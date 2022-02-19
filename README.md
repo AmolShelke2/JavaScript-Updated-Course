@@ -21,3 +21,7 @@ JavaScript is a high level object-oriented multi-paradigm programming language
 
 - and JavaScript is usefull for the interactivity such as clicking a button, submitting the
   form, loading data from the servers, and then this aplication is then we called web apps and it is all we can do with the help of javaScript
+
+### How to Link our JavaScript files and run it?
+
+We can use the inline script tags and write our javaScript code between them but it can be very painfull if you are writing a lot of javascript code so in this case we can create javaScript file and link them into index.html to link the javaScript file to the website. We can add the script file in the head section or at the end of all your HTML code, what that means it means that your javaScript file will be load after your all html code.
