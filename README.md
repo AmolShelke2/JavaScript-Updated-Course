@@ -25,3 +25,5 @@ JavaScript is a high level object-oriented multi-paradigm programming language
 ### How to Link our JavaScript files and run it?
 
 We can use the inline script tags and write our javaScript code between them but it can be very painfull if you are writing a lot of javascript code so in this case we can create javaScript file and link them into index.html to link the javaScript file to the website. We can add the script file in the head section or at the end of all your HTML code, what that means it means that your javaScript file will be load after your all html code.
+
+<hr>
