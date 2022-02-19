@@ -19,5 +19,5 @@ JavaScript is a high level object-oriented multi-paradigm programming language
 
 - CSS is known as cascading style sheets it is responsible for styling the webpage without css the website will not look good
 
-and JavaScript is usefull for the interactivity such as clicking a button, submitting the
-form, loading data from the servers, and then this aplication is then we called web apps and it is all we can do with the help of javaScript
+- and JavaScript is usefull for the interactivity such as clicking a button, submitting the
+  form, loading data from the servers, and then this aplication is then we called web apps and it is all we can do with the help of javaScript
