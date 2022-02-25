@@ -54,3 +54,24 @@ fullAge = 17
 */
 
 // Basic operator
+
+// mathematical operator
+// Minus operator
+const currentYear = 2022;
+
+const ageAmol = currentYear - 2004;
+const ageSarah = currentYear - 2003;
+
+console.log(ageAmol, ageSarah);
+
+// plus operator
+
+console.log(ageAmol + ageSarah);
+
+// Multiplication operator
+
+console.log(ageAmol * ageAmol);
+
+// division operator
+
+console.log(currentYear / ageAmol);
