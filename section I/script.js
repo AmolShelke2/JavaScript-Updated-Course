@@ -102,7 +102,7 @@ console.log(ageAmol < ageSarah);
 */
 
 // Operator Presedence
-
+/*
 const now = 2022;
 const ageAmol = now - 2004;
 const ageSarah = now - 2005;
@@ -112,3 +112,44 @@ console.log(now - 2004 > now - 2005);
 let x, y;
 x = y = 25 - 10 - 5; // x = y = 10, x = 10
 console.log(x, y);
+
+*/
+
+// coding challenge #1
+
+/*
+Mark and john are trying to compare their 
+BMI(body Mass Index), which is calculated using 
+the formula; BMI = max / height ** 2 = max / (height * height).
+(mass in kg and height in meter)
+
+1. store mark's and john's mass and height
+ in variables 
+
+2. Calculate both their BMI's using the
+ formula (you can event implement both versions)
+
+3. Create a Boolean variable 'markHigherBMI' containing 
+information about whether Mark has a higher BMI than John
+
+Test Data 1: Marks weight 78 kg and is 1.69 m tall.
+john weight is 92 kg and 1.95 m tall .
+Test Data 2: Marks weights 95 kg and is 1.88 m tall. 
+john weight 85 kg and 1.76 m tall.
+
+*/
+
+const marksMass = 78;
+const marksHeight = 1.69;
+const johnsMass = 92;
+const johnsHeight = 1.95;
+
+const marksBMI = marksMass / (marksHeight * marksHeight);
+const johnsBMI = johnsMass / (johnsHeight * johnsHeight);
+
+console.log(
+  "MarksBMI " + marksBMI + " is greater than " + "johnsBMI " + johnsBMI
+);
+
+const marksHigherBMI = marksBMI > johnsBMI;
+console.log(marksHigherBMI);
