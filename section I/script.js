@@ -48,4 +48,9 @@ age = 32; // reasigning a value
 const birthYear = 2005;
 birthYear = 222;
 
+var fullAge = 18
+fullAge = 17
+
 */
+
+// Basic operator
