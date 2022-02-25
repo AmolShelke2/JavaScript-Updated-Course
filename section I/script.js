@@ -57,6 +57,7 @@ fullAge = 17
 
 // mathematical operator
 // Minus operator
+/*
 const currentYear = 2022;
 
 const ageAmol = currentYear - 2004;
@@ -68,6 +69,10 @@ console.log(ageAmol, ageSarah);
 
 console.log(ageAmol + ageSarah);
 
+const firstName = 'Amol';
+const lastName = 'Shelke';
+console.log(firstName + ' ' + lastName);
+
 // Multiplication operator
 
 console.log(ageAmol * ageAmol);
@@ -75,3 +80,22 @@ console.log(ageAmol * ageAmol);
 // division operator
 
 console.log(currentYear / ageAmol);
+*/
+
+// Assignment operator
+
+let x = 20 - 2; // 18
+x += 10; // x = x + 10 = 28
+x *= 2; // x = x * 2 = 56
+x++; // x = x + 1 = 57
+x--; // x = x - 1 = 56
+
+console.log(x);
+
+// Comparision operator
+const currentYear = 2022;
+
+const ageAmol = currentYear - 2004;
+const ageSarah = currentYear - 2003;
+
+console.log(ageAmol < ageSarah);
