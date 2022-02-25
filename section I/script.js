@@ -137,7 +137,7 @@ john weight is 92 kg and 1.95 m tall .
 Test Data 2: Marks weights 95 kg and is 1.88 m tall. 
 john weight 85 kg and 1.76 m tall.
 
-*/
+
 
 const marksMass = 78;
 const marksHeight = 1.69;
@@ -153,3 +153,34 @@ console.log(
 
 const marksHigherBMI = marksBMI > johnsBMI;
 console.log(marksHigherBMI);
+
+*/
+
+// Strings and Template Literals
+/*
+const firstName = "Amol";
+const job = "frontEnd Developer";
+const birthYear = 2004;
+const currentYear = 2022;
+
+const amol =
+  "I'm " +
+  firstName +
+  ", a " +
+  (currentYear - birthYear) +
+  " years old " +
+  job +
+  "!";
+
+console.log(amol);
+
+// template literals
+
+const amolNew = `I'm ${firstName} a ${
+  currentYear - birthYear
+} year old ${job}!`;
+console.log(amolNew);
+
+console.log(`Just a simple string...`);
+
+*/
