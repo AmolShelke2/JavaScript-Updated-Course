@@ -83,7 +83,7 @@ console.log(currentYear / ageAmol);
 */
 
 // Assignment operator
-
+/*
 let x = 20 - 2; // 18
 x += 10; // x = x + 10 = 28
 x *= 2; // x = x * 2 = 56
@@ -99,3 +99,16 @@ const ageAmol = currentYear - 2004;
 const ageSarah = currentYear - 2003;
 
 console.log(ageAmol < ageSarah);
+*/
+
+// Operator Presedence
+
+const now = 2022;
+const ageAmol = now - 2004;
+const ageSarah = now - 2005;
+
+console.log(now - 2004 > now - 2005);
+
+let x, y;
+x = y = 25 - 10 - 5; // x = y = 10, x = 10
+console.log(x, y);
