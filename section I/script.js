@@ -496,3 +496,21 @@ if (day === "monday") {
 }
 
 */
+
+// Expressions and Statements
+/* 
+
+3 + 2; // 5
+4 * 2; // 8
+
+the things that produce value immidiately that is Expressions
+
+if (25 > 20) {
+  const str = "25 is greater";
+}
+
+The things that dosen't produce values that is statements
+
+console.log(`I'm ${2022 - 2004} years old`);
+
+*/
