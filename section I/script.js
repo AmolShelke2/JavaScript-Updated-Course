@@ -485,11 +485,11 @@ if (day === "monday") {
   console.log("learn about the JavaScript section I ");
 } else if (day === "tuesday") {
   console.log("learn about the JavaScript section II");
-} else if (day === "wednesday" && day === "thursday") {
+} else if (day === "wednesday" || day === "thursday") {
   console.log("solve all the coding challenges from Section I and Section II");
 } else if (day === "friday") {
   console.log("Learn about the JavaScript section III");
-} else if (day === "saturday" && day === "sunday") {
+} else if (day === "saturday" || day === "sunday") {
   console.log("Enjoy weekend :D");
 } else {
   console.log("Invalid Day!");
