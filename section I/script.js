@@ -356,3 +356,45 @@ if (hasDriverLicense && hasGoodVision && !isTired) {
 */
 
 // Coding Challenge # 3
+/* 
+
+1. Calculate the average score for each team using test
+data below.
+
+2. Compare the Team's average scores to determine the 
+winner of the competitions, and print it to the console.
+Don't forget that there can be a draw, so test for that as 
+well (draw means they have the same average score,)
+
+3. Bonus 1: Include a requirement for a minimum score fo 100.
+with this rule, a team only wins if it has a higher socre than 
+the other team, and the same time a score at least 100 points,
+Hints: use a logical operator to test for minimun score, as well 
+as multiple else if block.
+
+4. Bonus 2: Minumum score also applies to a draw! so 
+a draw only happens when both teams have same score and both have a score
+greater or equal 100 points. Otherwise, no team wins the trophy
+
+Test data: Dolphins score 96, 108, 89. Koalas score 88, 91 , 110
+
+test data bonus 1: Dolphins score 97, 112 and 101. koalas 
+score 109, 95 and 123
+*/
+
+// solution  of task 1 and 2
+
+const dolphinsTeamScore = (96 + 108 + 89) / 3;
+const koalasTeamScore = (88 + 91 + 110) / 3;
+
+console.log(dolphinsTeamScore, koalasTeamScore);
+
+if (dolphinsTeamScore > koalasTeamScore) {
+  console.log(
+    "Dolphins Team wins the game with the score of " + dolphinsTeamScore
+  );
+} else if (dolphinsTeamScore === koalasTeamScore) {
+  console.log("They have the same score so they not get the trophy..");
+} else {
+  console.log("Koalas Team wins the game with the score of " + koalasTeamScore);
+}
