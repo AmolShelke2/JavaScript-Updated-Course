@@ -327,7 +327,7 @@ if (favourite !== 23) {
 */
 
 // Boolean Logic
-
+/*
 // and, or, not;
 
 const hasDriverLicense = true;
@@ -352,3 +352,7 @@ if (hasDriverLicense && hasGoodVision && !isTired) {
 } else {
   console.log("someone else should drive...");
 }
+
+*/
+
+// Coding Challenge # 3
