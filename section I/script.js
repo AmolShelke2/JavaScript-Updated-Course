@@ -293,6 +293,7 @@ if (height) {
 }
 
 */
+/*
 
 // Equality operator == , vs ===
 const age = 18;
@@ -323,3 +324,6 @@ if (favourite === 23) {
 if (favourite !== 23) {
   console.log("why not 23?");
 }
+*/
+
+// Boolean Logic
