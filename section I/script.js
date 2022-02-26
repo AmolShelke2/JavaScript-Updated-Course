@@ -545,3 +545,29 @@ day === "monday"
   ? console.log("you have to go to the college")
   : console.log("it is weekend");
 */
+
+// Coding Challenge # 4
+
+/* 
+
+Steven Wants to build a very simple tip calculator 
+for whenver he goes eating in a restaurant. In his country
+, it's usual to tip 15% if the bill value is between 
+50 and 300. if the value is different the tip is 20%
+
+1. your task is to calculate the tip, depending on the bill
+value.  create a variable called tip for this it's not allowed 
+to use if/else statement
+
+2. print a string to the console containing the bill value, the tip 
+and the final value (bill + tip)
+
+*/
+
+const bill = 55;
+
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+console.log(
+  `THe bill was ${bill}, the tip was ${tip} and the total value ${bill + tip}`
+);
