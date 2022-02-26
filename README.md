@@ -27,3 +27,14 @@ JavaScript is a high level object-oriented multi-paradigm programming language
 We can use the inline script tags and write our javaScript code between them but it can be very painfull if you are writing a lot of javascript code so in this case we can create javaScript file and link them into index.html to link the javaScript file to the website. We can add the script file in the head section or at the end of all your HTML code, what that means it means that your javaScript file will be load after your all html code.
 
 <hr>
+
+### What I learn in this section:
+
+- Hello world
+- values and variables
+- object and primitives
+- basic operators
+- declaring variables with Let const and var
+- Solve Coding Challenges
+- Strings and Template Literals
+-
