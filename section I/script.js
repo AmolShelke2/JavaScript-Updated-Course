@@ -478,6 +478,7 @@ switch (day) {
 
 // challenge try to convert the switch statement with if/else
 
+/*
 const day = "monday";
 
 if (day === "monday") {
@@ -493,3 +494,5 @@ if (day === "monday") {
 } else {
   console.log("Invalid Day!");
 }
+
+*/
