@@ -366,8 +366,8 @@ winner of the competitions, and print it to the console.
 Don't forget that there can be a draw, so test for that as 
 well (draw means they have the same average score,)
 
-3. Bonus 1: Include a requirement for a minimum score fo 100.
-with this rule, a team only wins if it has a higher socre than 
+3. Bonus 1: Include a requirement for a minimum score of 100.
+with this rule, a team only wins if it has a higher score than 
 the other team, and the same time a score at least 100 points,
 Hints: use a logical operator to test for minimun score, as well 
 as multiple else if block.
@@ -380,8 +380,12 @@ Test data: Dolphins score 96, 108, 89. Koalas score 88, 91 , 110
 
 test data bonus 1: Dolphins score 97, 112 and 101. koalas 
 score 109, 95 and 123
+
+test data bonus 2: Dolphins score 97, 112 and 101. Koalas score 
+109, 95 and 106
 */
 
+/*
 // solution  of task 1 and 2
 
 const dolphinsTeamScore = (96 + 108 + 89) / 3;
@@ -398,3 +402,45 @@ if (dolphinsTeamScore > koalasTeamScore) {
 } else {
   console.log("Koalas Team wins the game with the score of " + koalasTeamScore);
 }
+
+*/
+
+// solution of bonus # 1
+/*
+const dolphinsTeamScore = (97 + 112 + 101) / 3;
+const koalasTeamScore = (109 + 95 + 123) / 3;
+
+console.log(dolphinsTeamScore, koalasTeamScore);
+
+if (dolphinsTeamScore >= 100 && dolphinsTeamScore > koalasTeamScore) {
+  console.log(
+    "DolphinsTeam wins the game with the highest score of " + dolphinsTeamScore
+  );
+} else if (koalasTeamScore >= 100 && koalasTeamScore > dolphinsTeamScore) {
+  console.log(
+    "KoalasTeamScore wins the game with the highest score of " + koalasTeamScore
+  );
+} else {
+  console.log("NO one wins the game they both get the same scores");
+}
+
+*/
+// solution of bonus # 2
+
+const dolphinsTeamScore = (97 + 112 + 101) / 3;
+const koalasTeamScore = (109 + 95 + 106) / 3;
+
+console.log(dolphinsTeamScore, koalasTeamScore);
+
+if (
+  dolphinsTeamScore >= 100 ||
+  (koalasTeamScore >= 100 && dolphinsTeamScore === koalasTeamScore)
+) {
+  console.log(
+    `They both have the same score of (${
+      (dolphinsTeamScore, koalasTeamScore)
+    }) so they both don't get any trophy`
+  );
+}
+
+// complete  solution
