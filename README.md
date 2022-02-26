@@ -37,4 +37,12 @@ We can use the inline script tags and write our javaScript code between them but
 - declaring variables with Let const and var
 - Solve Coding Challenges
 - Strings and Template Literals
--
+- If else statements
+- type conversion and type coercion
+- truthy and falsy values
+- Equality operator
+- Boolean Logic
+- Switch statements
+- ternary operator
+- Expressions and statements
+- logical operators and or not
