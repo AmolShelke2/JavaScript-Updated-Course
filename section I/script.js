@@ -449,7 +449,7 @@ if (
 */
 
 // Switch statement
-
+/*
 const day = "tuesday";
 
 switch (day) {
@@ -475,7 +475,7 @@ switch (day) {
   default:
     console.log("Not a valid Day!");
 }
-
+*/
 // challenge try to convert the switch statement with if/else
 
 /*
@@ -513,4 +513,35 @@ The things that dosen't produce values that is statements
 
 console.log(`I'm ${2022 - 2004} years old`);
 
+*/
+
+// The conditional Ternary operator
+/*
+
+const age = 19;
+
+// age >= 18
+//   ? console.log("I like to drink wine 🔥")
+//   : console.log("I like to drink water...");
+
+const drink = age >= 18 ? "wine" : "water";
+console.log(drink);
+
+let drink2;
+
+if (age >= 18) {
+  drink2 = "wine";
+} else {
+  drink2 = "water";
+}
+
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? "wine" : "water"}`);
+
+const day = "sunday";
+
+day === "monday"
+  ? console.log("you have to go to the college")
+  : console.log("it is weekend");
 */
