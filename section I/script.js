@@ -385,7 +385,6 @@ test data bonus 2: Dolphins score 97, 112 and 101. Koalas score
 109, 95 and 106
 */
 
-/*
 // solution  of task 1 and 2
 
 const dolphinsTeamScore = (96 + 108 + 89) / 3;
@@ -397,13 +396,11 @@ if (dolphinsTeamScore > koalasTeamScore) {
   console.log(
     "Dolphins Team wins the game with the score of " + dolphinsTeamScore
   );
-} else if (dolphinsTeamScore === koalasTeamScore) {
-  console.log("They have the same score so they not get the trophy..");
-} else {
+} else if (koalasTeamScore > dolphinsTeamScore) {
   console.log("Koalas Team wins the game with the score of " + koalasTeamScore);
+} else {
+  console.log("They have the same score so they not get the trophy..");
 }
-
-*/
 
 // solution of bonus # 1
 /*
