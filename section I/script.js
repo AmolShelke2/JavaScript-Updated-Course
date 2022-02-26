@@ -387,6 +387,7 @@ test data bonus 2: Dolphins score 97, 112 and 101. Koalas score
 
 // solution  of task 1 and 2
 
+/*
 const dolphinsTeamScore = (96 + 108 + 89) / 3;
 const koalasTeamScore = (88 + 91 + 110) / 3;
 
@@ -401,6 +402,8 @@ if (dolphinsTeamScore > koalasTeamScore) {
 } else {
   console.log("They have the same score so they not get the trophy..");
 }
+
+*/
 
 // solution of bonus # 1
 /*
@@ -423,6 +426,7 @@ if (dolphinsTeamScore >= 100 && dolphinsTeamScore > koalasTeamScore) {
 
 */
 // solution of bonus # 2
+/*
 
 const dolphinsTeamScore = (97 + 112 + 101) / 3;
 const koalasTeamScore = (109 + 95 + 106) / 3;
@@ -441,3 +445,5 @@ if (
 }
 
 // complete  solution
+
+*/
