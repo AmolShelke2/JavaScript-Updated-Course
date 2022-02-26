@@ -447,3 +447,49 @@ if (
 // complete  solution
 
 */
+
+// Switch statement
+
+const day = "tuesday";
+
+switch (day) {
+  case "monday": // day === 'monday'
+    console.log("learn about the JavaScript Section I");
+    break;
+  case "tuesday":
+    console.log("learn about the JavaScript section II");
+    break;
+  case "wednesday":
+    console.log("solve the coding challenges of Section I and Section II");
+    break;
+  case "thursday":
+    console.log("Learn about the JavaScript section III");
+    break;
+  case "friday":
+    console.log("create a project of the section IV");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("Enjoy Weekend :D");
+    break;
+  default:
+    console.log("Not a valid Day!");
+}
+
+// challenge try to convert the switch statement with if/else
+
+const day = "monday";
+
+if (day === "monday") {
+  console.log("learn about the JavaScript section I ");
+} else if (day === "tuesday") {
+  console.log("learn about the JavaScript section II");
+} else if (day === "wednesday" && day === "thursday") {
+  console.log("solve all the coding challenges from Section I and Section II");
+} else if (day === "friday") {
+  console.log("Learn about the JavaScript section III");
+} else if (day === "saturday" && day === "sunday") {
+  console.log("Enjoy weekend :D");
+} else {
+  console.log("Invalid Day!");
+}
