@@ -46,3 +46,5 @@ We can use the inline script tags and write our javaScript code between them but
 - ternary operator
 - Expressions and statements
 - logical operators and or not
+
+<hr>
