@@ -48,3 +48,5 @@ We can use the inline script tags and write our javaScript code between them but
 - logical operators and or not
 
 <hr>
+
+## Section II JavaScript Fundamentals Section II
