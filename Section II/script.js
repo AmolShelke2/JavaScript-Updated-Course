@@ -14,3 +14,39 @@ if (hasDriversLicense) console.log("I can drive :D");
 // const private = 22;
 
 */
+
+// Functions in JavaScript
+/*
+function logger() {
+  console.log("My name is Amol");
+}
+
+// calling/ running/ invoking function
+logger();
+logger();
+logger();
+
+function fruitProcessor(apples, oranges) {
+  const juice = `Juice with ${apples} apples and ${oranges} oranges`;
+  return juice;
+}
+
+const appleJuice = fruitProcessor(5, 0);
+console.log(appleJuice);
+
+const appleOrangeJuice = fruitProcessor(2, 4);
+console.log(appleOrangeJuice);
+
+*/
+
+/*
+function ageCalculator(name, birthYear, currentYear) {
+  console.log(name, birthYear, currentYear);
+  const age = currentYear - birthYear;
+  return (amolSentence = `Hi all I'm ${name} and my birthYear was ${birthYear} and we are present in ${currentYear} and I'm ${age} years old`);
+}
+
+const amolAge = ageCalculator("Amol", 2004, 2022);
+console.log(amolAge);
+
+*/
