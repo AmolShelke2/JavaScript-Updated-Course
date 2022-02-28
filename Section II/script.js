@@ -92,6 +92,7 @@ console.log(yearsUntilRetirement(1999, "Savan"));
 
 // Function calling another function
 
+/* 
 function cutFruitPieces(fruit) {
   return fruit * 4;
 }
@@ -100,12 +101,13 @@ function fruitProcessor(apples, oranges) {
   const applePieces = cutFruitPieces(apples);
   const orangesPieces = cutFruitPieces(oranges);
 
-  const juice = `Juice with ${applePieces} pieces of apples and ${orangesPieces} pieces of oranges`;
+  const juice = `Juice with ${applePieces} piece of apples and ${orangesPieces} piece of oranges`;
   return juice;
 }
 
 console.log(fruitProcessor(2, 3));
 
+*/
 // Output: Juice with 8 pieces of apples and 12 pieces of oranges
 // Explanation:
 
@@ -125,3 +127,5 @@ and simply the fruitProcessor function will return the template literal string
 with the applePieces and orangesPieces
 
 */
+
+// Reviewing Functions
