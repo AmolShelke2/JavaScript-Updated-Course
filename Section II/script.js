@@ -129,3 +129,57 @@ with the applePieces and orangesPieces
 */
 
 // Reviewing Functions
+
+/*
+
+const calcAge = function (year) {
+  return 2022 - year;
+};
+
+const yearsUntilRetirement = function (birthYear, firstName) {
+  const age = calcAge(birthYear);
+  const retireMent = 65 - age;
+  if (retireMent > 0) {
+    console.log(`${firstName} retires in ${retireMent} years`);
+    return retireMent;
+  } else {
+    console.log(`${firstName} has already retires🎉`);
+    return -1;
+  }
+  // return `${firstName} retires in ${retireMent} years`;
+};
+
+console.log(yearsUntilRetirement(2004, "Amol"));
+console.log(yearsUntilRetirement(1950, "mike"));
+
+*/
+
+// function declaration
+
+/*
+function printName(firstName, lastName, job) {
+  return `Hello there I'm ${firstName} ${lastName} and I am a ${job}:D`;
+}
+
+const name = printName("Amol", "Shelke", "Front End Developer");
+console.log(name);
+
+function expression
+
+const printName = function (firstName, lastName, job) {
+  return `Hello there I'm ${firstName} ${lastName} and I am a ${job}:D`;
+};
+
+const intro = printName("Amol", "Shelke", "Front End Developer");
+console.log(intro);
+
+arrow function
+
+const printName = (firstName, lastName, job) => {
+  return `Hello there I'm ${firstName} ${lastName} and I am a ${job}:D`;
+};
+
+const intro2 = printName("Amol", "Shelke", "Front End Developer");
+console.log(intro2);
+
+*/
