@@ -89,3 +89,39 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 console.log(yearsUntilRetirement(2004, "Amol"));
 console.log(yearsUntilRetirement(1999, "Savan"));
 */
+
+// Function calling another function
+
+function cutFruitPieces(fruit) {
+  return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+  const orangesPieces = cutFruitPieces(oranges);
+
+  const juice = `Juice with ${applePieces} pieces of apples and ${orangesPieces} pieces of oranges`;
+  return juice;
+}
+
+console.log(fruitProcessor(2, 3));
+
+// Output: Juice with 8 pieces of apples and 12 pieces of oranges
+// Explanation:
+
+/* 
+In this code we are first creating a function cutFruitPieces and passing 
+an parameter of fruit one fruit. and then returning the fruit times 4
+and the function ends.
+
+and in the next function we are creating a function with the function 
+declaration and passing two parameters apples and oranges, and we are 
+calling the cutFruitPieces in the fruitProcessor function with the arguments
+of the fruitProcessor function that means whatever we passed in the 
+arguments as apples and oranges it will return the 4 times of that as an
+pieces. 
+
+and simply the fruitProcessor function will return the template literal string
+with the applePieces and orangesPieces
+
+*/
