@@ -55,6 +55,7 @@ console.log(amolAge);
 
 // function declarations
 
+/*
 function calcAge1(birthYear) {
   return 2022 - birthYear;
 }
@@ -69,3 +70,22 @@ const calcAge2 = function (birthYear) {
 
 const age2 = calcAge2(2002);
 console.log(age2);
+
+*/
+
+// arrow function
+/*
+const calcAge3 = (birthYear) => 2022 - birthYear;
+const age3 = calcAge3(2004);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = 2022 - birthYear;
+  const retireMent = 65 - age;
+  // return retireMent
+  return `${firstName} retires in ${retireMent} years`;
+};
+
+console.log(yearsUntilRetirement(2004, "Amol"));
+console.log(yearsUntilRetirement(1999, "Savan"));
+*/
