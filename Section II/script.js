@@ -1,8 +1,8 @@
 // JavaScript Fundamentals Section II
 
 // Activating Strict mode
-/*
 "use strict";
+/*
 
 let hasDriversLicense = false;
 const passTest = true;
@@ -50,3 +50,22 @@ const amolAge = ageCalculator("Amol", 2004, 2022);
 console.log(amolAge);
 
 */
+
+// Function   function declaration vs expression
+
+// function declarations
+
+function calcAge1(birthYear) {
+  return 2022 - birthYear;
+}
+
+const amolAge = calcAge1(2004);
+console.log(amolAge);
+
+// function expression
+const calcAge2 = function (birthYear) {
+  return 2022 - birthYear;
+};
+
+const age2 = calcAge2(2002);
+console.log(age2);
