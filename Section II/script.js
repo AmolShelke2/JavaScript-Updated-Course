@@ -183,39 +183,3 @@ const intro2 = printName("Amol", "Shelke", "Front End Developer");
 console.log(intro2);
 
 */
-
-/*
-Implement function verify(text) which verifies where 
-parenthesis text are correctoly nested. 
-
-you need to consider three kinds (),[], <>. and only these 
-kinds.
-
-Example: 
-verify("---(+++)---") -> 1 // True
-verify("") -> 1 // True
-verify("before (middle []) after") -> 1 // True
-verify(")(")  -> 0 // false 
-verify("<(>)") -> 0 // false 
-verify("([<>()])") 1 // True
-verify("([)") -> 0 // False 
-
-*/
-
-function verify(text) {
- let stack = []
-  for (var i = 0; i < text.length; i++) {
-    let ch = stack[stack.length - 1]
-    if (text[i] == '(' || text[i] =='[' || text[i] == '<') {
-      stack.push(text[i])
-    } else if ((ch == '(' && text[i] == ')') || (ch == '<' && text[i] == '>')
-      || (ch == '[' && text[i] == ']')) {
-        stack.pop()
-    } else return 0
-  }
-  return stack.length ? 0 : 1
-
-}
-
-const sValid = verify('')
-console.log(sValid)
