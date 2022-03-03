@@ -154,9 +154,9 @@ console.log(yearsUntilRetirement(1950, "mike"));
 
 */
 
+/*
 // function declaration
 
-/*
 function printName(firstName, lastName, job) {
   return `Hello there I'm ${firstName} ${lastName} and I am a ${job}:D`;
 }
@@ -173,7 +173,8 @@ const printName = function (firstName, lastName, job) {
 const intro = printName("Amol", "Shelke", "Front End Developer");
 console.log(intro);
 
-arrow function
+*/
+// arrow function
 
 const printName = (firstName, lastName, job) => {
   return `Hello there I'm ${firstName} ${lastName} and I am a ${job}:D`;
@@ -181,5 +182,3 @@ const printName = (firstName, lastName, job) => {
 
 const intro2 = printName("Amol", "Shelke", "Front End Developer");
 console.log(intro2);
-
-*/
