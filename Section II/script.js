@@ -175,10 +175,14 @@ console.log(intro);
 
 */
 // arrow function
-
-const printName = (firstName, lastName, job) => {
+/*
+function printName(firstName, lastName, job) {
   return `Hello there I'm ${firstName} ${lastName} and I am a ${job}:D`;
-};
+}
 
 const intro2 = printName("Amol", "Shelke", "Front End Developer");
 console.log(intro2);
+
+*/
+
+// Coding Challenge # 1
