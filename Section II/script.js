@@ -184,5 +184,64 @@ const intro2 = printName("Amol", "Shelke", "Front End Developer");
 console.log(intro2);
 
 */
+/*
+ Back to the two gymnastics temas, the dolphins and the koalas
+ there is a ndw gymnastics discipline, which works differently
+Each team competes 3 times, and then the average of the 3 scores
+is calculated {so one average score per team}
+
+A team only wins if it has at least DOUBLE the average score of the 
+other team. OtherWise, no team wins
+
+1. create an arrow function `calcAverage` to calculate the average 
+of 3 teams
+
+2. Use the function to calculate the average for both teams
+
+3. Create a function `CheckWinner` that takes the average score
+of each team as an parameters {dolphiAvg and koalasAvg} and then logs
+the winner to the console.
+
+4. use the checkWinner function to determine the winner for both 
+data 1 and data 2 
+
+5. Ignore draws this times ...
+
+TEST DATA 1: Dolphins socre 44, 23, and 71, Koalas 
+score 65, 54 and 49
+
+TEST DATA 2: Dolphins score 85, 54, and 41, Koalas 
+Score 23, 34,and  27
+*/
 
 // Coding Challenge # 1
+
+// test 1 
+  
+const calcAverage = (score1, score2, score3) => {
+  const average = score1 + score2 + score3 / 3
+  return average
+}
+
+// test 2
+const dolphinAvg = calcAverage(85, 54, 41)
+const koalasAvg = calcAverage(23, 34, 27)
+console.log(dolphinAvg , koalasAvg)
+
+// test 3
+
+function checkWinner(dolphinAvg, koalasAvg) {
+  if (dolphinAvg >= 2 * koalasAvg) {
+    console.log(`Dolphis win the game with {${dolphinAvg} vs. ${koalasAvg}}🥳`)
+  } else if (koalasAvg >= 2 * dolphinAvg) {
+    console.log(`Koalas win the game with {${koalasAvg} vs. ${dolphinAvg}}🥳`)
+  } else {
+    console.log('Noone wins🥲')
+   }
+}
+
+checkWinner(dolphinAvg, koalasAvg)
+
+ 
+
+
