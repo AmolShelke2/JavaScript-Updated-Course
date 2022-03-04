@@ -273,3 +273,11 @@ console.log(friends[friends.length -1])
 
 friends[2] = 'jay'
 console.log(friends)
+
+// array with the different Data types
+
+const firstName = 'Amol'
+const amol = [firstName, 'Shelke', 2022 - 2004, 'FrontEnd Developer', friends ]
+console.log(amol)
+
+
