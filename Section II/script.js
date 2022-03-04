@@ -219,7 +219,7 @@ Score 23, 34,and  27
 // test 1 
   
 const calcAverage = (score1, score2, score3) => {
-  const average = score1 + score2 + score3 / 3
+  const average = (score1 + score2 + score3) / 3
   return average
 }
 
@@ -241,7 +241,4 @@ function checkWinner(dolphinAvg, koalasAvg) {
 }
 
 checkWinner(dolphinAvg, koalasAvg)
-
- 
-
 
