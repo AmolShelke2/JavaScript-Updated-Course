@@ -249,4 +249,27 @@ checkWinner(dolphinAvg, koalasAvg)
 
 // Arrays in javaScript
 
+// Without array it would be like this
 
+const friend1 = 'Michael'
+const friend2 = 'Steven'
+const friend3 = 'Rouls'
+
+// With array we can store data like in box 
+const friends = ['Michael', 'Steven', 'Rouls']
+console.log(friends)
+
+const years = new Array(1991, 1984, 2006, 2020)
+console.log(years)
+
+// axesing the element of the arrays
+
+console.log(friends[0], friends[2])
+
+// we can check the lengt of an array using the length property
+
+console.log(friends.length)
+console.log(friends[friends.length -1])
+
+friends[2] = 'jay'
+console.log(friends)
