@@ -216,7 +216,7 @@ Score 23, 34,and  27
 
 // Coding Challenge # 1
 
-// test 1 
+// test 1
 
 /*
 
@@ -246,3 +246,7 @@ function checkWinner(dolphinAvg, koalasAvg) {
 checkWinner(dolphinAvg, koalasAvg)
 
 */
+
+// Arrays in javaScript
+
+
