@@ -294,3 +294,35 @@ console.log(ages)
 */
 
 // JavaScript methods or array Operations..
+
+/* 
+
+// add Elements 
+const friends = ['xxx', 'yyy', 'zzz']
+// adds Element at the end 
+const newLength = friends.push('ddd')
+console.log(friends, newLength)
+
+// friends.unshift('aaa')
+
+// remove Elements 
+
+const popedEl = friends.pop()
+console.log(popedEl) 
+console.log(friends)
+
+const firstItemPop = friends.shift()
+console.log(firstItemPop)
+
+console.log(friends)
+console.log(friends.indexOf('zzz'))
+
+// The includes method will check if the passed argument is present in array or not base on the condition it will return true or false
+console.log(friends.includes('zzz'))
+console.log(friends.includes('abc'))
+
+if (friends.includes('zzz')) {
+  console.log('You have a friend called zzz')
+}
+
+*/
