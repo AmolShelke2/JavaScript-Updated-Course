@@ -247,7 +247,8 @@ checkWinner(dolphinAvg, koalasAvg)
 
 */
 
-// Arrays in javaScript
+// Introduction to Arrays
+
 
 // Without array it would be like this
 
@@ -255,12 +256,12 @@ const friend1 = 'Michael'
 const friend2 = 'Steven'
 const friend3 = 'Rouls'
 
-// With array we can store data like in box 
+// basic way to create a array
 const friends = ['Michael', 'Steven', 'Rouls']
 console.log(friends)
 
-const years = new Array(1991, 1984, 2006, 2020)
-console.log(years)
+const y = new Array(1991, 1984, 2006, 2020)
+console.log(y)
 
 // axesing the element of the arrays
 
@@ -280,4 +281,12 @@ const firstName = 'Amol'
 const amol = [firstName, 'Shelke', 2022 - 2004, 'FrontEnd Developer', friends ]
 console.log(amol)
 
+// Exercise 
+const calcAge = function (birthYear) {
+  return 2022 - birthYear
 
+}
+const years = [2000, 2002, 2004, 2003, 2001]
+// we can pass any expressions inside  arrays 
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])]
+console.log(ages)
