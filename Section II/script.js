@@ -249,7 +249,7 @@ checkWinner(dolphinAvg, koalasAvg)
 
 // Introduction to Arrays
 
-
+/*
 // Without array it would be like this
 
 const friend1 = 'Michael'
@@ -290,3 +290,7 @@ const years = [2000, 2002, 2004, 2003, 2001]
 // we can pass any expressions inside  arrays 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])]
 console.log(ages)
+
+*/
+
+// JavaScript methods or array Operations..
