@@ -374,6 +374,7 @@ console.log(totalValue)
 */
 
 // Introduction to Objects
+/*
 
 const amol = {
   firstName: 'Amol',
@@ -382,3 +383,36 @@ const amol = {
   job: 'Teacher',
   friends: ['Amol', 'Amol', 'amol']
 }
+
+*/
+
+// How do we acces data from objects
+
+const amol = {
+  firstName: 'Amol',
+  lastName: 'Shelke',
+  age: 2022 - 2004,
+  job: 'Teacher',
+  friends: ['Amol', 'Amol', 'amol']
+}
+
+// by DOT notation
+/*
+console.log(amol.firstName)
+
+// brackets notation
+console.log(amol['lastName'])
+
+const nameKey = 'Name'
+console.log(amol['first' + nameKey])
+console.log(amol['last' + nameKey])
+
+const interestedIn =
+  prompt('What do you want to know about amol? Choose between, firstName, LastName, age, job, and friends')
+
+if (amol[interestedIn]) {
+  console.log(amol[interestedIn])
+} else {
+  console.log('Wrong request')
+}
+*/
