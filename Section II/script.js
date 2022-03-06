@@ -326,3 +326,47 @@ if (friends.includes('zzz')) {
 }
 
 */
+
+//  Coding Challenge #2
+
+/* 
+
+Steven is still building his tip calculator, using the same rules as before:
+tip 15% of the bill if the bill value is between 50 and 300, and if the value
+is different, the tip is 20%
+
+1. Write a function `calcTip` that take any bill value as an input and return 
+the corresponding tip, calculated based on the rules above.
+
+2.  and now let's use arrays. So create an array 'bills' containing the test 
+data below.
+
+3. Create an array 'tips' containing the tip value for each bill, calculated
+from the functio you created before.
+
+4. BONUS: create an array 'total' containg the total values, so the bill + tip.
+
+Test Data = 125, 555, and 44
+*/
+
+// Test 1 
+function calcTip(bill) {
+  if (bill >= 50 && bill < 300) {
+   return  bill * .15
+  } else
+    return bill * .20
+}
+
+
+// Test 2.
+
+const bills = [125, 555, 44]
+
+// Test 3 
+const allTips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]
+console.log(allTips)
+
+// Test 4 Bonus
+
+const totalValue = [bills[0] + allTips[0], bills[1] + allTips[1], bills[2] + allTips[2]]
+console.log(totalValue)
