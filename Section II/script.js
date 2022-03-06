@@ -493,7 +493,7 @@ GOOD LUCK 😀
 
 */
 
-
+/*
 // solution
 
 const mark = {
@@ -529,3 +529,9 @@ if (markBMI > johnBMI) {
 } else {
   console.log('both have same BMI')
 }
+
+*/
+
+// Itreation the for loop 
+
+
