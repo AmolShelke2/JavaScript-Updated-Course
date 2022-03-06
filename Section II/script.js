@@ -374,3 +374,11 @@ console.log(totalValue)
 */
 
 // Introduction to Objects
+
+const amol = {
+  firstName: 'Amol',
+  lastName: 'Shelke',
+  age: 2022 - 2004,
+  job: 'Teacher',
+  friends: ['Amol', 'Amol', 'amol']
+}
