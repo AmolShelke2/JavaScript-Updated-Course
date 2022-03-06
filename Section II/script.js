@@ -348,7 +348,7 @@ from the functio you created before.
 
 Test Data = 125, 555, and 44
 */
-
+/*
 // Test 1 
 function calcTip(bill) {
   if (bill >= 50 && bill < 300) {
@@ -370,3 +370,7 @@ console.log(allTips)
 
 const totalValue = [bills[0] + allTips[0], bills[1] + allTips[1], bills[2] + allTips[2]]
 console.log(totalValue)
+
+*/
+
+// Introduction to Objects
