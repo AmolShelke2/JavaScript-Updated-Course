@@ -428,3 +428,42 @@ console.log(amol)
 
 console.log(`${amol.firstName} has ${amol.friends.length} friends and his best friend is called ${amol.friends[0]}`)
 */
+/*
+
+// Object methods
+
+const amol = {
+  firstName: 'Amol',
+  lastName: 'shelke',
+  birthYear: 2004,
+  job: 'Front End developer',
+  friends: ['x', 'y', 'z'],
+  hasDriverLicense: true,
+
+  // calcAge: function (birthYear) {
+  //   return 2022 - birthYear
+  // }
+
+  // calcAge: function () {
+  //   // console.log(this)
+  //   return 2022 - this.birthYear
+  // }
+
+  calcAge: function () {
+    this.age = 2022 - this.birthYear  
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()} -year old ${amol.job}
+    , and he has ${this.hasDriverLicense ? 'a' : 'no'} driver's license
+    `
+  }
+
+}
+console.log(amol.calcAge())
+console.log(amol.age)
+
+console.log(amol.getSummary()); 
+
+*/
