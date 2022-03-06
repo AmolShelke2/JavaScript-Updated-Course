@@ -385,7 +385,7 @@ const amol = {
 }
 
 */
-
+/*
 // How do we acces data from objects
 
 const amol = {
@@ -393,7 +393,7 @@ const amol = {
   lastName: 'Shelke',
   age: 2022 - 2004,
   job: 'Teacher',
-  friends: ['Amol', 'Amol', 'amol']
+  friends: ['Michael', 'Amol', 'amol']
 }
 
 // by DOT notation
@@ -415,4 +415,16 @@ if (amol[interestedIn]) {
 } else {
   console.log('Wrong request')
 }
+
+
+// Adding new properties to objects using dot notation and bracket notation
+amol.location = 'India'
+amol['twitter'] = '@amol_shelke09'
+console.log(amol)
+
+// Challenge
+
+// amol has 3 friends, and his best friend is called Michael
+
+console.log(`${amol.firstName} has ${amol.friends.length} friends and his best friend is called ${amol.friends[0]}`)
 */
