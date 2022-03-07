@@ -582,15 +582,17 @@ for (let i = 0; i < birthYears.length; i++) {
 console.log(age) 
 */
 
+/*
+
 // break and continue
 
 const amol = ['Amol', 'Shelke', 2022 - 2004, 'FrontEnd Developer',
               ['abc', 'abc', 'xyz'], true]
 
-// for (let i = 0; i < amol.length; i++) {
-//   if(typeof amol[i] !== 'string') continue
-//   console.log(amol[i], typeof amol[i])
-// }
+for (let i = 0; i < amol.length; i++) {
+  if(typeof amol[i] !== 'string') continue
+  console.log(amol[i], typeof amol[i])
+}
 
 // break
 
@@ -600,3 +602,22 @@ for (let i = 0; i < amol.length; i++) {
   console.log(amol[i])
 
 }
+*/
+// Looping Backwards and Loops in Loops
+
+const amol = ['Amol', 'Shelke', 2022 - 2004, 'FrontEnd Developer',
+  ['abc', 'abc', 'xyz']]
+            
+for (let i  = amol.length - 1; i >= 0; i--) {
+  console.log(amol[i])
+}
+
+// loop inside a loop
+
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`---------Starting exercise ${exercise}`)
+
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Exercise ${exercise} lifting weights repitation ${rep}🏋️‍♂️`)
+  }
+} 
