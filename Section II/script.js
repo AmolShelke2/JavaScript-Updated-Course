@@ -587,8 +587,16 @@ console.log(age)
 const amol = ['Amol', 'Shelke', 2022 - 2004, 'FrontEnd Developer',
               ['abc', 'abc', 'xyz'], true]
 
-for (let i = 0; i < amol.length; i++) {
-  if(typeof amol[i] !== 'string') continue
-  console.log(amol[i], typeof amol[i])
-}
+// for (let i = 0; i < amol.length; i++) {
+//   if(typeof amol[i] !== 'string') continue
+//   console.log(amol[i], typeof amol[i])
+// }
 
+// break
+
+console.log('BREAK WITH NUMBER')
+for (let i = 0; i < amol.length; i++) {
+  if (typeof amol[i] === 'number') break
+  console.log(amol[i])
+
+}
