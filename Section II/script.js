@@ -532,6 +532,63 @@ if (markBMI > johnBMI) {
 
 */
 
-// Itreation the for loop 
+// Itreation the for loop
+/*
 
+// console.log('Lifting weight repitition 1 🏋️‍♂️')
+// console.log('Lifting weight repitition 2 🏋️‍♂️')
+// console.log('Lifting weight repitition 3 🏋️‍♂️')
+// console.log('Lifting weight repitition 4 🏋️‍♂️')
+// console.log('Lifting weight repitition 5 🏋️‍♂️')
+// console.log('Lifting weight repitition 6 🏋️‍♂️')
+// console.log('Lifting weight repitition 7 🏋️‍♂️')
+// console.log('Lifting weight repitition 8 🏋️‍♂️')
+// console.log('Lifting weight repitition 9 🏋️‍♂️')
+// console.log('Lifting weight repitition 10 🏋️‍♂️')
+
+// for loop keeps running while condition is TRUE
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weight repitition ${rep} 🏋️‍♂️`)
+}
+*/
+
+// Looping Arrays, Breaking and continuing
+/*
+const amol = ['Amol', 'Shelke', 2022 - 2004, 'FrontEnd Developer',
+              ['abc', 'abc', 'xyz'], true]
+
+const types = [];
+
+for (let i = 0; i < amol.length; i++) {
+  // reading array 
+  console.log(amol[i])
+  
+  // filling types array
+  // types[i] = typeof amol[i]
+  types.push(typeof amol[i])
+
+}
+console.log(types)
+
+const birthYears = [2002, 2003, 2004, 2000, 2001]
+const age = [];
+
+for (let i = 0; i < birthYears.length; i++) {
+  const ages = 2022 - birthYears[i]
+  age.push(ages)
+}
+
+console.log(age) 
+*/
+
+// break and continue
+
+const amol = ['Amol', 'Shelke', 2022 - 2004, 'FrontEnd Developer',
+              ['abc', 'abc', 'xyz'], true]
+
+for (let i = 0; i < amol.length; i++) {
+  if(typeof amol[i] !== 'string') continue
+  console.log(amol[i], typeof amol[i])
+}
 
