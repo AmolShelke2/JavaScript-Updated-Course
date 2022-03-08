@@ -70,4 +70,3 @@ What I learn in this section
 - Looping through arrays
 - Looping backwards & loops in loop
 - the while loop
-- 
