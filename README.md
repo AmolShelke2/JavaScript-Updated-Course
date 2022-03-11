@@ -53,20 +53,33 @@ We can use the inline script tags and write our javaScript code between them but
 
 What I learn in this section
 
-- Use strict mode 
-- function in javaScript 
+- Use strict mode
+- function in javaScript
 - function declaration
 - function expression
 - arrow function
 - function statement
 - function calling another function
-- Arrays in javaScript 
-- Array Methods 
-- Objects in javaScript 
-- object methods 
+- Arrays in javaScript
+- Array Methods
+- Objects in javaScript
+- object methods
 - dot notation and bracket notation
 - iteration the for loop
 - break and continue
 - Looping through arrays
 - Looping backwards & loops in loop
 - the while loop
+
+## Section III Developer Skills
+
+what I learn in this section
+
+- Prettier
+- stack overflow, google, terminal
+
+## Section VI
+
+What I learn in this section
+
+- I skip this lecture because it was HTML CSS crash course..
