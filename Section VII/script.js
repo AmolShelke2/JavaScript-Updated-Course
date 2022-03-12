@@ -11,7 +11,6 @@ console.log(document.querySelector(".guess").value);
 
 */
 const secretNumber = Math.trunc(Math.random() * 20) + 1;
-console.log(secretNumber);
 
 let score = 20;
 
@@ -78,4 +77,5 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector("body").style.backgroundColor = "#222";
   document.querySelector(".guess").value = "";
   document.querySelector(".number").textContent = "?";
+  document.querySelector(".message").textContent = "Start guessing...";
 });
