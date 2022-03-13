@@ -78,13 +78,13 @@ what I learn in this section
 - Prettier
 - stack overflow, google, terminal
 
-## Section VI
+## Section VI HTML CSS Crash course
 
 What I learn in this section
 
 - I skip this lectures because it was HTML CSS crash course..
 
-## Section VII
+## Section VII JavaScript in the browser_DOM and Event Fundamentals
 
 What I learn in this section
 
