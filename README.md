@@ -90,3 +90,5 @@ What I learn in this section
 
 - I learn about DOM manipulation and create guess the number project in this section
 - and in this section there are 2 more projects but I have created the pig game in the old course so I'm skipping that project...
+
+## Section VIII How JavaScript works behind the scenes
