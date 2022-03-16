@@ -15,3 +15,17 @@
 9. Non-Blocking event loop
 
 */
+
+// The JavaScript Engine and Runtime.
+
+/* 
+What is JavaScript Engine?:  
+    A javaScript Engine is simply a computer program that executes 
+    javaScript code.
+
+What a JavaScript Runtime is?: 
+    We can imagine the JavaScript runtime as a big box which includes all 
+    the things that we need in order to use javaScript in this case, in the 
+    browser And a heart of  any javaScript engines runtime is always a 
+    javaScript engine.
+*/
