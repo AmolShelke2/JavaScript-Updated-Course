@@ -29,3 +29,22 @@ What a JavaScript Runtime is?:
     browser And a heart of  any javaScript engines runtime is always a 
     javaScript engine.
 */
+
+// Execution in Detail?
+
+// whats inside execution context
+
+/* 
+1. Variables Enviorment
+    - Let, const and var declaration
+    - Functions
+    - arguments object
+
+2. Scope chain
+3. This Keyword
+
+Execution context belonging to arrow functions, do not get their argument
+object nor do they get the this keyword
+
+
+*/
