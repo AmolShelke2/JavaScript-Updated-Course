@@ -109,4 +109,22 @@ calcAge(1991)
 
 */
 
-// Variable EnviorMent Hoisting and the TDZ 
+// Variable EnviorMent Hoisting and the TDZ
+ 
+/* 
+Hoisting make some types of variables accessible in the code before 
+they are actually declared variable lift to the top of their execution contexts
+
+*/
+
+// Temporal DeadZone
+
+const myName = 'Amol'
+
+if (myName === 'Amol') {
+    console.log(`Amol is a ${job}`)
+    const age = 2022 - 2004; 
+    console.log(age) // it will throw an error as cannot acces 'job' before initialization
+    const job = 'SDE-1'
+    console.log(x)
+}
