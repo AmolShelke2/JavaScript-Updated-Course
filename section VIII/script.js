@@ -67,7 +67,7 @@ object nor do they get the this keyword
 
 // Scope Chain in Practise.
 
-
+/*
 function calcAge(birthYear) {
     const age = 2022 - birthYear
 
@@ -106,3 +106,7 @@ const firstName = 'Amol'
 calcAge(1991)
 // printAge()
 // console.log(age)
+
+*/
+
+// Variable EnviorMent Hoisting and the TDZ 
