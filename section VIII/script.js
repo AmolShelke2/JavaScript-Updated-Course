@@ -131,4 +131,48 @@ if (myName === 'Amol') {
 
 */
 
-// Hoisting and Temporal Deadzone in practise 
+// Hoisting and Temporal Deadzone in practise
+
+// variables 
+// console.log(me)
+// console.log(job)
+// console.log(year)
+
+var me = 'Amol'
+let job = 'SDE'
+const year = 2004
+
+// function
+
+console.log(addDecl(2, 3))
+
+function addDecl(a, b) {
+    return a + b
+}
+
+// console.log(addExpr(2, 3))
+
+const addExpr = function (a, b) {
+    return a + b
+}
+
+// console.log(addExpr(2, 4))
+const addArrow = (a, b) => a + b
+
+// Example
+console.log(numProducts)
+if (!numProducts) deleteShopping()
+
+var numProducts = 10
+
+function deleteShopping() {
+    console.log('All Products deleted')
+}
+
+var x = 1
+let y = 2
+const z = 3
+
+
+console.log(x === window.x) // True because the var declaration
+// will create a place in browsers window object.
