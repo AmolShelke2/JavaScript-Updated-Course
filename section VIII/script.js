@@ -64,3 +64,45 @@ object nor do they get the this keyword
         however this only applies to let and const variable
         function are also block scoped(only in blocked scoped)
 */
+
+// Scope Chain in Practise.
+
+
+function calcAge(birthYear) {
+    const age = 2022 - birthYear
+
+    function printAge() {
+        let output = `${firstName}, you are ${age}, born in ${birthYear}`
+        console.log(output)
+
+        if (birthYear >= 1981 && birthYear <= 1996) {
+            var millenial = true
+            // Creating new variable with the same name as outer 
+            // scopes variable
+            const firstName = 'Jonas'
+
+            // Reasigning outer scope's variable
+            output = 'New Output'
+            const str = `Oh, and you're a millenial, ${firstName}`
+            console.log(str)
+
+            function add(a, b) {
+                return a + b
+            }
+        }
+        // console.log(str) // Error 
+        console.log(millenial) // True
+        //console.log(add(2, 7)) // if we use strict mode it will throw error
+                            // and if we remove the strict mode it will work properly                  
+
+        console.log(output)
+    }
+    printAge()
+
+    return age
+}
+
+const firstName = 'Amol'
+calcAge(1991)
+// printAge()
+// console.log(age)
