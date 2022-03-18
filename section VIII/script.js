@@ -133,10 +133,12 @@ if (myName === 'Amol') {
 
 // Hoisting and Temporal Deadzone in practise
 
-// variables 
+// variables
 // console.log(me)
 // console.log(job)
 // console.log(year)
+
+/*
 
 var me = 'Amol'
 let job = 'SDE'
@@ -176,3 +178,6 @@ const z = 3
 
 console.log(x === window.x) // True because the var declaration
 // will create a place in browsers window object.
+*/
+
+// The This Keyword
