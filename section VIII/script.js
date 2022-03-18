@@ -116,7 +116,7 @@ Hoisting make some types of variables accessible in the code before
 they are actually declared variable lift to the top of their execution contexts
 
 */
-
+/*
 // Temporal DeadZone
 
 const myName = 'Amol'
@@ -128,3 +128,7 @@ if (myName === 'Amol') {
     const job = 'SDE-1'
     console.log(x)
 }
+
+*/
+
+// Hoisting and Temporal Deadzone in practise 
