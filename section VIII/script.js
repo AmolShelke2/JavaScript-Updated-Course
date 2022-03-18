@@ -48,3 +48,19 @@ object nor do they get the this keyword
 
 
 */
+
+// What is scope And scope chain
+
+/* 
+  there are three types of scopes in JavaScript.
+    1. Global Scope 
+        it means we can access the variable from anywhere in our code 
+        that declare  on the top level.
+    2. function scope 
+        it means we can only access the variables inside the function
+        not outside
+    3. Block Scope 
+        variable are accessible only inside block(block scoped)
+        however this only applies to let and const variable
+        function are also block scoped(only in blocked scoped)
+*/
