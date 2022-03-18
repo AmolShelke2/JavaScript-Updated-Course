@@ -181,3 +181,12 @@ console.log(x === window.x) // True because the var declaration
 */
 
 // The This Keyword
+
+/* this keyword/variable: Special variable that is created for every
+execution context (every function) takes the value of (points to) the 
+'owner' of the function in which the this **This** Keyword is used.
+
+This in not static. it depends on how the function is called, and its
+value is only assigned when the function is actually called.
+
+*/
