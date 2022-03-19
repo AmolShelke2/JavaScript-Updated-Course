@@ -192,7 +192,7 @@ value is only assigned when the function is actually called.
 */
 
 // The This Kyeword in practise.
- 
+/*
 // console.log(this) // window object
 
 const calcAge = function (birthYear) {
@@ -237,3 +237,7 @@ f()
 // so here we are trying to assign the calcAge function to f
 // and calling the f function as an regular call so it will
 // simply log undefined because here it does not have any object who is calling the method
+
+*/
+
+// regular function vs arrow function 
