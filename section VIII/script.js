@@ -240,4 +240,51 @@ f()
 
 */
 
-// regular function vs arrow function 
+// regular function vs arrow function
+ 
+const amol = {
+    firstName: 'Amol',
+    year: 1981,
+    calcAge: function () {
+        console.log(this)
+        // console.log(2022 - this.year)
+        
+        // // SOlution 1 
+        // const self = this 
+        // const isMillinial = function () {
+        //     console.log(self)
+        //     console.log(self.year >= 1981 && self.year <= 1996)
+        // };
+        
+        // Solution 2 
+        const isMillinial = () => {
+            console.log(this)
+            console.log(this.year >= 1981 && this.year <= 1996)
+        }
+        isMillinial()
+    },
+
+    greet: () => {
+        console.log(this)
+        console.log(`Hey ${this.firstName}`) // it will log dpac to the console because the arrow function does not get their own this keyword
+        // so the this keyword will points to the global object and it will find their is a variable declare with the var keyword firstName so it will 
+        // get the dpac from their
+    },
+}
+amol.greet()
+amol.calcAge()
+
+// Arguments keywords
+
+const addExpr = function (a, b) {
+    console.log(arguments)
+    return a + b
+}
+addExpr(2, 4)
+addExpr(2, 4, 6,77, 7, 7)
+
+var addArrow = (a, b) => {
+    console.log(arguments)
+    return a + b
+}
+addArrow(2, 5, 6)
