@@ -190,3 +190,5 @@ This in not static. it depends on how the function is called, and its
 value is only assigned when the function is actually called.
 
 */
+
+// The This Kyeword in practise.
