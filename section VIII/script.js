@@ -313,3 +313,44 @@ console.log('Me', me)
 */
 
 // Primitives vs Objects in Practise.
+
+// Primitive types
+let lastName = 'Williams'
+let oldLastName = lastName
+lastName = 'Davis'
+console.log(lastName) // Davis
+console.log(oldLastName) // Williams
+
+// refrence Types
+const jessica = {
+    firstName: 'Jessica', 
+    lastName: 'Williams', 
+    age: 27, 
+} 
+
+
+const marriedJEssica = jessica
+marriedJEssica.lastName = 'Devis'
+console.log('Before Marriage:', jessica) // Devis
+console.log('After Marriage:', marriedJEssica) // Devis
+
+// marriedJEssica = {} // Error
+
+// Copying Object
+
+const jessica2 = {
+    firstName: 'Jessica', 
+    lastName: 'Williams', 
+    age: 27, 
+    family: ['Alice', 'Bob']
+} 
+
+const jessicaCopy = Object.assign({}, jessica2)
+jessicaCopy.lastName = 'Davis'
+
+jessicaCopy.family.push('Mary')
+jessicaCopy.family.push('John')
+
+console.log('Before Marriage:', jessica2) 
+console.log('After Marriege:', jessicaCopy)
+
