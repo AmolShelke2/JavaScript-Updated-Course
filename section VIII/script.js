@@ -241,6 +241,7 @@ f()
 */
 
 // regular function vs arrow function
+/*
  
 const amol = {
     firstName: 'Amol',
@@ -288,3 +289,7 @@ var addArrow = (a, b) => {
     return a + b
 }
 addArrow(2, 5, 6)
+*/
+
+// Primitive vs Object(primitives vs. Reference types.)
+
