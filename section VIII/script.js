@@ -312,6 +312,7 @@ console.log('Me', me)
 
 */
 
+/*
 // Primitives vs Objects in Practise.
 
 // Primitive types
@@ -354,3 +355,4 @@ jessicaCopy.family.push('John')
 console.log('Before Marriage:', jessica2) 
 console.log('After Marriege:', jessicaCopy)
 
+*/
