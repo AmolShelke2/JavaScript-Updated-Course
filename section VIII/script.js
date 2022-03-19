@@ -311,3 +311,5 @@ console.log('Friend:', friend)
 console.log('Me', me)  
 
 */
+
+// Primitives vs Objects in Practise.
