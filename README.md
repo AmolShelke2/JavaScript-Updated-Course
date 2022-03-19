@@ -92,3 +92,22 @@ What I learn in this section
 - and in this section there are 2 more projects but I have created the pig game in the old course so I'm skipping that project...
 
 ## Section VIII How JavaScript works behind the scenes
+
+What I learn in this section
+
+- An High Level Overview of JavaScript
+- The JavaScript Engine and Runtime.
+- Execution in Detail?
+- whats inside execution context
+- What is scope And scope chain
+- Scope Chain in Practise.
+- Variable EnviorMent Hoisting and the TDZ
+- Temporal DeadZone
+- Hoisting and Temporal Deadzone in practise
+- The This Keyword
+- The This Kyeword in practise.
+- this keyword in method
+- regular function vs arrow function
+- Arguments keywords
+- Primitive vs Object(primitives vs. Reference types.
+- Primitives vs Objects in Practises
