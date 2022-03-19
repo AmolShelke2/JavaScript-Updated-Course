@@ -192,3 +192,48 @@ value is only assigned when the function is actually called.
 */
 
 // The This Kyeword in practise.
+ 
+// console.log(this) // window object
+
+const calcAge = function (birthYear) {
+    console.log(2022 - birthYear)
+    // console.log(this) // Undefined when we call the regular function the this keyword will be undefined when we are strict mode 
+    // and we are not using the strict mode this will simply points to the global object
+}
+
+calcAge(2004)
+
+const calcAgeArrow = birthYear => {
+    console.log(2022 - birthYear)
+    // console.log(this) // it will point to the window object because the arrow function does not get the this keyword
+}
+
+calcAgeArrow(2002)
+
+// this keyword in method
+
+const amol = {
+    year: 2004,
+    calcAge: function () {
+        console.log(this)
+        console.log(2022 - this.year)
+    }
+}
+
+amol.calcAge() // bacause in this case amol was the object calling that method
+
+
+const matilda = {
+    year: 2002,
+}
+
+matilda.calcAge = amol.calcAge;
+matilda.calcAge()
+// In this case it will points to the matilda object bacuse here 
+// we are calling the method on matilda 
+
+const f = amol.calcAge
+f()
+// so here we are trying to assign the calcAge function to f
+// and calling the f function as an regular call so it will
+// simply log undefined because here it does not have any object who is calling the method
