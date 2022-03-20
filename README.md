@@ -71,6 +71,8 @@ What I learn in this section
 - Looping backwards & loops in loop
 - the while loop
 
+<hr>
+
 ## Section III Developer Skills
 
 what I learn in this section
@@ -83,6 +85,8 @@ what I learn in this section
 What I learn in this section
 
 - I skip this lectures because it was HTML CSS crash course..
+  
+<hr>
 
 ## Section VII JavaScript in the browser_DOM and Event Fundamentals
 
@@ -90,6 +94,8 @@ What I learn in this section
 
 - I learn about DOM manipulation and create guess the number project in this section
 - and in this section there are 2 more projects but I have created the pig game in the old course so I'm skipping that project...
+
+<hr>
 
 ## Section VIII How JavaScript works behind the scenes
 
@@ -111,3 +117,7 @@ What I learn in this section
 - Arguments keywords
 - Primitive vs Object(primitives vs. Reference types.
 - Primitives vs Objects in Practises
+
+<hr>
+
+## Section VIIII Data structures, Modern operators and strings
