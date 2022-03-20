@@ -59,7 +59,7 @@ console.log(p, q, r)
 */
 
 // Destructuring Objects
-
+/*
 const restaurant = {
   name: "Classico Italiano",
   location: "Via Angelor Tavanti 23, Firenze, Italy",
@@ -140,3 +140,6 @@ const {
 } = openingHours;
 
 console.log(`Open: ${open} Close: ${close}`);
+*/
+
+// The Spread Operator
