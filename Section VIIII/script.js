@@ -1,7 +1,7 @@
-// Destrcting arrays
-
 'use strict'
 
+// Destructing arrays
+/*
 const restaurant = {
     name: 'Classico Italiano',
     location: 'Via Angelor Tavanti 23, Firenze, Italy',
@@ -55,3 +55,7 @@ console.log(i, j, k)
 // Default values
 const [p=1, q=1, r=1] = [8] 
 console.log(p, q, r)
+
+*/
+
+// Destructing Objects
