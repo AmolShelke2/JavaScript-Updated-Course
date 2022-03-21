@@ -327,3 +327,5 @@ add(...x);
 restaurant.orderPizza("mushrooms", "onions", "cheese", "olives", "Spimach");
 restaurant.orderPizza("mushrooms");
 */
+
+// Short Circutting(&& and _)
