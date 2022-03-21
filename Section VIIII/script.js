@@ -406,3 +406,5 @@ if (restaurant.orderPizza) {
 
 restaurant.order && restaurant.orderPizza("mushroom", "Cheese");
 */
+
+// The Nullish Coalescing operator
