@@ -143,7 +143,7 @@ console.log(`Open: ${open} Close: ${close}`);
 */
 
 // The Spread Operator
-
+/*
 const restaurant = {
   name: "Classico Italiano",
   location: "Via Angelor Tavanti 23, Firenze, Italy",
@@ -244,3 +244,7 @@ const restaurantCopy = { ...restaurant };
 restaurantCopy.name = "Amols restaurant";
 console.log("OLD ONE:", restaurant.name);
 console.log("NEW ONE:", restaurantCopy.name);
+
+*/
+
+// Rest Patterns and Parameters
