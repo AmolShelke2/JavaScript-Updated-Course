@@ -410,6 +410,7 @@ restaurant.order && restaurant.orderPizza("mushroom", "Cheese");
 
 // The Nullish Coalescing operator
 
+/*
 restaurant.nameGuests = 0;
 
 const guests = restaurant.nameGuests ? restaurant.nameGuests : 10;
@@ -419,3 +420,7 @@ console.log(guests);
 
 const guestCorrect = restaurant.nameGuests ?? 10;
 console.log(guestCorrect);
+
+*/
+
+// CODING CHALLENGE #1
