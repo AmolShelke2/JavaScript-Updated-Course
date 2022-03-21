@@ -329,3 +329,80 @@ restaurant.orderPizza("mushrooms");
 */
 
 // Short Circutting(&& and _)
+
+const restaurant = {
+  name: "Classico Italiano",
+  location: "Via Angelor Tavanti 23, Firenze, Italy",
+  categories: ["Italian", "Pizzeria", "Vegetarian", "organic"],
+  starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Carpse Salad"],
+  mainMenu: ["Pizza", "Pasta", "Risotto"],
+
+  openingHours: {
+    thu: {
+      open: 11,
+      close: 22,
+    },
+    fri: {
+      open: 11,
+      close: 23,
+    },
+    sat: {
+      open: 0, // Open 24 hours
+      close: 24,
+    },
+  },
+
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
+
+  orderDelivery: function ({
+    starterIndex = 1,
+    mainIndex = 0,
+    time = "20:00",
+    address,
+  }) {
+    console.log(
+      `Order recived ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
+    );
+  },
+
+  orderPizza: function (mainIngredients, ...otherIngredients) {
+    console.log(mainIngredients, otherIngredients);
+  },
+};
+
+// Use any data type, return ANY data type, short-circuting
+/*
+console.log("---- OR ------");
+
+console.log(3 || "AMOL"); // 3
+console.log("", "Amol"); // Amol
+console.log(true || 0); // true
+console.log(undefined || null); // null
+
+console.log(undefined || 0 || "" || "hello" || 23 || null);
+
+restaurant.nameGuests = 0;
+
+const guests1 = restaurant.nameGuests ? restaurant.nameGuests : 10;
+console.log(guests1);
+
+const guests2 = restaurant.nameGuests || 10;
+console.log(guests2);
+
+console.log("--- AND ----");
+
+console.log(0 && "AMOL");
+console.log(7 && "Amol");
+
+console.log("Hello" && 22 && null && "Amol");
+
+// practical Example
+
+if (restaurant.orderPizza) {
+  restaurant.orderPizza("Mushroom", "cheese");
+}
+
+restaurant.order && restaurant.orderPizza("mushroom", "Cheese");
+*/
