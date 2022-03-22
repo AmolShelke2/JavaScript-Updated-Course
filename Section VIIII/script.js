@@ -522,3 +522,15 @@ const { team1, x: draw, team2 } = game.odds;
 console.log(team1, draw, team2);
 
 // Task 6
+
+const PrintGoals = function (...players) {
+  console.log(players);
+  console.log(`${players.length} goals were scored`);
+};
+
+PrintGoals("Davies", "Muller", "Lewandowski", "Kimmich");
+PrintGoals(...game.scored);
+
+// Task 7
+team1 < team2 && console.log("Team 1 is likely to win the game");
+team1 > team2 && console.log("Team 2 is likely to win the game");
