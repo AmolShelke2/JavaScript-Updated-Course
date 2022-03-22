@@ -460,6 +460,8 @@ again with players from game.scored
 GOOD LUCK 😀
 */
 
+// SOlution
+/*
 const game = {
   team1: "Bayern Munich",
   team2: "Borrussia Dortmund",
@@ -534,3 +536,6 @@ PrintGoals(...game.scored);
 // Task 7
 team1 < team2 && console.log("Team 1 is likely to win the game");
 team1 > team2 && console.log("Team 2 is likely to win the game");
+*/
+
+//  Looping Arrays The for-Of-loop
