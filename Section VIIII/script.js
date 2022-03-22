@@ -552,7 +552,7 @@ for (const [i, el] of menu.entries()) {
 console.log(menu.entries()); 
 
 */
-
+/*
 // Enhanced Object Literals
 
 const weekDays = [
@@ -614,3 +614,7 @@ const restaurant = {
     console.log(mainIngredients, otherIngredients);
   },
 };
+
+*/
+
+// Optional chaining
