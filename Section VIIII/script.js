@@ -329,7 +329,7 @@ restaurant.orderPizza("mushrooms");
 */
 
 // Short Circutting(&& and _)
-
+/*
 const restaurant = {
   name: "Classico Italiano",
   location: "Via Angelor Tavanti 23, Firenze, Italy",
@@ -371,8 +371,9 @@ const restaurant = {
     console.log(mainIngredients, otherIngredients);
   },
 };
-
+*/
 // Use any data type, return ANY data type, short-circuting
+
 /*
 console.log("---- OR ------");
 
@@ -548,6 +549,68 @@ for (const [i, el] of menu.entries()) {
   console.log(`${i + 1}: ${el}`);
 }
 
-console.log(menu.entries());
+console.log(menu.entries()); 
 
 */
+
+// Enhanced Object Literals
+
+const weekDays = [
+  "monday",
+  "tuesday",
+  "wednesday",
+  "thursday",
+  "friday",
+  "saturday",
+];
+
+// computing values
+
+const hours = {
+  [weekDays[3]]: {
+    open: 11,
+    close: 22,
+  },
+  [weekDays[4]]: {
+    open: 11,
+    close: 23,
+  },
+  [`day-${2 + 4}`]: {
+    open: 0, // Open 24 hours
+    close: 24,
+  },
+};
+
+const restaurant = {
+  name: "Classico Italiano",
+  location: "Via Angelor Tavanti 23, Firenze, Italy",
+  categories: ["Italian", "Pizzeria", "Vegetarian", "organic"],
+  starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Carpse Salad"],
+  mainMenu: ["Pizza", "Pasta", "Risotto"],
+
+  // ES6 enhanced object literals
+  hours,
+
+  // openingHours: openingHours, // old way
+
+  // old way of writing methods
+
+  // order: function (starterIndex, mainIndex) {
+  //   return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  // },
+
+  // ES6 way of writing methods
+  order(starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
+
+  orderDelivery({ starterIndex = 1, mainIndex = 0, time = "20:00", address }) {
+    console.log(
+      `Order recived ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
+    );
+  },
+
+  orderPizza(mainIngredients, ...otherIngredients) {
+    console.log(mainIngredients, otherIngredients);
+  },
+};
