@@ -617,7 +617,9 @@ const restaurant = {
 
 */
 
+/*
 // Optional chaining
+
 if (restaurant.openingHours.mon) {
   console.log(restaurant.openingHours.mon.open);
 }
@@ -646,3 +648,6 @@ console.log(restaurant.order?.(0, 1) ?? "Method does not exist");
 
 const users = [{ name: "Amol", email: ".com" }];
 console.log(users[0]?.name ?? "user array empty");
+*/
+
+// Looping Objects Object keys, values and entries
