@@ -712,6 +712,8 @@ properties, and the number of goals as the value. In this game, it will look lik
 GOOD LUCK 😀
 */
 
+/*
+
 // Solution
 
 const game = {
@@ -774,3 +776,7 @@ for (const [team, draw] of Object.entries(game.odds)) {
   const message = team === "x" ? `draw` : `Victory ${game[team]};`;
   console.log(`Odd of ${message} ${draw}`);
 }
+
+*/
+
+// Learning Sets
