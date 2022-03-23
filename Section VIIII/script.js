@@ -780,3 +780,37 @@ for (const [team, draw] of Object.entries(game.odds)) {
 */
 
 // Learning Sets
+
+const ordersSet = new Set(["Pasta", "Pizza", "Pizza", "Risotto", "Pizza"]);
+console.log(ordersSet);
+
+console.log(new Set("amol"));
+
+console.log(ordersSet.size);
+
+// checking if a certain element is present in set or not
+console.log(ordersSet.has("Pizza"));
+console.log(ordersSet.has("Bread"));
+
+// Adding element to the set
+ordersSet.add("Garlic Bread");
+
+// Removing element from the set
+ordersSet.delete("Pizza");
+
+console.log(ordersSet);
+console.log(ordersSet[0]);
+
+// Looping sets
+for (const order of ordersSet) {
+  console.log(order);
+}
+
+// Example
+const staff = ["Waiter", "Chef", "Waiter", "Manager", "Chef", "Waiter"];
+const staffUnique = [...new Set(staff)];
+console.log(staffUnique);
+
+console.log(
+  new Set(["Waiter", "Chef", "Waiter", "Manager", "Chef", "Waiter"]).size
+);
