@@ -85,7 +85,7 @@ what I learn in this section
 What I learn in this section
 
 - I skip this lectures because it was HTML CSS crash course..
-  
+
 <hr>
 
 ## Section VII JavaScript in the browser_DOM and Event Fundamentals
@@ -121,3 +121,16 @@ What I learn in this section
 <hr>
 
 ## Section VIIII Data structures, Modern operators and strings
+
+What I learn in this section
+
+- Destructuring Arrays
+- Destructuring Objects
+- Spread operator
+- Rest patterns and arguments
+- short circuiting
+- The Nullish Coalescing operator
+- For of loop
+- Looping Arrays The for-Of-loop
+- Enhanced Object Literals
+- Optional chaining
