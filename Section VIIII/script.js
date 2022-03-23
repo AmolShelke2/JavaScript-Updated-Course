@@ -650,6 +650,7 @@ const users = [{ name: "Amol", email: ".com" }];
 console.log(users[0]?.name ?? "user array empty");
 */
 
+/*
 // Looping Objects Object keys, values and entries
 
 // properties name
@@ -676,3 +677,7 @@ const entries = Object.entries(restaurant.openingHours);
 for (const [key, { open, close }] of entries) {
   console.log(`On ${key} we open at ${open} and close at ${close}`);
 }
+
+*/
+
+// CODING CHALLENGE #2
