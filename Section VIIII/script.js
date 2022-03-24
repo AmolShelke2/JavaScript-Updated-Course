@@ -906,6 +906,7 @@ console.log(...question.values());
 
 // Summary which Data structures to use
 
+/*
 // ARRAYS VS. SETS
 
 // Array
@@ -939,6 +940,9 @@ const taskObj = {
   repeat: true,
 };
 
+// More traditional key/value store(abused object)
+// Easirer to write and access values with . and []
+
 // MAPS
 
 const taskMap = new Map([
@@ -946,3 +950,10 @@ const taskMap = new Map([
   ["data", "today"],
   [false, "Start coding"],
 ]);
+
+// better performance
+// key can have any data type
+// Easy to iterate
+// easy to compute size
+
+*/
