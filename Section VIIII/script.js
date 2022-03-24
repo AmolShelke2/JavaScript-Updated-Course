@@ -820,3 +820,34 @@ console.log(
 */
 
 // Maps Fundamentals
+const rest = new Map();
+console.log(rest);
+rest.set("name", "Amol Restaurant");
+
+rest.set(1, "Congress Nagar");
+console.log(rest.set(2, "Chatrapti square"));
+
+rest
+  .set("categories", ["Italian", "Pizzeria", "Vegetarian", "Organic"])
+  .set("open", 11)
+  .set("close", 23)
+  .set(true, "We are open :D")
+  .set(false, "We are closed :(");
+
+console.log(rest.get("name"));
+// console.log(rest.get(true));
+
+const time = 20;
+console.log(rest.get(time > rest.get("open") && time < rest.get("close")));
+
+console.log(rest.has("categories"));
+rest.delete(2);
+rest.set([1, 2], "Test");
+console.log(rest);
+console.log(rest.size);
+rest.clear();
+// console.log(rest);
+console.log(rest.get([1, 2]));
+
+rest.set(document.querySelector("h2", "Heading"));
+console.log(rest);
