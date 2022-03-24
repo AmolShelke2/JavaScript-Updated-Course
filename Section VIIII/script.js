@@ -855,6 +855,8 @@ console.log(rest);
 
 */
 
+/*
+
 // Maps Iteration
 
 const question = new Map([
@@ -899,3 +901,7 @@ console.log(...question);
 console.log(question.entries());
 console.log(...question.keys());
 console.log(...question.values());
+
+*/
+
+// Summary which Data structures to use
