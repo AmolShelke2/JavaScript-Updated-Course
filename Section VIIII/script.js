@@ -820,6 +820,7 @@ console.log(
 */
 
 // Maps Fundamentals
+/*
 const rest = new Map();
 console.log(rest);
 rest.set("name", "Amol Restaurant");
@@ -851,3 +852,7 @@ console.log(rest.get([1, 2]));
 
 rest.set(document.querySelector("h2", "Heading"));
 console.log(rest);
+
+*/
+
+// Maps Iteration
