@@ -905,3 +905,44 @@ console.log(...question.values());
 */
 
 // Summary which Data structures to use
+
+// ARRAYS VS. SETS
+
+// Array
+
+const tasks = ["Code", "Eat", "Code"];
+// output: ['code', 'Eat', 'Code']
+
+// - Use when you need ordered list of values (might contain duplicate values)
+// - Use when you need to manipulate Data
+
+//------------------------------------
+
+// Sets
+
+let task = new Set(["Code", "Eat", "Code"]);
+// Output: ['Code', 'Eat']
+
+// Use when you need to work with unique values
+// Use when high performance is really important
+// Use to remove duplicates from arrays
+
+//------------------------------------
+
+// OBJECTS vs MAPS
+
+// Object
+
+const taskObj = {
+  task: "Code",
+  date: "Today",
+  repeat: true,
+};
+
+// MAPS
+
+const taskMap = new Map([
+  ["task", "code"],
+  ["data", "today"],
+  [false, "Start coding"],
+]);
