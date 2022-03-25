@@ -996,3 +996,15 @@ const gameEvents = new Map([
   [80, "⚽️ GOAL"],
   [92, "🔶 Yellow card"],
 ]);
+
+// Task 1
+const events = [...new Set(gameEvents.values())];
+gameEvents.delete(64);
+console.log(events);
+
+// Task 2
+gameEvents.delete(64);
+console.log(gameEvents);
+
+// Task 3
+console.log(`An event happened, on average ${90 / gameEvents.size} minutes`);
