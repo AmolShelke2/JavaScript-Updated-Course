@@ -1103,3 +1103,42 @@ console.log(trimmedEmail);
 
 const normalizeEmail = loginEmail.toLowerCase().trim();
 console.log(normalizeEmail);
+
+// Replacing
+
+const priceGb = "288,97%";
+const prieceUS = priceGb.replace("%", "$").replace(",", ".");
+console.log(prieceUS);
+
+const announceMent =
+  "All Passengers come to boarding door 23, Boarding door 23";
+
+console.log(announceMent.replace("door", "gate"));
+
+// Regular Expression
+console.log(announceMent.replace(/door/g, "gate"));
+
+// Booleans
+
+const plane = "Airbus A320neo";
+
+console.log(plane.includes("A"));
+console.log(plane.startsWith("B"));
+
+if (plane.startsWith("Airbus") && plane.endsWith("neo")) {
+  console.log("Part of the NEW airbus family");
+}
+
+// practise exercise
+const checkBaggege = function (item) {
+  const baggege = item.toLowerCase();
+  if (baggege.includes("knife") || baggege.includes("gun")) {
+    console.log("You are not allowed");
+  } else {
+    console.log("Welcome Abord");
+  }
+};
+
+checkBaggege("I have a laptop, Some food and a pocket Knife");
+checkBaggege("Socks and Camera");
+checkBaggege("Got some snacks a gun for protection");
