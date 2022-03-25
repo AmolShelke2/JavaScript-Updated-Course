@@ -1066,6 +1066,7 @@ console.log(typeof new String("Amol").slice(1)); // String
 
 */
 
+/*
 // WORKING WITH STRINGS PART 2
 
 const airline = "TAP Air Portugal";
@@ -1142,3 +1143,5 @@ const checkBaggege = function (item) {
 checkBaggege("I have a laptop, Some food and a pocket Knife");
 checkBaggege("Socks and Camera");
 checkBaggege("Got some snacks a gun for protection");
+
+*/
