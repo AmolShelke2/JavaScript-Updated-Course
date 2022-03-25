@@ -1019,3 +1019,46 @@ for (const [min, event] of gameEvents) {
 */
 
 // WORKING WITH STRINGS PART 1
+
+const airline = "Tap air Portugal";
+const plane = "A320";
+
+console.log(plane[0]);
+console.log(plane[1]);
+console.log(plane[2]);
+
+console.log(airline.length);
+console.log("djljld".length);
+
+// strings method
+console.log(airline.indexOf("r"));
+
+console.log(airline.lastIndexOf("r"));
+
+console.log(airline.indexOf("Portugal"));
+
+console.log(airline.slice(4, 7));
+
+console.log(airline.slice(0, airline.indexOf(" ")));
+console.log(airline.slice(airline.lastIndexOf(" ") + 1));
+
+console.log(airline.slice(1, -1));
+
+const checkMiddleSeat = function (seat) {
+  // B and E are middle seats
+  const s = seat.slice(-1);
+  if (s === "B" || s === "E") {
+    console.log("You got the middle seat🥲");
+  } else {
+    console.log("You got lucky");
+  }
+};
+
+checkMiddleSeat("11B");
+checkMiddleSeat("23C");
+checkMiddleSeat("3E");
+
+console.log(new String("Amol"));
+console.log(typeof new String("Amol")); // Object
+
+console.log(typeof new String("Amol").slice(1)); // String
