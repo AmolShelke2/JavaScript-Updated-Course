@@ -1008,3 +1008,10 @@ console.log(gameEvents);
 
 // Task 3
 console.log(`An event happened, on average ${90 / gameEvents.size} minutes`);
+
+// Task 4
+
+for (const [min, event] of gameEvents) {
+  const half = min <= 45 ? "FIRST" : "SECOND";
+  console.log(`[${half} HALF] ${min}: ${event}`);
+}
