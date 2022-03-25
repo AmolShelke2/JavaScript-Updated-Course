@@ -1018,6 +1018,7 @@ for (const [min, event] of gameEvents) {
 
 */
 
+/*
 // WORKING WITH STRINGS PART 1
 
 const airline = "Tap air Portugal";
@@ -1062,3 +1063,7 @@ console.log(new String("Amol"));
 console.log(typeof new String("Amol")); // Object
 
 console.log(typeof new String("Amol").slice(1)); // String
+
+*/
+
+// WORKING WITH STRINGS PART 2
