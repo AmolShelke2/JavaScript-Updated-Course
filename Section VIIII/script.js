@@ -1145,3 +1145,5 @@ checkBaggege("Socks and Camera");
 checkBaggege("Got some snacks a gun for protection");
 
 */
+
+// WORKING WITH STRINGS PART 3
