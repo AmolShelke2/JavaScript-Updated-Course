@@ -1067,3 +1067,39 @@ console.log(typeof new String("Amol").slice(1)); // String
 */
 
 // WORKING WITH STRINGS PART 2
+
+const airline = "TAP Air Portugal";
+console.log(airline.toLocaleLowerCase());
+console.log(airline.toUpperCase());
+
+// Fix capitalization in name
+
+const passenger = "AMol";
+
+const pasengerLower = passenger.toLowerCase();
+// console.log(pasengerLower);
+
+const passengerCorrect = passenger[0].toUpperCase() + pasengerLower.slice(1);
+// console.log(passengerCorrect);
+
+// Create a function that will take any passenger name and then fix it
+
+function passengerName(name) {
+  const passengerLower = name.toLowerCase();
+  const passengerCorrect = name[0].toUpperCase() + passengerLower.slice(1);
+  return passengerCorrect;
+}
+
+console.log(passengerName("AmOlSheLke"));
+
+// Comaparing emails
+
+const email = "ShelkeAmol089@gmail.io";
+const loginEmail = "HelloJonas.io \n";
+
+const lowerEmail = loginEmail.toLowerCase();
+const trimmedEmail = lowerEmail.trim();
+console.log(trimmedEmail);
+
+const normalizeEmail = loginEmail.toLowerCase().trim();
+console.log(normalizeEmail);
