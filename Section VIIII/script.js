@@ -982,7 +982,7 @@ in the first half or second half (after 45 min) of the game, like this:
       [FIRST HALF] 17: ⚽️ GOAL
 GOOD LUCK 😀
 */
-
+/*
 const gameEvents = new Map([
   [17, "⚽️ GOAL"],
   [36, "🔁 Substitution"],
@@ -999,7 +999,7 @@ const gameEvents = new Map([
 
 // Task 1
 const events = [...new Set(gameEvents.values())];
-gameEvents.delete(64);
+
 console.log(events);
 
 // Task 2
@@ -1015,3 +1015,7 @@ for (const [min, event] of gameEvents) {
   const half = min <= 45 ? "FIRST" : "SECOND";
   console.log(`[${half} HALF] ${min}: ${event}`);
 }
+
+*/
+
+// WORKING WITH STRINGS PART 1
