@@ -147,3 +147,5 @@ document.body.addEventListener('click', high5);
 ['amol', 'shelke', 'bcca', 'sde'].forEach(high5);
 
 */
+
+// function returning function
