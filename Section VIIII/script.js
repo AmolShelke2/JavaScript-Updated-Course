@@ -1245,4 +1245,9 @@ solution in case you're stuck. Then pause and continue!
 
 Afterwards, test with your own test data!
 GOOD LUCK 😀
+
 */
+
+document.body.append(document.createElement("textarea"));
+document.body.append(document.createElement("button"));
+const text = document.querySelector("textaraa").value;
