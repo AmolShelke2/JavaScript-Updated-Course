@@ -329,7 +329,7 @@ restaurant.orderPizza("mushrooms");
 */
 
 // Short Circutting(&& and _)
-
+/*
 const restaurant = {
   name: "Classico Italiano",
   location: "Via Angelor Tavanti 23, Firenze, Italy",
@@ -371,6 +371,7 @@ const restaurant = {
     console.log(mainIngredients, otherIngredients);
   },
 };
+*/
 
 // Use any data type, return ANY data type, short-circuting
 
