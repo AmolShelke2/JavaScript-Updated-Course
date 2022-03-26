@@ -65,11 +65,13 @@ checkIn(flight, Amol);
 
 // first class function
 
-// JavaScript treats functions as first-class citizens
-// this means that function are simply values
-// functions are just another type of Object
+/*
 
-//Store functions in variables or properties
+JavaScript treats functions as first-class citizens
+this means that function are simply values
+functions are just another type of Object
+
+Store functions in variables or properties
 
 const add = (a, b) => a + b;
 
@@ -80,7 +82,7 @@ const counter = {
   },
 };
 
-//Pass Functions as arguments to other function
+Pass Functions as arguments to other function
 
 const greet = () => console.log('Hello MF');
 btnClose.addEventListener('click', greet);
@@ -88,6 +90,7 @@ btnClose.addEventListener('click', greet);
 // Return function from function
 
 // Call methods on function
+*/
 
 ////////////////////////////////
 // Higher Order function
