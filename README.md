@@ -135,3 +135,9 @@ What I learn in this section
 - Enhanced Object Literals
 - Optional chaining
 - sets
+- Maps_fundamentals
+- maps_iteration
+- summary which data structures used
+- Working with strings part 1
+- Working with strings part 2
+- working with strings part 3
