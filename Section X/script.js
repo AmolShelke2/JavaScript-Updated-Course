@@ -26,7 +26,7 @@ createBooking('LH124', undefined, 1000);
 */
 
 // How passing Arguments works values vs refrence.
-
+/*
 const flight = 'LH234';
 const Amol = {
   name: 'Amol Shelke',
@@ -58,3 +58,55 @@ const newPassPort = function (person) {
 
 newPassPort(Amol);
 checkIn(flight, Amol);
+
+*/
+
+// First class function and Higher order function
+
+// first class function
+
+// JavaScript treats functions as first-class citizens
+// this means that function are simply values
+// functions are just another type of Object
+
+//Store functions in variables or properties
+
+const add = (a, b) => a + b;
+
+const counter = {
+  value: 23,
+  inc: function () {
+    this.value++;
+  },
+};
+
+//Pass Functions as arguments to other function
+
+const greet = () => console.log('Hello MF');
+btnClose.addEventListener('click', greet);
+
+// Return function from function
+
+// Call methods on function
+
+////////////////////////////////
+// Higher Order function
+
+/*
+A function that recives another function as an argument, that
+returns a new function or both
+
+This is only happened because of first class function
+
+const greet = () => console.log('Hello MF');
+btnClose.addEventListener('click', greet);
+
+function that returns new function
+
+function count() {
+    let counter = 0
+    return function() {
+      counter++
+    }
+}
+*/
