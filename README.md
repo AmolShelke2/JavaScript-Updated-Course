@@ -141,3 +141,7 @@ What I learn in this section
 - Working with strings part 1
 - Working with strings part 2
 - working with strings part 3
+
+## Section X A closer look at function
+
+What I learn in this section
