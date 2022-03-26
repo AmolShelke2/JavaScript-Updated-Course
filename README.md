@@ -145,3 +145,5 @@ What I learn in this section
 ## Section X A closer look at function
 
 What I learn in this section
+
+- Default Parameters

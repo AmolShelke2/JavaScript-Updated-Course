@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 // Default parameter
 
 const bookings = [];
@@ -22,3 +22,6 @@ const createBooking = function (flightNum, numPassenger = 1, price = 199) {
 createBooking('LH123');
 createBooking('Lauda', 2, 1000);
 createBooking('LH124', undefined, 1000);
+
+*/
+// How passing Arguments works values vs refrence.
