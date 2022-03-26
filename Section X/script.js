@@ -113,3 +113,5 @@ function count() {
     }
 }
 */
+
+// Function accepting callBack functions
