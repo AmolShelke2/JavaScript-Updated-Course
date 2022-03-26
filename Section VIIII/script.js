@@ -1146,4 +1146,4 @@ checkBaggege("Got some snacks a gun for protection");
 
 */
 
-// WORKING WITH STRINGS PART 3
+// working with strigs part 3
