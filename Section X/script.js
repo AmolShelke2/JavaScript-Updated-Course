@@ -188,7 +188,7 @@ greetMsg('Amol');
 */
 
 // The call and apply methods
-
+/*
 const lufthansa = {
   airline: 'Lufthansa',
   iataCode: 'LH',
@@ -235,3 +235,7 @@ const flightData = [583, 'George cooper'];
 book.apply(india, flightData);
 
 book.call(india, ...flightData);
+
+*/
+
+// The Bind method
