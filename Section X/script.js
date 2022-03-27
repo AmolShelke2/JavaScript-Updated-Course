@@ -149,6 +149,7 @@ document.body.addEventListener('click', high5);
 */
 
 // function returning function
+/*
 
 const greet = function (greeting) {
   return function (name) {
@@ -184,3 +185,6 @@ const greetArrow = greeting => {
 
 const greetMsg = greetArrow('Heello');
 greetMsg('Amol');
+*/
+
+// The call and apply methods
