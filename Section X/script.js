@@ -149,3 +149,38 @@ document.body.addEventListener('click', high5);
 */
 
 // function returning function
+
+const greet = function (greeting) {
+  return function (name) {
+    console.log(`${greeting} ${name}`);
+  };
+};
+
+const greeterHey = greet('Hiee👋');
+greeterHey('Amol');
+greeterHey('Jonas');
+
+greet('Hello')('Jonas');
+
+// Example
+
+const calC = function (num1) {
+  return function (num2) {
+    console.log(num1 + num2);
+  };
+};
+
+const addition = calC(19);
+addition(19);
+calC(18)(18);
+
+// Challenge try to rewrite the function with arrow function
+
+const greetArrow = greeting => {
+  return function (name) {
+    console.log(`${greeting} ${name}`);
+  };
+};
+
+const greetMsg = greetArrow('Heello');
+greetMsg('Amol');
