@@ -403,3 +403,27 @@ document
   */
 
 // Immidiately Invoked function Expression
+/*
+const runOnce = function () {
+  console.log('this will never run again');
+};
+
+runOnce();
+
+// IIFE
+(function () {
+  console.log('this will never run again');
+  const isPrivate = 20;
+})();
+
+// console.log(isPrivate);
+
+(() => console.log('this will never run again'))();
+
+{
+  const isPrivate = 20;
+  var notPrivate = 20;
+}
+// console.log(isPrivate);
+console.log(notPrivate);
+*/
