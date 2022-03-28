@@ -370,4 +370,16 @@ const poll = {
 
   // this generates [0, 0, 0, 0,]
   answers: new Array(4).fill(0),
+
+  // task 1
+  registerNewAnswer() {
+    const output = Number(
+      prompt(
+        `${this.question}\n${this.options.join('\n')}\n(write option here)`
+      )
+    );
+    console.log(output);
+  },
 };
+
+poll.registerNewAnswer();
