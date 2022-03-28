@@ -370,16 +370,32 @@ const poll = {
 
   // this generates [0, 0, 0, 0,]
   answers: new Array(4).fill(0),
-
   // task 1
-  registerNewAnswer() {
-    const output = Number(
+  registerNewAnswer: function () {
+    const input = Number(
       prompt(
         `${this.question}\n${this.options.join('\n')}\n(write option here)`
       )
     );
-    console.log(output);
+    console.log(input);
+
+    typeof input === 'number' &&
+      input < this.answers.length &&
+      this.answers[input]++;
+
+    this.displayResults();
+    this.displayResults('string');
+  },
+
+  displayResults: function (type = 'array') {
+    if (type === 'array') {
+      console.log(this.answers);
+    } else if (type === 'string') {
+      console.log(`Poll results are ${this.answers.join(',')}`);
+    }
   },
 };
 
-poll.registerNewAnswer();
+document
+  .querySelector('.poll')
+  .addEventListener('click', poll.registerNewAnswer.bind(poll));
