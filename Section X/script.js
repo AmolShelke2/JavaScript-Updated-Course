@@ -429,6 +429,7 @@ console.log(notPrivate);
 */
 
 // Learning Closures
+/*
 
 const secureBooking = function () {
   let passengerCounter = 0;
@@ -445,3 +446,7 @@ booker();
 booker();
 
 console.dir(booker);
+
+*/
+
+// More examples of closures
