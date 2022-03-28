@@ -427,3 +427,21 @@ runOnce();
 // console.log(isPrivate);
 console.log(notPrivate);
 */
+
+// Learning Closures
+
+const secureBooking = function () {
+  let passengerCounter = 0;
+
+  return function () {
+    passengerCounter++;
+    console.log(`${passengerCounter} passenger`);
+  };
+};
+
+const booker = secureBooking();
+booker();
+booker();
+booker();
+
+console.dir(booker);
