@@ -363,7 +363,7 @@ BONUS TEST DATA 1: [5, 2, 3]
 BONUS TEST DATA 2: [1, 5, 3, 9, 6, 1]
 GOOD LUCK 😀
 */
-
+/*
 const poll = {
   question: 'What is your favourite programming language',
   options: ['0: JavaScript', '1: Python', '2: Rust', '3: C++'],
@@ -399,3 +399,7 @@ const poll = {
 document
   .querySelector('.poll')
   .addEventListener('click', poll.registerNewAnswer.bind(poll));
+
+  */
+
+// Immidiately Invoked function Expression
