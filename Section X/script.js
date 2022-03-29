@@ -513,3 +513,23 @@ time you need. Think about WHEN exactly the callback function is executed, and w
 
 GOOD LUCK 😀
 */
+
+(function () {
+  const header = document.querySelector('h1');
+  header.style.color = 'red';
+
+  document.body.addEventListener('click', function () {
+    header.style.color = 'green';
+  });
+})();
+
+// Explaination
+
+/* 
+because as we learn the IIFE function only executes once after 
+calling or invoking it. SO somehow we can be able to acces the header
+variable after the functions execution was completed right, so this 
+is what a closures is. after executing the function its gone from the 
+callStack but we can able to access it's varible enviorment because of 
+closures.
+*/
