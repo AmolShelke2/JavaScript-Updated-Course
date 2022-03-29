@@ -514,6 +514,7 @@ time you need. Think about WHEN exactly the callback function is executed, and w
 GOOD LUCK 😀
 */
 
+/*
 (function () {
   const header = document.querySelector('h1');
   header.style.color = 'red';
@@ -522,6 +523,8 @@ GOOD LUCK 😀
     header.style.color = 'green';
   });
 })();
+
+*/
 
 // Explaination
 

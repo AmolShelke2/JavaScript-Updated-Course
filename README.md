@@ -147,3 +147,11 @@ What I learn in this section
 What I learn in this section
 
 - Default Parameters
+- How passing arguments works
+- first class function and higher order function
+- function accepting another function callback function
+- function returning function
+- the call and apply method
+- the bind method
+- Immidiately invoked function expression
+- closures
