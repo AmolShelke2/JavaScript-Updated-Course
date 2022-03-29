@@ -155,3 +155,9 @@ What I learn in this section
 - the bind method
 - Immidiately invoked function expression
 - closures
+
+## Section XI Array Bankist
+
+What I learn in this section
+
+- Simple Array Methods
