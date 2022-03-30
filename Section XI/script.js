@@ -189,3 +189,7 @@ currenciesUnique.forEach(function (value, key, map) {
 */
 
 // Project Bankist_app
+
+// ////////
+
+// Coding Challenge #1
