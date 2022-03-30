@@ -169,3 +169,5 @@ currenciesUnique.forEach(function (value, key, map) {
 */
 
 // Project Bankist_app
+
+// Creating DOM Elements
