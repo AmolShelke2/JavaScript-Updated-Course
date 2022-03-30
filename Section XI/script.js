@@ -228,7 +228,7 @@ GOOD LUCK 😀
 */
 
 //  Solution
-
+/*
 const checkDogs = function (dogsJulia, dogsKate) {
   const copyJulia = [...dogsJulia];
   const correctedJulia = copyJulia.slice(1, -2);
@@ -253,3 +253,6 @@ const checkDogs = function (dogsJulia, dogsKate) {
 
 checkDogs([3, 5, 2, 12, 7], [4, 1, 15, 8, 3]);
 // checkDogs([9, 16, 6, 8, 3], [10, 5, 6, 1, 4]);
+*/
+
+// Data transformation map, filter, reduce
