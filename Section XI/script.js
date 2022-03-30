@@ -147,3 +147,5 @@ movements.forEach(function (mov, i, arr) {
 // 2: function(400)
 // ...
 */
+
+// forEach with Maps
