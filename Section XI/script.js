@@ -283,3 +283,23 @@ reduce boils('reduces') all array elements down to one single value
 */
 
 // The Map Method in practise
+
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+const eurToUsd = 1.1;
+
+const movementsUsd = movements.map(function (mov) {
+  return mov * eurToUsd;
+});
+
+// Exercise try to rewrite the function in arrow
+const moveMentsUSD = movements.map(mov => {
+  return mov * eurToUsd;
+});
+
+console.log(movements);
+console.log(movementsUsd);
+
+//
+const movementsUSDfor = [];
+for (const mov of movements) movementsUSDfor.push(mov * eurToUsd);
+console.log(movementsUSDfor);
