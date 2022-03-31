@@ -281,3 +281,5 @@ reduce boils('reduces') all array elements down to one single value
 (eg. adding all elements together)
 
 */
+
+// The Map Method in practise
