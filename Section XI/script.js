@@ -303,3 +303,13 @@ console.log(movementsUsd);
 const movementsUSDfor = [];
 for (const mov of movements) movementsUSDfor.push(mov * eurToUsd);
 console.log(movementsUSDfor);
+
+const movementsDescription = movements.map((mov, i) => {
+  if (mov > 0) {
+    return `moveMent ${i + 1}: You deposited ${mov}`;
+  } else {
+    return `moveMent ${i + 1}: You withdraw ${Math.abs(mov)}`;
+  }
+});
+
+console.log(movementsDescription);
