@@ -256,3 +256,28 @@ checkDogs([3, 5, 2, 12, 7], [4, 1, 15, 8, 3]);
 */
 
 // Data transformation map, filter, reduce
+
+// Map
+
+/* 
+Maps return a new array containing the results of applying the results
+an operation on all original array Element
+*/
+
+// Filter
+
+/* 
+
+Filter returns a new array containing the array elements that passed 
+a specified test condition.
+
+*/
+
+// Reduce
+
+/*
+
+reduce boils('reduces') all array elements down to one single value
+(eg. adding all elements together)
+
+*/
