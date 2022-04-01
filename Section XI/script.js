@@ -81,7 +81,11 @@ const displayMoveMents = function (movements) {
 
 displayMoveMents(account1.movements);
 
-const user = 'Steven Thomas Williams';
+const calcDisplayBalance = function (movements) {
+  const balance = movements.reduce((acc, mov) => acc + mov, 0);
+  labelBalance.textContent = `${balance} EUR`;
+};
+calcDisplayBalance(account1.movements);
 
 const createUserNames = function (accs) {
   accs.forEach(function (acc) {
@@ -370,4 +374,21 @@ const balance = movements.reduce(function (acc, cur, i, arr) {
   console.log(`Iteration ${i}: ${acc}`);
   return acc + cur;
 }, 0);
-console.log(balance);
+
+const balanceArrow = movements.reduce((acc, cur) => acc + cur, 0);
+console.log(balanceArrow);
+
+let balanceFor = 0;
+for (const mov of movements) {
+  balanceFor += mov;
+  console.log(balanceFor);
+}
+
+// Maximum value
+const max = movements.reduce((acc, mov) => {
+  if (acc > mov) {
+    return acc;
+  } else return mov;
+}, movements[0]);
+
+console.log(max);
