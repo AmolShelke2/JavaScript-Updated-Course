@@ -327,6 +327,9 @@ const movementsDescription = movements.map((mov, i) => {
 
 console.log(movementsDescription);
 */
+
+// Filter
+/*
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 const deposits = movements.filter(function (mov) {
   return mov > 0;
@@ -356,3 +359,6 @@ for (const withdrw of movements) {
   if (withdrw < 0) withdrawlsFor.push(withdrw);
 }
 console.log(withdrawlsFor);
+*/
+
+// Reduce Method
