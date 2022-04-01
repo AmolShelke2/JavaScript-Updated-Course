@@ -422,16 +422,16 @@ GOOD LUCK 😀
 
 // Solution
 
-const calcAverageHumanAge = function (dogs) {
-  let convertedAge;
-  dogs.map(dog => {
-    if (dog <= 2) {
-      convertedAge = dog * 2;
-    } else {
-      convertedAge = 16 + dog * 4;
-    }
-    console.log(convertedAge);
+const calcAverageHumanAge = function (dogAges) {
+  const humanAges = dogAges.map(function (dogAge) {
+    if (dogAge <= 2) {
+      return dogAge * 2;
+    } else return 16 + dogAge * 4;
   });
+  const adultAges = humanAges.filter(function (age) {
+    return age >= 18;
+  });
+  console.log(humanAges, adultAges);
 };
 
 calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]);
