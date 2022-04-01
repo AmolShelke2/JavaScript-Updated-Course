@@ -93,7 +93,7 @@ const createUserNames = function (accs) {
   });
 };
 createUserNames(accounts);
-console.log(accounts);
+// console.log(accounts);
 
 /////////////////////////////////////////////////
 // LECTURES
@@ -362,3 +362,12 @@ console.log(withdrawlsFor);
 */
 
 // Reduce Method
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+// Accumulator -> Snowball
+
+const balance = movements.reduce(function (acc, cur, i, arr) {
+  console.log(`Iteration ${i}: ${acc}`);
+  return acc + cur;
+}, 0);
+console.log(balance);
