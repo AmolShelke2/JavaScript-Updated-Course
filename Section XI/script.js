@@ -366,6 +366,7 @@ console.log(withdrawlsFor);
 */
 
 // Reduce Method
+/*
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 // Accumulator -> Snowball
@@ -392,3 +393,6 @@ const max = movements.reduce((acc, mov) => {
 }, movements[0]);
 
 console.log(max);
+*/
+
+// Coding Challenge #2
