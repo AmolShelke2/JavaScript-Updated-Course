@@ -473,7 +473,7 @@ console.log(average1, average2);
 */
 
 // The Magic of Chaning methods
-
+/*
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 const euroToUsd = 1.1;
 const totalDeposit = movements
@@ -486,3 +486,15 @@ const totalDeposit = movements
   .reduce((acc, mov) => acc + mov, 0);
 
 console.log(totalDeposit);
+*/
+
+// Coding Challenge #3
+
+/* 
+
+Rewrite the 'calcAverageHumanAge' function from the previous challenge, but this 
+time as an arrow function, and using chaining
+
+TEST DATA 1: [5, 2, 4, 1, 15, 8, 3]
+TEST DATA 2: [16, 6, 10, 5, 6, 1, 4]
+*/
