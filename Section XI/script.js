@@ -444,7 +444,6 @@ GOOD LUCK 😀
 */
 
 // Solution
-
 /*
 const calcAverageHumanAge = function (dogAges) {
   const humanAges = dogAges.map(function (dogAge) {
@@ -469,9 +468,7 @@ calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]);
 const average1 = calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]);
 const average2 = calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4]);
 console.log(average1, average2);
-
 */
-
 // The Magic of Chaning methods
 /*
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
@@ -498,3 +495,13 @@ time as an arrow function, and using chaining
 TEST DATA 1: [5, 2, 4, 1, 15, 8, 3]
 TEST DATA 2: [16, 6, 10, 5, 6, 1, 4]
 */
+
+const calcAverageHumanAgeArrow = ages =>
+  ages
+    .map(age => (age <= 2 ? 2 * age : 16 + age * 4))
+    .filter(age => age >= 18)
+    .reduce((acc, age, i, arr) => acc + age / arr.length, 0);
+
+const avg1 = calcAverageHumanAgeArrow([5, 2, 4, 1, 15, 8, 3]);
+const avg2 = calcAverageHumanAgeArrow([16, 6, 10, 5, 6, 1, 4]);
+console.log(avg1, avg2);
