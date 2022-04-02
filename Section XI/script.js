@@ -603,3 +603,5 @@ const accountMap = accounts.map(function (acc) {
   }
 });
 */
+
+// The findIndex() method
