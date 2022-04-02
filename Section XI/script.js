@@ -155,6 +155,9 @@ btnLogin.addEventListener('click', function (e) {
     console.log('LOGIN');
   }
 });
+
+// Implementing transfers
+
 /////////////////////////////////////////////////
 // LECTURES
 
