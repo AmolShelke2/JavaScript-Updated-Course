@@ -510,6 +510,7 @@ console.log(avg1, avg2);
 */
 
 // The find method
+/*
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 const firstWithdrawl = movements.find(mov => mov < 0);
@@ -534,3 +535,4 @@ const accountMap = accounts.map(function (acc) {
     console.log(acc);
   }
 });
+*/
