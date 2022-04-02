@@ -510,3 +510,27 @@ console.log(avg1, avg2);
 */
 
 // The find method
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+const firstWithdrawl = movements.find(mov => mov < 0);
+console.log(firstWithdrawl);
+console.log(movements);
+
+console.log(accounts);
+
+const account = accounts.find(acc => acc.owner === 'Jessica Davis');
+console.log(account);
+
+// Try to implement this functionality using the for of loop
+
+for (const accFor of accounts) {
+  if (accFor.owner === 'Jessica Davis') {
+    console.log(accFor);
+  }
+}
+
+const accountMap = accounts.map(function (acc) {
+  if (acc.owner === 'Jessica Davis') {
+    console.log(acc);
+  }
+});
