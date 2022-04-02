@@ -79,9 +79,9 @@ const displayMoveMents = function (movements) {
   });
 };
 
-const calcDisplayBalance = function (movements) {
-  const balance = movements.reduce((acc, mov) => acc + mov, 0);
-  labelBalance.textContent = `${balance}€`;
+const calcDisplayBalance = function (acc) {
+  acc.balance = acc.movements.reduce((acc, mov) => acc + mov, 0);
+  labelBalance.textContent = `${acc.balance}€`;
 };
 
 const calcDisplaySummary = function (acc) {
@@ -118,6 +118,19 @@ const createUserNames = function (accs) {
 createUserNames(accounts);
 // console.log(accounts);
 
+const updatUI = function (acc) {
+  // Display movements
+  displayMoveMents(acc.movements);
+
+  // display balance
+  calcDisplayBalance(currentAccount);
+
+  // display summmary
+  calcDisplaySummary(currentAccount);
+
+  console.log('LOGIN');
+};
+
 // Event Listener
 let currentAccount;
 
@@ -143,20 +156,37 @@ btnLogin.addEventListener('click', function (e) {
     inputLoginUsername.value = inputLoginPin.value = '';
     inputLoginPin.blur();
 
-    // Display movements
-    displayMoveMents(currentAccount.movements);
-
-    // display balance
-    calcDisplayBalance(currentAccount.movements);
-
-    // display summmary
-    calcDisplaySummary(currentAccount);
-
-    console.log('LOGIN');
+    // update UI
+    updatUI(currentAccount);
   }
 });
 
 // Implementing transfers
+
+btnTransfer.addEventListener('click', function (e) {
+  e.preventDefault();
+  const amount = Number(inputTransferAmount.value);
+  const reciverAcc = accounts.find(
+    acc => acc.username === inputTransferTo.value
+  );
+  console.log(amount, reciverAcc);
+
+  if (
+    amount > 0 &&
+    // reciverAcc &&
+    currentAccount.balance >= amount &&
+    reciverAcc?.username !== currentAccount.username
+  ) {
+    // console.log('Transfer Valid');
+
+    // Doing the transfer
+    currentAccount.movements.push(-amount);
+    reciverAcc.movements.push(amount);
+
+    // update UI
+    updatUI(currentAccount);
+  }
+});
 
 /////////////////////////////////////////////////
 // LECTURES
