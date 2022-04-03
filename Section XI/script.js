@@ -676,6 +676,7 @@ console.log(arrDeep.flat(3));
 // console.log(overAllBalance);
 
 // flat
+/*
 const overAllBalance = accounts
   .map(acc => acc.movements)
   .flat()
@@ -688,3 +689,6 @@ const overAllBalance2 = accounts
   .reduce((acc, mov) => acc + mov, 0);
 
 console.log(overAllBalance2);
+
+*/
+// Sorting Arrays
