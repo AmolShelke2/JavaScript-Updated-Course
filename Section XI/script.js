@@ -643,7 +643,7 @@ const accountMap = accounts.map(function (acc) {
 */
 
 // Some and Every method
-
+/*
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 // console.log(movements.includes(450));
 
@@ -656,3 +656,6 @@ console.log(anyDeposit);
 // Every
 console.log(movements.every(mov => mov > 0));
 console.log(account4.movements.every(mov => mov > 0));
+*/
+
+// flat and flatMap method
