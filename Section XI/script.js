@@ -740,6 +740,7 @@ console.log(movements);
 // console.log(arr);
 */
 
+/*
 // More ways of creating and filling Arrays
 
 const arr = [1, 2, 3, 4, 5, 6, 7];
@@ -774,3 +775,5 @@ labelBalance.addEventListener('click', function () {
 
   const movementsUI2 = [...document.querySelectorAll('.movements__value')];
 });
+
+*/
