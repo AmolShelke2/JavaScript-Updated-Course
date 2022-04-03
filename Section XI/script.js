@@ -739,3 +739,5 @@ console.log(movements);
 // arr.sort((a, b) => a - b);
 // console.log(arr);
 */
+
+// More ways of creating and filling Arrays
