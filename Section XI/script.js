@@ -659,3 +659,32 @@ console.log(account4.movements.every(mov => mov > 0));
 */
 
 // flat and flatMap method
+
+const arr = [[1, 2, 3], [4, 5, 6], 7, 8];
+console.log(arr.flat());
+
+const arrDeep = [[[1, 2], 3], [[4, [5, 6]]], 7, 8];
+console.log(arrDeep.flat(3));
+
+// const accountMovements = accounts.map(acc => acc.movements);
+// console.log(accountMovements);
+
+// const allMovements = accountMovements.flat();
+// console.log(allMovements);
+
+// const overAllBalance = allMovements.reduce((acc, mov) => acc + mov, 0);
+// console.log(overAllBalance);
+
+// flat
+const overAllBalance = accounts
+  .map(acc => acc.movements)
+  .flat()
+  .reduce((acc, mov) => acc + mov, 0);
+console.log(overAllBalance);
+
+// flatMaps
+const overAllBalance2 = accounts
+  .flatMap(acc => acc.movements)
+  .reduce((acc, mov) => acc + mov, 0);
+
+console.log(overAllBalance2);
