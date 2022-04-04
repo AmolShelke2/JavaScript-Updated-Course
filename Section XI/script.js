@@ -803,3 +803,26 @@ console.log(++a);
 console.log(a);
 
 // 3
+
+const { deposits, withdrawls } = accounts
+  .flatMap(acc => acc.movements)
+  .reduce(
+    (sums, cur) => {
+      // cur > 0 ? (sums.deposits += cur) : (sums.withdrawls += cur);
+      sums[cur > 0 ? 'deposits' : 'withdrawls'] += cur;
+      return sums;
+    },
+    { deposits: 0, withdrawls: 0 }
+  );
+
+console.log(deposits, withdrawls);
+
+console.log(accounts);
+const flatAccount = accounts.flatMap(acc => acc.movements);
+console.log(flatAccount);
+
+const mapOwners = accounts.map(acc => acc.owner);
+console.log(mapOwners);
+
+const flatOwners = accounts.flatMap(acc => acc.owner);
+console.log(flatOwners);
