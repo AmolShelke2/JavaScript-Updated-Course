@@ -826,3 +826,24 @@ console.log(mapOwners);
 
 const flatOwners = accounts.flatMap(acc => acc.owner);
 console.log(flatOwners);
+
+// 4
+
+// This is a nice title -> This Is a Nice Title
+
+const converTitleCase = function (title) {
+  const capitalize = str => str[0].toUpperCase() + str.slice(1);
+  const exceptions = ['a', 'an', 'the', 'but', 'or', 'on', 'in', 'with'];
+
+  const titleCase = title
+    .toLowerCase()
+    .split(' ')
+    .map(word => (exceptions.includes(word) ? word : capitalize(word)))
+    .join(' ');
+
+  return capitalize(titleCase);
+};
+
+console.log(converTitleCase('this is a nice title'));
+console.log(converTitleCase('this is a LONG titles'));
+console.log(converTitleCase('and here is another title with an EXAMPLE'));
