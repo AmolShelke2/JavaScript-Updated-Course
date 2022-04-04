@@ -849,3 +849,5 @@ console.log(converTitleCase('this is a nice title'));
 console.log(converTitleCase('this is a LONG titles'));
 console.log(converTitleCase('and here is another title with an EXAMPLE'));
 */
+
+// Final Coding Challenge
