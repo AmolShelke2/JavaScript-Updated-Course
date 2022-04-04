@@ -779,3 +779,12 @@ labelBalance.addEventListener('click', function () {
 */
 
 // Array Methods in practise
+
+// 1.
+
+const bankDepositSum = accounts
+  .flatMap(acc => acc.movements)
+  .filter(mov => mov > 0)
+  .reduce((sum, curr) => sum + curr, 0);
+
+console.log(bankDepositSum);
