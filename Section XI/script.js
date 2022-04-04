@@ -777,3 +777,5 @@ labelBalance.addEventListener('click', function () {
 });
 
 */
+
+// Array Methods in practise
