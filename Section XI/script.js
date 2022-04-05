@@ -931,3 +931,10 @@ const recommendedFood = dogs.forEach(dog => {
 console.log(dogs);
 
 // Test case 2
+const findSarahDog = dogs.find(dog => dog.owners.includes('Sarah'));
+console.log(findSarahDog);
+console.log(
+  `Sarah's dog is eating ${
+    dogs.curFood > dogs.recomendFood * 0.9 ? 'much' : 'less'
+  }`
+);
