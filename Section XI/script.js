@@ -938,3 +938,19 @@ console.log(
     findSarahDog.curFood > findSarahDog.recomendFood ? 'much' : 'less'
   } food`
 );
+
+// Test case 3
+
+const ownersEatTooLittle = dogs
+  .filter(dog => dog.curFood < dog.recomendFood * 0.9)
+  .flatMap(dog => dog.owners);
+
+console.log(ownersEatTooLittle);
+
+// OwnersEatTooMuch
+
+const ownersEatTooMuch = dogs
+  .filter(dog => dog.curFood > dog.recomendFood * 0.9)
+  .flatMap(dog => dog.owners);
+
+console.log(ownersEatTooMuch);
