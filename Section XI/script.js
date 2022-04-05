@@ -963,3 +963,14 @@ console.log(`${ownersEatTooMuch.join(' and ')} dog's eats to Much`);
 
 const ownersEatTooSame = dogs.filter(dog => dog.curFood === dog.recomendFood);
 console.log(ownersEatTooSame);
+
+// test case 6
+
+// Eating an okay amount means the dog's current food portion is within
+// a range 10% above and 10% below the recommended portion (see hint).
+
+const checkOkayAmount = dog =>
+  dogs.curFood > dogs.recomendFood * 0.9 &&
+  dogs.curFood < dogs.recomendFood * 1.1;
+
+console.log(dogs.some(checkOkayAmount));
