@@ -974,3 +974,9 @@ const checkOkayAmount = dog =>
   dogs.curFood < dogs.recomendFood * 1.1;
 
 console.log(dogs.some(checkOkayAmount));
+
+// Test case 7
+
+const okayAmount = [];
+okayAmount.push(dogs.some(checkOkayAmount));
+console.log(okayAmount);
