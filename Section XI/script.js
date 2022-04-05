@@ -935,7 +935,7 @@ const findSarahDog = dogs.find(dog => dog.owners.includes('Sarah'));
 console.log(findSarahDog);
 console.log(
   `Sarah's dog is eating ${
-    findSarahDog.curFood > findSarahDog.recomendFood ? 'much' : 'less'
+    findSarahDog.curFood > findSarahDog.recomendFood ? 'much' : 'little'
   } food`
 );
 
@@ -954,3 +954,7 @@ const ownersEatTooMuch = dogs
   .flatMap(dog => dog.owners);
 
 console.log(ownersEatTooMuch);
+
+// Test case 4
+console.log(`${ownersEatTooLittle.join(' and ')} dog's eats to little`);
+console.log(`${ownersEatTooMuch.join(' and ')} dog's eats to Much`);
