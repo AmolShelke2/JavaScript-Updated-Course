@@ -934,7 +934,7 @@ console.log(dogs);
 const findSarahDog = dogs.find(dog => dog.owners.includes('Sarah'));
 console.log(findSarahDog);
 console.log(
-  `Sarah's dog is eating ${
+  `Sarah's dog is eating too ${
     findSarahDog.curFood > findSarahDog.recomendFood ? 'much' : 'little'
   } food`
 );
@@ -958,3 +958,8 @@ console.log(ownersEatTooMuch);
 // Test case 4
 console.log(`${ownersEatTooLittle.join(' and ')} dog's eats to little`);
 console.log(`${ownersEatTooMuch.join(' and ')} dog's eats to Much`);
+
+// test case 5
+
+const ownersEatTooSame = dogs.filter(dog => dog.curFood === dog.recomendFood);
+console.log(ownersEatTooSame);
