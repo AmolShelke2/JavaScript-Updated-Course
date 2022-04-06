@@ -177,3 +177,5 @@ What I learn in this section
 - more ways of creating and filling arrays
 - summary
 - Array methods in practise
+
+## Section XII Numbers, Dates INTL and TIMERS
