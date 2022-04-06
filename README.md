@@ -161,3 +161,19 @@ What I learn in this section
 What I learn in this section
 
 - Simple Array Methods
+- Looping Arrays ForEach
+- forEach with Maps and sets
+- creating DOM Elements
+- Data transformation map filter reduce
+- the map method
+- the filter method
+- the reduce method
+- the magic of chaining method
+- the find method
+- the findIndex method
+- some and every
+- flat and flatMap
+- sorting Arrays
+- more ways of creating and filling arrays
+- summary
+- Array methods in practise
