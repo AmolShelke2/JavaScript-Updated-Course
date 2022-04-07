@@ -297,3 +297,16 @@ console.log(Number.isInteger(23 / 0));
 */
 
 // Math & Rounding
+
+// sqrt Returns the square root of a number.
+console.log(Math.sqrt(64));
+console.log(25 ** (1 / 2));
+console.log(8 ** (1 / 3));
+
+// Max Returns the larger of a set of supplied numeric expressions.
+console.log(Math.max(5, 15, 13, 53, 69));
+console.log(Math.max(23, 24, 5, '54')); // Does type coercion
+console.log(Math.max(6, 18, '23px', 11, 21)); // does not parsing
+
+// MIN  Returns the smaller of a set of supplied numeric expressions.
+console.log(Math.min(1, 2, 0, 13, 5, 4));
