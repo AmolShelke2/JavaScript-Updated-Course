@@ -253,7 +253,7 @@ btnSort.addEventListener('click', function (e) {
 // LECTURES
 
 // Converting and Checking Numbers
-
+/*
 console.log(23 === 23.0); // True
 
 // Base 10 - 0 to 9, 1/10 = 0.1 3/10 = 3.33333333
@@ -293,3 +293,7 @@ console.log(isFinite(23 / 0));
 console.log(Number.isInteger(23));
 console.log(Number.isInteger(23.0));
 console.log(Number.isInteger(23 / 0));
+
+*/
+
+// Math & Rounding
