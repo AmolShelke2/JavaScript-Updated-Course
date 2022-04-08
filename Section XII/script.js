@@ -297,7 +297,7 @@ console.log(Number.isInteger(23 / 0));
 */
 
 // Math & Rounding
-
+/*
 // sqrt Returns the square root of a number.
 console.log(Math.sqrt(64));
 console.log(25 ** (1 / 2));
@@ -340,3 +340,6 @@ console.log(Math.floor(-23.3));
 console.log((2.5).toFixed(0));
 console.log((2.5).toFixed(4));
 console.log(+(2.245).toFixed(2));
+*/
+
+// The Remainder operator
