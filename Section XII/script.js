@@ -374,3 +374,37 @@ labelBalance.addEventListener('click', function () {
 */
 
 //  Working with BigInt
+
+console.log(2 ** 53 - 1);
+console.log(Number.MAX_SAFE_INTEGER);
+console.log(2 ** 53 + 1);
+console.log(2 ** 53 + 2);
+console.log(2 ** 53 + 3);
+console.log(2 ** 53 + 4);
+
+const bigINt = 4444444444444434444442423243434343434343434344343434n;
+console.log(typeof bigINt, bigINt); // bigint
+
+console.log(BigInt(44444444444));
+
+// Operations
+console.log(10000n + 10000n);
+
+const huge = 33888488483838383838383838383n;
+const num = 23;
+console.log(huge * BigInt(num));
+
+// Exceptions logical and comparison
+console.log(20n > 18);
+console.log(20n === 20);
+
+console.log(typeof 20n);
+console.log(20n == 20);
+
+// Strings
+console.log(huge + ' is REALLY BIG');
+
+// DIVISIONS
+
+console.log(11n / 3n);
+console.log(10 / 3);
