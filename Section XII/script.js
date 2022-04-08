@@ -342,4 +342,33 @@ console.log((2.5).toFixed(4));
 console.log(+(2.245).toFixed(2));
 */
 
+/*
 // The Remainder operator
+
+console.log(5 % 2); // 1
+console.log(5 / 2); // 5 = 2 * 2 + 1
+
+console.log(8 % 3);
+console.log(8 / 3); // 8 = 2 * 3 + 2
+
+console.log(6 % 0);
+console.log(6 / 2);
+
+console.log(7 % 2);
+console.log(7 / 2);
+
+const isEven = n => n % 2 === 0;
+console.log(isEven(8));
+console.log(isEven(23));
+console.log(isEven(10));
+
+labelBalance.addEventListener('click', function () {
+  [...document.querySelectorAll('.movements__row')].forEach(function (row, i) {
+    if (i % 2 === 0) row.style.backgroundColor = 'orangered';
+    // 0 2 4 6 8
+    if (i % 3 === 0) row.style.backgroundColor = 'blue';
+    // 1 3 5 7 9
+  });
+});
+// Nth time
+*/
