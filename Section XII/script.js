@@ -374,7 +374,7 @@ labelBalance.addEventListener('click', function () {
 */
 
 //  Working with BigInt
-
+/*
 console.log(2 ** 53 - 1);
 console.log(Number.MAX_SAFE_INTEGER);
 console.log(2 ** 53 + 1);
@@ -408,3 +408,6 @@ console.log(huge + ' is REALLY BIG');
 
 console.log(11n / 3n);
 console.log(10 / 3);
+*/
+
+// Creating Dates
