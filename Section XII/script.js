@@ -310,3 +310,28 @@ console.log(Math.max(6, 18, '23px', 11, 21)); // does not parsing
 
 // MIN  Returns the smaller of a set of supplied numeric expressions.
 console.log(Math.min(1, 2, 0, 13, 5, 4));
+
+//Math Pi
+console.log(Math.PI * Number.parseFloat('10px') ** 2);
+
+// Random
+// console.log(Math.trunc(Math.random() * 6) + 1);
+
+const randomINt = (min, max) =>
+  Math.floor(Math.random() * (max - min) + 1) + min;
+// 0...1 --> 0...(max - min) -> min...max
+// console.log(randomINt(10, 20));
+
+// Rounding Integers
+console.log(Math.trunc(23.3));
+
+console.log(Math.round(23.8));
+
+console.log(Math.ceil(25.7));
+console.log(Math.ceil(23.2));
+
+console.log(Math.floor(24.5));
+console.log(Math.floor(22.2));
+
+console.log(Math.trunc(-23.3));
+console.log(Math.floor(-23.3));
