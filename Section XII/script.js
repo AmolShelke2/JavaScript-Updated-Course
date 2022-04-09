@@ -475,3 +475,5 @@ future.setFullYear(2040);
 console.log(future);
 
 */
+
+// Operations with Dates
