@@ -427,7 +427,6 @@ console.log(new Date(2023, 10, 31));
 console.log(new Date(0));
 console.log(new Date(3 * 24 * 60 * 60 * 1000));
 
-*/
 
 // Working with Dates
 const future = new Date(3 * 24 * 60 * 60);
@@ -448,3 +447,5 @@ console.log(Date.now());
 
 future.setFullYear(2040);
 console.log(future);
+
+*/
