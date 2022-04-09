@@ -492,6 +492,7 @@ console.log(future);
 */
 
 // Operations with Dates
+/*
 const future = new Date(2037, 10, 19, 15, 23);
 console.log(+future);
 
@@ -500,3 +501,4 @@ const calcDaysPassed = (date1, date2) =>
 
 const days1 = calcDaysPassed(new Date(2022, 3, 14), new Date(2022, 3, 24));
 console.log(days1);
+*/
