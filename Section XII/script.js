@@ -526,4 +526,4 @@ const days1 = calcDaysPassed(new Date(2022, 3, 14), new Date(2022, 3, 24));
 console.log(days1);
 */
 
-// Internationalizing
+// Internationalizing Numbers(intl)
