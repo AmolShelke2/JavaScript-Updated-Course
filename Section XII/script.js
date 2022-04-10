@@ -527,3 +527,17 @@ console.log(days1);
 */
 
 // Internationalizing Numbers(intl)
+
+// Basic formating with Numbers
+const num = 3884764.23;
+
+console.log('In: ', new Intl.NumberFormat('en-In').format(num));
+console.log('US:  ', new Intl.NumberFormat('en-US').format(num));
+console.log('Germany: ', new Intl.NumberFormat('de-DE').format(num));
+console.log('Syria: ', new Intl.NumberFormat('ar-SY').format(num));
+console.log('UK:    ', new Intl.NumberFormat('en-Uk').format(num));
+console.log(
+  navigator.language,
+  '--------',
+  new Intl.NumberFormat(navigator.language).format(num)
+);
