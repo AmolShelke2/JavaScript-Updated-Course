@@ -545,6 +545,7 @@ const options = {
 };
 
 // Basic formating with Numbers
+/*
 const num = 3884764.23;
 
 console.log('In: ', new Intl.NumberFormat('en-IN', options).format(num));
@@ -558,3 +559,4 @@ console.log(
   '--------',
   new Intl.NumberFormat(navigator.language, options).format(num)
 );
+*/
