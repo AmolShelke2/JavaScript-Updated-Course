@@ -563,3 +563,24 @@ console.log(
 */
 
 // Timers_SetTimeOut and setInterval
+
+// setTimeOut
+const ingredients = ['olives', ' '];
+
+const pizzaTimer = setTimeout(
+  (ing1, ing2) => console.log(`Here is your pizza with ${ing1} and ${ing2}🍕`),
+  3000,
+  ...ingredients
+);
+console.log('waiting for 3 seconds to get pizza'); // this string will logged first after 3 seconds the setTimeout will executes
+
+if (ingredients.includes('spinach')) {
+  clearTimeout(pizzaTimer);
+}
+
+// setInterval
+
+setInterval(function () {
+  const now = new Date();
+  console.log(now);
+}, 1000);
