@@ -193,3 +193,6 @@ What I learn in this section
 - internationalizing Numbers
 - Timers _setTimeOut and SetInterval
 - Implemented Timer in Bankist App
+
+
+## Section XIII Advanced DOM And Events
