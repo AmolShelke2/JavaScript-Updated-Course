@@ -179,3 +179,17 @@ What I learn in this section
 - Array methods in practise
 
 ## Section XII Numbers, Dates INTL and TIMERS
+
+What I learn in this section
+
+- converting and checking Numbers
+- Math and rounding
+- the remainder operator
+- working with bigInt 
+- creating Dates
+- Adding Dates to Bankist_App
+- operations with dates
+- internationalizing Dates
+- internationalizing Numbers
+- Timers _setTimeOut and SetInterval
+- Implemented Timer in Bankist App
