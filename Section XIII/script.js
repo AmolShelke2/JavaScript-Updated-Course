@@ -74,3 +74,5 @@ document.querySelector('.btn').addEventListener('click', function () {
   message.parentElement.removeChild(message);
 });
 */
+
+// Styles Attributes and classes
