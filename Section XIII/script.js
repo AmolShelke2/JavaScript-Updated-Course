@@ -36,7 +36,7 @@ document.addEventListener('keydown', function (e) {
 ////////////
 
 // Selecting creating and Deleting the elements
-/*
+
 console.log(document.documentElement);
 console.log(document.head);
 console.log(document.body);
@@ -73,6 +73,20 @@ document.querySelector('.btn').addEventListener('click', function () {
   message.remove();
   message.parentElement.removeChild(message);
 });
-*/
 
 // Styles Attributes and classes
+
+// styles
+message.style.backgroundColor = '#37383d';
+message.style.width = '120%';
+
+console.log(message.style.color);
+console.log(message.style.backgroundColor);
+
+console.log(getComputedStyle(message).color);
+console.log(getComputedStyle(message).height);
+
+message.style.height =
+  Number.parseFloat(getComputedStyle(message).height, 10) + 30 + 'px';
+
+document.documentElement.style.setProperty('--color-primary', 'orangered');
