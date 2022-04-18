@@ -36,7 +36,7 @@ document.addEventListener('keydown', function (e) {
 ////////////
 
 // Selecting creating and Deleting the elements
-
+/*
 console.log(document.documentElement);
 console.log(document.head);
 console.log(document.body);
@@ -74,8 +74,9 @@ document.querySelector('.btn').addEventListener('click', function () {
   message.parentElement.removeChild(message);
 });
 
+*/
 // Styles Attributes and classes
-
+/*
 // styles
 message.style.backgroundColor = '#37383d';
 message.style.width = '120%';
@@ -114,3 +115,13 @@ console.log(link.getAttribute('href'));
 console.log(logo.dataset.versionNumber);
 
 // Classes
+
+// use always
+logo.classList.add('d');
+logo.classList.toggle('d');
+logo.classList.remove('d');
+logo.classList.contains('d');
+
+// Don't use
+logo.className = 'Jonas';
+*/
