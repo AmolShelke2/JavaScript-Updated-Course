@@ -112,3 +112,5 @@ console.log(link.getAttribute('href'));
 
 // Data attributes
 console.log(logo.dataset.versionNumber);
+
+// Classes
