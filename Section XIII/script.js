@@ -32,6 +32,36 @@ document.addEventListener('keydown', function (e) {
 
 // implementing the smoothly scroll
 
+const btnScrollTo = document.querySelector('.btn--scroll-to');
+const section1 = document.querySelector('#section--1');
+
+btnScrollTo.addEventListener('click', function (e) {
+  const s1coards = section1.getBoundingClientRect();
+  console.log(s1coards);
+
+  console.log(e.target.getBoundingClientRect());
+
+  console.log('Current Scroll (X/Y)', window.pageXOffset, window.pageYOffset);
+
+  console.log(
+    'height/width viewPort',
+    document.documentElement.clientHeight,
+    document.documentElement.clientWidth
+  );
+
+  // Scrolling
+  // window.scrollTo(
+  //   s1coards.left + window.pageXOffset,
+  //   s1coards.top + window.pageYOffset
+  // );
+
+  window.scrollTo({
+    left: s1coards.left + window.pageXOffset,
+    top: s1coards.top + window.pageYOffset,
+    behavior: 'smooth',
+  });
+});
+
 ///
 // How DOM Actually works behind the scenes
 // written all notes in book
