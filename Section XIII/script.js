@@ -30,6 +30,8 @@ document.addEventListener('keydown', function (e) {
   }
 });
 
+// implementing the smoothly scroll
+
 ///
 // How DOM Actually works behind the scenes
 // written all notes in book
