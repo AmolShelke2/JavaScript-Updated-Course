@@ -161,3 +161,25 @@ logo.className = 'Jonas';
 */
 
 // Types of events and Event Handlers
+
+const h1 = document.querySelector('h1');
+
+const h1Alert = function (e) {
+  alert('addEventListener: Great! You are reading the heading :D');
+
+  h1.removeEventListener('mouseenter', h1Alert);
+};
+
+h1.addEventListener('mouseenter', h1Alert);
+
+setTimeout(() => h1.removeEventListener('mouseenter', h1Alert), 3000);
+
+// another event handler method
+
+// h1.onmouseenter = function (e) {
+//   alert('addEventListener: Great! You are reading the heading :D');
+// };
+
+// h1.onclick = function () {
+//   alert('addEventListener: Great! You are reading the heading :D');
+// };
