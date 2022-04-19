@@ -159,3 +159,5 @@ logo.classList.contains('d');
 // Don't use
 logo.className = 'Jonas';
 */
+
+// Types of events and Event Handlers
