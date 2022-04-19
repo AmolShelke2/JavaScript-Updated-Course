@@ -183,3 +183,5 @@ setTimeout(() => h1.removeEventListener('mouseenter', h1Alert), 3000);
 // h1.onclick = function () {
 //   alert('addEventListener: Great! You are reading the heading :D');
 // };
+
+// Event Bubbling
