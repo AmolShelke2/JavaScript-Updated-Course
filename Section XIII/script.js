@@ -186,3 +186,5 @@ setTimeout(() => h1.removeEventListener('mouseenter', h1Alert), 3000);
 
 //
 // Event Propagation Bubbling and capturing
+
+// Event Propagation in practise
