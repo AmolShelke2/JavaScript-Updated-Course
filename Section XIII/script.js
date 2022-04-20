@@ -191,7 +191,7 @@ setTimeout(() => h1.removeEventListener('mouseenter', h1Alert), 3000);
 // Event Propagation in practise
 
 // rgb(255, 255, 255)
-
+/*
 const randomInt = (min, max) =>
   Math.floor(Math.random() * (max - min + 1) + min);
 
@@ -216,3 +216,5 @@ document.querySelector('.nav').addEventListener('click', function (e) {
   this.style.backgroundColor = randomColor();
   console.log('Nav', e.target, e.currentTarget);
 });
+
+*/
