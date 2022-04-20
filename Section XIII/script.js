@@ -202,6 +202,8 @@ document.querySelector('.nav__link').addEventListener('click', function (e) {
   this.style.backgroundColor = randomColor();
   console.log('Links', e.target, e.currentTarget);
   console.log(e.currentTarget === this);
+
+  // Stop Propagation
 });
 
 document.querySelector('.nav__links').addEventListener('click', function (e) {
