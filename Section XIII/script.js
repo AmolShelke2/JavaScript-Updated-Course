@@ -92,6 +92,9 @@ document.querySelector('.nav__links').addEventListener('click', function (e) {
     });
   }
 });
+
+// Building tabbed component
+
 ///
 // How DOM Actually works behind the scenes
 // written all notes in book
