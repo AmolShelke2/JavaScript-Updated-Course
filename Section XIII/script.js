@@ -218,3 +218,5 @@ document.querySelector('.nav').addEventListener('click', function (e) {
 });
 
 */
+
+// Learning Event Delagation
