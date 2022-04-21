@@ -247,4 +247,4 @@ document.querySelector('.nav').addEventListener('click', function (e) {
 
 */
 
-// Learning Event Delagation
+// Learning DOM Traversing
