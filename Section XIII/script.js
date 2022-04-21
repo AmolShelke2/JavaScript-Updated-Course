@@ -246,7 +246,7 @@ document.querySelector('.nav').addEventListener('click', function (e) {
 });
 
 */
-
+/*
 // Learning DOM Traversing
 
 const h1 = document.querySelector('h1');
@@ -278,3 +278,4 @@ console.log(h1.parentElement.children);
     el.style.transform = 'scale(0.5)';
   }
 });
+*/
