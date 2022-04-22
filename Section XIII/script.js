@@ -95,6 +95,12 @@ document.querySelector('.nav__links').addEventListener('click', function (e) {
 
 // Building tabbed component
 
+const tabs = document.querySelectorAll('.operations__tab');
+const tabsContainer = document.querySelector('.operations__tab-container');
+const tabsContent = document.querySelectorAll('.operations__content');
+
+tabs.forEach(t => t.addEventListener('click', () => console.log('Tab')));
+
 ///
 // How DOM Actually works behind the scenes
 // written all notes in book
