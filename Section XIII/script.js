@@ -121,6 +121,8 @@ tabsContainer.addEventListener('click', function (e) {
     .classList.add('operations__content--active');
 });
 
+// New Fade Animation
+
 ///
 // How DOM Actually works behind the scenes
 // written all notes in book
@@ -308,5 +310,3 @@ console.log(h1.parentElement.children);
   }
 });
 */
-
-// Passing arguments to Event Handlers
