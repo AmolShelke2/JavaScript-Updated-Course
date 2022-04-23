@@ -138,9 +138,10 @@ const handleHover = function (e, opacity) {
 };
 
 // passing "Argument" into Handler
-
 nav.addEventListener('mouseover', handleHover.bind(0.5));
 nav.addEventListener('mouseout', handleHover.bind(1));
+
+// Implementing sticky Navbar
 
 ///
 // How DOM Actually works behind the scenes
