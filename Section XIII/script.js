@@ -336,3 +336,5 @@ console.log(h1.parentElement.children);
   }
 });
 */
+
+// Intersection observer API
