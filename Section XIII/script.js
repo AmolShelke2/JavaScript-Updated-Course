@@ -123,25 +123,24 @@ tabsContainer.addEventListener('click', function (e) {
 
 // New Fade Animation
 const handleHover = function (e, opacity) {
+  console.log(this, e.currentTarget);
+
   if (e.target.classList.contains('nav__link')) {
     const link = e.target;
     const siblings = link.closest('.nav').querySelectorAll('.nav__link');
     const logo = link.closest('.nav').querySelector('img');
 
     siblings.forEach(el => {
-      if (el !== link) el.style.opacity = opacity;
+      if (el !== link) el.style.opacity = this;
     });
-    logo.style.opacity = opacity;
+    logo.style.opacity = this;
   }
 };
 
-nav.addEventListener('mouseover', function (e) {
-  handleHover(e, 0.5);
-});
+// passing "Argument" into Handler
 
-nav.addEventListener('mouseout', function (e) {
-  handleHover(e, 1);
-});
+nav.addEventListener('mouseover', handleHover.bind(0.5));
+nav.addEventListener('mouseout', handleHover.bind(1));
 
 ///
 // How DOM Actually works behind the scenes
