@@ -123,8 +123,6 @@ tabsContainer.addEventListener('click', function (e) {
 
 // New Fade Animation
 const handleHover = function (e, opacity) {
-  console.log(this, e.currentTarget);
-
   if (e.target.classList.contains('nav__link')) {
     const link = e.target;
     const siblings = link.closest('.nav').querySelectorAll('.nav__link');
@@ -142,8 +140,16 @@ nav.addEventListener('mouseover', handleHover.bind(0.5));
 nav.addEventListener('mouseout', handleHover.bind(1));
 
 // Implementing sticky Navbar
+const initalCoards = section1.getBoundingClientRect();
+// console.log(initalCoards);
 
-///
+window.addEventListener('scroll', function () {
+  // console.log(window.scrollY);
+
+  if (window.scrollY > initalCoards.top) nav.classList.add('sticky');
+  else nav.classList.remove('sticky');
+});
+
 // How DOM Actually works behind the scenes
 // written all notes in book
 ////////////
