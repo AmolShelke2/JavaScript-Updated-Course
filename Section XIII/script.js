@@ -308,3 +308,5 @@ console.log(h1.parentElement.children);
   }
 });
 */
+
+// Passing arguments to Event Handlers
