@@ -338,3 +338,12 @@ console.log(h1.parentElement.children);
 */
 
 // Intersection observer API
+const obsCallback = function () {};
+
+const obsOptions = {
+  root: null,
+  threshold: 0.1,
+};
+
+const observer = new IntersectionObserver(obsCallback, obsOptions);
+observer.observe(section1);
