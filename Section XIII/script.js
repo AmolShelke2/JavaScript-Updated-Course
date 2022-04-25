@@ -135,20 +135,41 @@ const handleHover = function (e, opacity) {
   }
 };
 
-// passing "Argument" into Handler
-nav.addEventListener('mouseover', handleHover.bind(0.5));
-nav.addEventListener('mouseout', handleHover.bind(1));
+// // passing "Argument" into Handler
+// nav.addEventListener('mouseover', handleHover.bind(0.5));
+// nav.addEventListener('mouseout', handleHover.bind(1));
 
-// Implementing sticky Navbar
-const initalCoards = section1.getBoundingClientRect();
-// console.log(initalCoards);
+// // Implementing sticky Navbar
+// const initalCoards = section1.getBoundingClientRect();
+// // console.log(initalCoards);
 
-window.addEventListener('scroll', function () {
-  // console.log(window.scrollY);
+// window.addEventListener('scroll', function () {
+//   // console.log(window.scrollY);
 
-  if (window.scrollY > initalCoards.top) nav.classList.add('sticky');
+//   if (window.scrollY > initalCoards.top) nav.classList.add('sticky');
+//   else nav.classList.remove('sticky');
+// });
+
+// Implemented sticky navbar using intersection observer API
+
+const header = document.querySelector('.header');
+const navHeight = nav.getBoundingClientRect().height;
+// console.log(navHeight);
+
+const stickyNav = function (entries) {
+  const [entry] = entries;
+  console.log(entry);
+  if (!entry.isIntersecting) nav.classList.add('sticky');
   else nav.classList.remove('sticky');
+};
+
+const observerHeader = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: `${-navHeight}px`,
 });
+
+observerHeader.observe(header);
 
 // How DOM Actually works behind the scenes
 // written all notes in book
@@ -338,16 +359,16 @@ console.log(h1.parentElement.children);
 */
 
 // Intersection observer API
-const obsCallback = function (entries, observer) {
-  entries.forEach(entry => {
-    console.log(entry);
-  });
-};
+// const obsCallback = function (entries, observer) {
+//   entries.forEach(entry => {
+//     console.log(entry);
+//   });
+// };
 
-const obsOptions = {
-  root: null,
-  threshold: [0, 0.2],
-};
+// const obsOptions = {
+//   root: null,
+//   threshold: [0, 0.2],
+// };
 
-const observer = new IntersectionObserver(obsCallback, obsOptions);
-observer.observe(section1);
+// const observer = new IntersectionObserver(obsCallback, obsOptions);
+// observer.observe(section1);
