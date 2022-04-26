@@ -373,4 +373,4 @@ console.log(h1.parentElement.children);
 // const observer = new IntersectionObserver(obsCallback, obsOptions);
 // observer.observe(section1);
 
-// Revealing Elements on Scroll
+// Revealing Elements on Scroll using intersection observer API
