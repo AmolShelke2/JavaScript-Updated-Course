@@ -171,6 +171,19 @@ const observerHeader = new IntersectionObserver(stickyNav, {
 
 observerHeader.observe(header);
 
+//Revealing Elements on Scroll using intersection observer API
+const allsection = document.querySelectorAll('.section');
+
+const revealSection = function (entries, observer) {
+  //
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {});
+allsection.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add('section--hidden');
+});
+
 // How DOM Actually works behind the scenes
 // written all notes in book
 ////////////
@@ -372,5 +385,3 @@ console.log(h1.parentElement.children);
 
 // const observer = new IntersectionObserver(obsCallback, obsOptions);
 // observer.observe(section1);
-
-// Revealing Elements on Scroll using intersection observer API
