@@ -192,6 +192,8 @@ allsection.forEach(function (section) {
   section.classList.add('section--hidden');
 });
 
+// Lazy Loading of images
+
 // How DOM Actually works behind the scenes
 // written all notes in book
 ////////////
