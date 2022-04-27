@@ -219,7 +219,7 @@ const imgObserver = new IntersectionObserver(loadImg, {
 
 imgTargets.forEach(img => imgObserver.observe(img));
 
-// Creating Slider component
+// Creating Slider component part 1
 
 // How DOM Actually works behind the scenes
 // written all notes in book
