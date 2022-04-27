@@ -193,6 +193,7 @@ allsection.forEach(function (section) {
 });
 
 // Lazy Loading of images
+// Lets implement
 
 // How DOM Actually works behind the scenes
 // written all notes in book
