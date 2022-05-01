@@ -232,20 +232,28 @@ const slider = document.querySelector('.slider')
 slider.style.transform = 'scale(0.4) translateX(-800px)'
 slider.style.overflow = 'visible'
 
-slides.forEach((s, i) => s.style.transform = `translateX(${100 * i}%)`)
 
-// 0%, 100%, 200%, 300%
+const goToSlide = function (slide) {
+  slides.forEach((s, i) => s.style.transform = `translateX(${100 * (i - slide)}%)`)
+  
+}
 
-// Next slide 
-btnRight.addEventListener('click', function () {
-  if (currentSlide === maxSlide - 1) {
+goToSlide(0)
+
+// Next slide
+const nextSlide = function () {
+   if (currentSlide === maxSlide - 1) {
     currentSlide = 0
   } else {
     currentSlide++
   }
- slides.forEach((s, i) => s.style.transform = `translateX(${100 *( i - currentSlide)}%)`)
- //curslide = 1; -100%, 0%, 100%, 200%
-})
+
+  goToSlide(currentSlide)
+}
+
+
+btnRight.addEventListener('click', nextSlide)
+
 
 // How DOM Actually works behind the scenes
 // written all notes in book
