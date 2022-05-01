@@ -262,6 +262,9 @@ const prevSlide = function () {
 btnRight.addEventListener('click', nextSlide)
 btnLeft.addEventListener('click', prevSlide)
 
+
+// slider part 2
+
 // How DOM Actually works behind the scenes
 // written all notes in book
 ////////////
