@@ -228,10 +228,9 @@ const btnRight = document.querySelector('.slider__btn--right')
 let currentSlide = 0
 const  maxSlide = slides.length
 
-const slider = document.querySelector('.slider')
-slider.style.transform = 'scale(0.4) translateX(-800px)'
-slider.style.overflow = 'visible'
-
+// const slider = document.querySelector('.slider')
+// slider.style.transform = 'scale(0.4) translateX(-800px)'
+// slider.style.overflow = 'visible'
 
 const goToSlide = function (slide) {
   slides.forEach((s, i) => s.style.transform = `translateX(${100 * (i - slide)}%)`)
@@ -251,9 +250,17 @@ const nextSlide = function () {
   goToSlide(currentSlide)
 }
 
+const prevSlide = function () {
+  if (currentSlide === 0) {
+    currentSlide = maxSlide - 1
+  } else {
+    currentSlide--
+  }
+  goToSlide(currentSlide)
+}
 
 btnRight.addEventListener('click', nextSlide)
-
+btnLeft.addEventListener('click', prevSlide)
 
 // How DOM Actually works behind the scenes
 // written all notes in book
