@@ -262,8 +262,14 @@ const prevSlide = function () {
 btnRight.addEventListener('click', nextSlide)
 btnLeft.addEventListener('click', prevSlide)
 
-
 // slider part 2
+
+// Implemented Sliders on arrow keys
+document.addEventListener('keydown', function (e) {
+  console.log(e)
+  if(e.key === 'ArrowLeft') prevSlide()
+  e.key === 'ArrowRight' && nextSlide()
+})
 
 // How DOM Actually works behind the scenes
 // written all notes in book
