@@ -220,6 +220,8 @@ const imgObserver = new IntersectionObserver(loadImg, {
 imgTargets.forEach(img => imgObserver.observe(img));
 
 // Creating Slider component part 1
+const sliders = function () {
+  
 
 const slides = document.querySelectorAll('.slide')
 const btnLeft = document.querySelector('.slider__btn--left')
@@ -229,12 +231,9 @@ const dotContainer = document.querySelector('.dots')
 let currentSlide = 0
 const  maxSlide = slides.length
 
-// const slider = document.querySelector('.slider')
-// slider.style.transform = 'scale(0.4) translateX(-800px)'
-// slider.style.overflow = 'visible'
+// refactor code
 
-// refactor code 
-
+// functions
 const createDots = function () {
   slides.forEach(function (_, i) {
     dotContainer.insertAdjacentHTML(
@@ -243,8 +242,6 @@ const createDots = function () {
     </button>`)
   })
 }
-
-createDots()
 
 const activateDot = function (slide) {
   document.querySelectorAll('.dots__dot')
@@ -255,13 +252,10 @@ const activateDot = function (slide) {
     .classList.add('dots__dot--active')
 }
 
-activateDot(0)
 
 const goToSlide = function (slide) {
   slides.forEach((s, i) => s.style.transform = `translateX(${100 * (i - slide)}%)`)
 }
-
-goToSlide(0)
 
 // Next slide
 const nextSlide = function () {
@@ -285,19 +279,23 @@ const prevSlide = function () {
   activateDot(currentSlide)
 }
 
+const init = function () {
+  goToSlide(0)
+  createDots()
+  activateDot(0)
+}
+init()
+
+// Event Handlers
 btnRight.addEventListener('click', nextSlide)
 btnLeft.addEventListener('click', prevSlide)
 
-// slider part 2
-
-// Implemented Sliders on arrow keys
 document.addEventListener('keydown', function (e) {
   console.log(e)
   if(e.key === 'ArrowLeft') prevSlide()
   e.key === 'ArrowRight' && nextSlide()
 })
 
-// creating dots .
 dotContainer.addEventListener('click', function (e) {
   if (e.target.classList.contains('dots__dot')) {
     const {slide} = e.target.dataset;
@@ -305,6 +303,8 @@ dotContainer.addEventListener('click', function (e) {
     activateDot(slide)
   }
 })
+}
+sliders()
 
 // How DOM Actually works behind the scenes
 // written all notes in book
