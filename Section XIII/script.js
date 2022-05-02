@@ -224,6 +224,7 @@ imgTargets.forEach(img => imgObserver.observe(img));
 const slides = document.querySelectorAll('.slide')
 const btnLeft = document.querySelector('.slider__btn--left')
 const btnRight = document.querySelector('.slider__btn--right')
+const dotContainer = document.querySelector('.dots')
 
 let currentSlide = 0
 const  maxSlide = slides.length
@@ -232,9 +233,29 @@ const  maxSlide = slides.length
 // slider.style.transform = 'scale(0.4) translateX(-800px)'
 // slider.style.overflow = 'visible'
 
+const createDots = function () {
+  slides.forEach(function (_, i) {
+    dotContainer.insertAdjacentHTML(
+    'beforeend',
+    `<button class="dots__dot" data-slide="${i}">
+    </button>`)
+  })
+}
+
+createDots()
+
+const activateDot = function (slide) {
+  document.querySelectorAll('.dots__dot')
+  .forEach(dot => dot.classList
+    .remove('dots__dot--active'))
+  
+  document.querySelector(`.dots__dot[data-slide="${slide}"]`)
+    .classList.add('dots__dot--active')
+}
+
+
 const goToSlide = function (slide) {
   slides.forEach((s, i) => s.style.transform = `translateX(${100 * (i - slide)}%)`)
-  
 }
 
 goToSlide(0)
@@ -248,6 +269,7 @@ const nextSlide = function () {
   }
 
   goToSlide(currentSlide)
+  activateDot(currentSlide)
 }
 
 const prevSlide = function () {
@@ -257,6 +279,7 @@ const prevSlide = function () {
     currentSlide--
   }
   goToSlide(currentSlide)
+  activateDot(currentSlide)
 }
 
 btnRight.addEventListener('click', nextSlide)
@@ -272,7 +295,13 @@ document.addEventListener('keydown', function (e) {
 })
 
 // creating dots .
-
+dotContainer.addEventListener('click', function (e) {
+  if (e.target.classList.contains('dots__dot')) {
+    const {slide} = e.target.dataset;
+    goToSlide(slide)
+    activateDot(slide)
+  }
+})
 
 // How DOM Actually works behind the scenes
 // written all notes in book
