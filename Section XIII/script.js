@@ -271,6 +271,9 @@ document.addEventListener('keydown', function (e) {
   e.key === 'ArrowRight' && nextSlide()
 })
 
+// creating dots .
+
+
 // How DOM Actually works behind the scenes
 // written all notes in book
 ////////////
