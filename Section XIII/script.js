@@ -528,3 +528,5 @@ window.addEventListener('beforeunload', function (e) {
 })
 
 */
+
+// Efficient script loading
