@@ -530,3 +530,4 @@ window.addEventListener('beforeunload', function (e) {
 */
 
 // Efficient script loading
+// all was theory write down in copy.
