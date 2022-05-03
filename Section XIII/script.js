@@ -507,3 +507,6 @@ console.log(h1.parentElement.children);
 
 // const observer = new IntersectionObserver(obsCallback, obsOptions);
 // observer.observe(section1);
+
+
+// Lifecycle of DOM Events
