@@ -510,3 +510,7 @@ console.log(h1.parentElement.children);
 
 
 // Lifecycle of DOM Events
+
+document.addEventListener('DOMContentLoaded', function (e) {
+  console.log('HTML parsed and DOM tree built', e)
+})
