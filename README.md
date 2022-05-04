@@ -196,3 +196,25 @@ What I learn in this section
 
 
 ## Section XIII Advanced DOM And Events
+
+What I learn in this section
+
+- Project Bankist App
+- HOW the DOM really works
+- selecting creating and deleting elements
+- styles, attributes and classes
+- Implementing smooth scrolling
+- types of Events and Event handlers
+- Event Propapagation_bubbling and capturing
+- Event propagation in practice
+- Event Deloigation
+- DOM Traversing
+- Building a Tabbed component
+- Passing arguments to Event handlers
+- Implementing a sticky navigation
+- Intersection observer API
+- Revealing Elements on Scroll
+- Building a slider component
+- lifecycle of DOM Events
+- Efficient script loading async defer
+  
