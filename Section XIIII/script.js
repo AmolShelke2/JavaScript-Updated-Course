@@ -27,3 +27,6 @@ const user = {
     // sending logic
   }, // Behaviour
 };
+
+// There are four main pillar of OOPS Abstraction, Inheritence,
+// incapsulation, Polymorphisam,
