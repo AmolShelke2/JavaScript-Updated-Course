@@ -55,3 +55,5 @@ polymorphisam:
 */
 
 // OOP In JavaScript
+
+// Prototypes
