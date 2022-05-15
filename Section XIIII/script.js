@@ -55,7 +55,6 @@ polymorphisam:
 */
 
 // OOP In JavaScript
-
 // Prototypes
 
-// complete lecture 4
+// complete lecture 4  written all notes in handbook.
