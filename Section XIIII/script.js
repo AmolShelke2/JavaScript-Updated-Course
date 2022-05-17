@@ -64,3 +64,16 @@ polymorphisam:
 // Written all notes in handbook.
 
 // Construction functions and the new Operator
+
+const Person = function (firstName, birthYear) {
+  
+}
+
+new Person('Amol', 2004)
+ 
+// Behind the scenes when we called the function with the new keyword
+
+// 1. New {} is created
+// 2. Function is called, this keyword is set to the newly created object.
+// 3. {} linked to prototype // more about this later
+// 4. function automatically return {}
