@@ -66,14 +66,27 @@ polymorphisam:
 // Construction functions and the new Operator
 
 const Person = function (firstName, birthYear) {
-  
-}
+  this.firstName = firstName;
+  this.birthYear = birthYear;
+};
 
-new Person('Amol', 2004)
- 
+const Amol = new Person('Amol', 2004);
+console.log(Amol);
+
 // Behind the scenes when we called the function with the new keyword
 
 // 1. New {} is created
 // 2. Function is called, this keyword is set to the newly created object.
 // 3. {} linked to prototype // more about this later
 // 4. function automatically return {}
+
+const matilda = new Person('Matilda', 2002);
+const jack = new Person('Jack', 1999);
+
+console.log(matilda);
+console.log(jack);
+
+const B_GM = '';
+// Instance of
+console.log(Amol instanceof Person); // TRUE
+console.log(B_GM instanceof Person); // FALSE
