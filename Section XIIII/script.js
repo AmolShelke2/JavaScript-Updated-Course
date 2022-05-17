@@ -62,3 +62,5 @@ polymorphisam:
 
 // OOP In practice
 // Written all notes in handbook.
+
+// Construction functions and the new Operator
