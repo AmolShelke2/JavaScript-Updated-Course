@@ -96,3 +96,5 @@ const B_GM = '';
 // Instance of
 console.log(Amol instanceof Person); // TRUE
 console.log(B_GM instanceof Person); // FALSE
+
+// Prototypes in practice 
