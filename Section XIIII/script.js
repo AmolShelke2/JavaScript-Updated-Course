@@ -97,4 +97,15 @@ const B_GM = '';
 console.log(Amol instanceof Person); // TRUE
 console.log(B_GM instanceof Person); // FALSE
 
-// Prototypes in practice 
+// Prototypes in practice
+console.log(Person.prototype);
+
+Person.prototype.calcAge = function () {
+  console.log(2022 - this.birthYear);
+};
+
+Amol.calcAge();
+matilda.calcAge();
+
+console.log(Amol.__proto__);
+console.log(Amol.__proto__ === Person.prototype);
