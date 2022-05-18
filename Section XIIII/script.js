@@ -109,3 +109,17 @@ matilda.calcAge();
 
 console.log(Amol.__proto__);
 console.log(Amol.__proto__ === Person.prototype);
+
+console.log(Person.prototype.isPrototypeOf(Amol));
+console.log(Person.prototype.isPrototypeOf(matilda));
+console.log(Person.prototype.isPrototypeOf(Person));
+
+// .prototypeOfLinkedObjects
+
+// We can also set properties on prototype
+Person.prototype.job = 'Teacher';
+console.log(Amol.job, matilda.job);
+
+// whether an object has a property with the specified name.
+console.log(Amol.hasOwnProperty('firstName'));
+console.log(Amol.hasOwnProperty('job'));
