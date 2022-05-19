@@ -123,3 +123,5 @@ console.log(Amol.job, matilda.job);
 // whether an object has a property with the specified name.
 console.log(Amol.hasOwnProperty('firstName'));
 console.log(Amol.hasOwnProperty('job'));
+
+// Prototypal Inheritance and the Prototype chain
