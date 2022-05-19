@@ -128,3 +128,5 @@ console.log(Amol.hasOwnProperty('job'));
 
 Amol.hasOwnProperty('name');
 console.log(Amol.hasOwnProperty('name')); // False
+
+// Prototypal inheritence on Built in objects.
