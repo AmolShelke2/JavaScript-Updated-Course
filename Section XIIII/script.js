@@ -125,3 +125,6 @@ console.log(Amol.hasOwnProperty('firstName'));
 console.log(Amol.hasOwnProperty('job'));
 
 // Prototypal Inheritance and the Prototype chain
+
+Amol.hasOwnProperty('name');
+console.log(Amol.hasOwnProperty('name')); // False
