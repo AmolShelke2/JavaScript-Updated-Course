@@ -65,6 +65,7 @@ polymorphisam:
 
 // Construction functions and the new Operator
 
+/*
 const Person = function (firstName, birthYear) {
   // Instance properties
   this.firstName = firstName;
@@ -173,7 +174,7 @@ and 'brake' multiple times on each of them.
 DATA CAR 1: 'BMW' going at 120 km/h
 DATA CAR 2: 'Mercedes' going at 95 km/h
 GOOD LUCK 😀
-*/
+
 
 const Car = function (make, speed) {
   this.make = make;
@@ -206,6 +207,8 @@ Car.prototype.brake = function () {
 BMW.brake();
 Mercedes.brake();
 Mercedes.brake();
+
+*/
 
 /////////////////////////////////////////////////////////////
 // Es6 classes.
