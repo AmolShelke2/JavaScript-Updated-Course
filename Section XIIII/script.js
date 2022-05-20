@@ -130,3 +130,23 @@ Amol.hasOwnProperty('name');
 console.log(Amol.hasOwnProperty('name')); // False
 
 // Prototypal inheritence on Built in objects.
+
+console.log(Amol.__proto__);
+// Object.prototype {top of prototype chain}
+console.log(Amol.__proto__.__proto__);
+// Null
+console.log(Amol.__proto__.__proto__.__proto__);
+
+console.dir(Person.prototype.constructor);
+
+const arr = [3, 4, 5, 6, 4, 2, 4]; // new Array === []
+console.log(arr.__proto__);
+console.log(arr.__proto__ === Array.prototype);
+
+console.log(arr.__proto__.__proto__);
+
+Array.prototype.unique = function () {
+  return [...new Set(this)];
+};
+
+console.log(arr.unique());
