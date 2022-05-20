@@ -196,8 +196,6 @@ BMW.accelerate();
 BMW.accelerate();
 
 Mercedes.accelerate();
-Mercedes.accelerate();
-Mercedes.accelerate();
 
 console.log('-----------------------------');
 
@@ -208,3 +206,6 @@ Car.prototype.brake = function () {
 BMW.brake();
 Mercedes.brake();
 Mercedes.brake();
+
+/////////////////////////////////////////////////////////////
+// Es6 classes.
