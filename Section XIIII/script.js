@@ -191,3 +191,20 @@ Car.prototype.accelerate = function () {
 
 BMW.accelerate();
 Mercedes.accelerate();
+
+BMW.accelerate();
+BMW.accelerate();
+
+Mercedes.accelerate();
+Mercedes.accelerate();
+Mercedes.accelerate();
+
+console.log('-----------------------------');
+
+Car.prototype.brake = function () {
+  console.log(this.speed - 5);
+};
+
+BMW.brake();
+Mercedes.brake();
+Mercedes.brake();
