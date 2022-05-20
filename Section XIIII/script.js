@@ -174,3 +174,13 @@ DATA CAR 1: 'BMW' going at 120 km/h
 DATA CAR 2: 'Mercedes' going at 95 km/h
 GOOD LUCK 😀
 */
+
+const Car = function (make, speed) {
+  this.make = make;
+  this.speed = speed;
+};
+
+const BMW = new Car('BMW', 120);
+const Mercedes = new Car('Mercedes', 95);
+
+console.log(BMW, Mercedes);
