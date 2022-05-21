@@ -246,3 +246,9 @@ console.log(rube.__proto__ === PersonCl.prototype);
 // };
 
 rube.greet();
+
+// Keep In mind
+
+// 1. Classes are not Hoisted.
+// 2. Classes are First-class citizens.
+// 3. Classes are Execured in strict mode.
