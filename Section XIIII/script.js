@@ -219,6 +219,7 @@ Mercedes.brake();
 // }
 
 // class Declaration
+/*
 class PersonCl {
   constructor(firstName, birthYear) {
     this.firstName = firstName;
@@ -252,3 +253,5 @@ rube.greet();
 // 1. Classes are not Hoisted.
 // 2. Classes are First-class citizens.
 // 3. Classes are Execured in strict mode.
+
+*/
