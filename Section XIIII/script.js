@@ -212,3 +212,13 @@ Mercedes.brake();
 
 /////////////////////////////////////////////////////////////
 // Es6 classes.
+
+// class Expression.
+const personCl = class {
+  
+}
+
+// class Declaration 
+class PersonCl  {
+
+}
