@@ -214,11 +214,35 @@ Mercedes.brake();
 // Es6 classes.
 
 // class Expression.
-const personCl = class {
-  
+// const personCl = class {
+
+// }
+
+// class Declaration
+class PersonCl {
+  constructor(firstName, birthYear) {
+    this.firstName = firstName;
+    this.birthYear = birthYear;
+  }
+
+  // Method will be added to .prototype property
+  calcAge() {
+    console.log(2022 - this.birthYear);
+  }
+
+  greet() {
+    console.log(`Hey,${this.firstName}`);
+  }
 }
 
-// class Declaration 
-class PersonCl  {
+const rube = new PersonCl('Ruby', 2004);
+console.log(rube);
+rube.calcAge();
 
-}
+console.log(rube.__proto__ === PersonCl.prototype);
+
+// PersonCl.prototype.greet = function () {
+//   console.log(`Hey ${this.firstName}`);
+// };
+
+rube.greet();
