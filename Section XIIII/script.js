@@ -209,7 +209,7 @@ Mercedes.brake();
 Mercedes.brake();
 
 */
-
+/*
 /////////////////////////////////////////////////////////////
 // Es6 classes.
 
@@ -219,10 +219,10 @@ Mercedes.brake();
 // }
 
 // class Declaration
-/*
+
 class PersonCl {
-  constructor(firstName, birthYear) {
-    this.firstName = firstName;
+  constructor(fullName, birthYear) {
+    this.fullName = fullName;
     this.birthYear = birthYear;
   }
 
@@ -232,13 +232,28 @@ class PersonCl {
   }
 
   greet() {
-    console.log(`Hey,${this.firstName}`);
+    console.log(`Hey,${this.fullName}`);
+  }
+
+  get age() {
+    return 2022 - this.birthYear;
+  }
+
+  set fullName(name) {
+    console.log(name);
+    if (name.includes(' ')) this._fullName = name;
+    else alert(`${name} is not a full name!`);
+  }
+
+  get fullName() {
+    return this._fullName;
   }
 }
 
-const rube = new PersonCl('Ruby', 2004);
+const rube = new PersonCl('Ruby Davis', 2004);
 console.log(rube);
 rube.calcAge();
+console.log(rube.age);
 
 console.log(rube.__proto__ === PersonCl.prototype);
 
@@ -246,14 +261,31 @@ console.log(rube.__proto__ === PersonCl.prototype);
 //   console.log(`Hey ${this.firstName}`);
 // };
 
-rube.greet();
-
 // Keep In mind
 
 // 1. Classes are not Hoisted.
 // 2. Classes are First-class citizens.
 // 3. Classes are Execured in strict mode.
 
-*/
+const walter = new PersonCl('walter White', 2002);
 
 // Setters and Getters
+
+const account = {
+  owner: 'Amol',
+  movements: [200, 100, 130, 100],
+
+  get latest() {
+    return this.movements.slice(-1).pop();
+  },
+
+  set latest(mov) {
+    this.movements.push(mov);
+  },
+};
+
+console.log(account.latest);
+account.latest = 50;
+console.log(account.movements);
+
+*/
