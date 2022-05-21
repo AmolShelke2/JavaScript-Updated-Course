@@ -255,3 +255,5 @@ rube.greet();
 // 3. Classes are Execured in strict mode.
 
 */
+
+// Setters and Getters
