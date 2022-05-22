@@ -64,7 +64,6 @@ polymorphisam:
 // Written all notes in handbook.
 
 // Construction functions and the new Operator
-
 /*
 const Person = function (firstName, birthYear) {
   // Instance properties
@@ -78,7 +77,13 @@ const Person = function (firstName, birthYear) {
 };
 
 const Amol = new Person('Amol', 2004);
+Person.hey = function () {
+  console.log('Hey there 👋');
+};
+
 console.log(Amol);
+
+Person.hey();
 
 // Behind the scenes when we called the function with the new keyword
 
@@ -208,8 +213,8 @@ BMW.brake();
 Mercedes.brake();
 Mercedes.brake();
 
-*/
-/*
+
+
 /////////////////////////////////////////////////////////////
 // Es6 classes.
 
@@ -226,6 +231,7 @@ class PersonCl {
     this.birthYear = birthYear;
   }
 
+  // instace method
   // Method will be added to .prototype property
   calcAge() {
     console.log(2022 - this.birthYear);
@@ -248,6 +254,12 @@ class PersonCl {
   get fullName() {
     return this._fullName;
   }
+
+  // static method
+  static hey() {
+    console.log('Hey there 👋');
+    console.log(this);
+  }
 }
 
 const rube = new PersonCl('Ruby Davis', 2004);
@@ -256,6 +268,7 @@ rube.calcAge();
 console.log(rube.age);
 
 console.log(rube.__proto__ === PersonCl.prototype);
+PersonCl.hey();
 
 // PersonCl.prototype.greet = function () {
 //   console.log(`Hey ${this.firstName}`);
@@ -287,7 +300,4 @@ const account = {
 console.log(account.latest);
 account.latest = 50;
 console.log(account.movements);
-
 */
-
-// Static method
