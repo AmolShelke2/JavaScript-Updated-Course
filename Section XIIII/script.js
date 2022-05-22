@@ -162,8 +162,7 @@ console.dir(dir => x + 1);
 
 ///////////////////////////////////////////////
 // Coding Challenge #1
-
-/* 
+/*
 1. Use a constructor function to implement a Car. A car has a make and a 
 speed property. The speed property is the current speed of the car in km/h;
 
@@ -179,7 +178,6 @@ and 'brake' multiple times on each of them.
 DATA CAR 1: 'BMW' going at 120 km/h
 DATA CAR 2: 'Mercedes' going at 95 km/h
 GOOD LUCK 😀
-
 
 const Car = function (make, speed) {
   this.make = make;
@@ -212,9 +210,7 @@ Car.prototype.brake = function () {
 BMW.brake();
 Mercedes.brake();
 Mercedes.brake();
-
-
-
+*/
 /////////////////////////////////////////////////////////////
 // Es6 classes.
 
@@ -300,6 +296,28 @@ const account = {
 console.log(account.latest);
 account.latest = 50;
 console.log(account.movements);
-*/
 
 // object.create()
+
+const PersonProto = {
+  calcAge() {
+    console.log(2022 - this.birthYear);
+  },
+
+  init(firstName, birthYear) {
+    this.firstName = firstName;
+    this.birthYear = birthYear;
+  },
+};
+
+const steven = Object.create(PersonProto);
+console.log(steven);
+steven.name = 'Steven';
+steven.birthYear = 2002;
+steven.calcAge();
+
+console.log(steven.__proto__ === PersonProto);
+
+const sarah = Object.create(PersonProto);
+sarah.init('Sarah', 2000);
+sarah.calcAge();
