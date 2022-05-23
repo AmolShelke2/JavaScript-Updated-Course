@@ -321,3 +321,5 @@ console.log(steven.__proto__ === PersonProto);
 const sarah = Object.create(PersonProto);
 sarah.init('Sarah', 2000);
 sarah.calcAge();
+
+// Coding challenge #2
