@@ -363,20 +363,13 @@ class carCl {
   }
 
   set speedUS(speed) {
-    return speed * 1.6;
-  }
-
-  get msg() {
-    return `The car is going on ${this.speed} km/h`;
+    this.speed = speed * 1.6;
   }
 }
 
-const bmw = new carCl('BMW', 120);
 const ford = new carCl('Ford', 120);
+ford.accelerate();
+ford.accelerate();
+ford.break();
+ford.speedUS = 50;
 console.log(ford);
-console.log(ford.accelerate());
-console.log(ford.break());
-console.log(ford.accelerate());
-console.log(ford);
-
-console.log(bmw);
