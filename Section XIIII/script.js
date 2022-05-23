@@ -323,3 +323,38 @@ sarah.init('Sarah', 2000);
 sarah.calcAge();
 
 // Coding challenge #2
+
+/*
+
+1. Re-create challenge 1, but this time using Es6 class;
+
+2. Add a getter called 'speedUs' which returns the current speed in
+mi/h (divide by 1.6)
+
+3. Add a setter called 'speedUs' which sets the current speed in mi/h 
+(but convert it to km/h before storing the value, by multiplying the input 
+by 1.6)
+
+4. Create a new car and experiment with the acceleration and brake
+methods, and with the getter and setter.
+
+DATA CAR 1: 'Ford' going at 120 km/h
+
+GOOD LUCK.
+
+*/
+
+class carCl {
+  constructor(make, speed) {
+    this.make = make;
+    this.speed = speed;
+  }
+
+  get speedUs() {
+    return this.speed / 1.6;
+  }
+}
+
+const BMW = new carCl('BMW', 120);
+const Mercedes = new carCl('Mercedes', 95);
+console.log(Mercedes.speedUs);
