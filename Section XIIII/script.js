@@ -350,11 +350,33 @@ class carCl {
     this.speed = speed;
   }
 
+  accelerate() {
+    return (this.speed += 10);
+  }
+
+  break() {
+    return (this.speed -= 5);
+  }
+
   get speedUs() {
     return this.speed / 1.6;
   }
+
+  set speedUS(speed) {
+    return speed * 1.6;
+  }
+
+  get msg() {
+    return `The car is going on ${this.speed} km/h`;
+  }
 }
 
-const BMW = new carCl('BMW', 120);
-const Mercedes = new carCl('Mercedes', 95);
-console.log(Mercedes.speedUs);
+const bmw = new carCl('BMW', 120);
+const ford = new carCl('Ford', 120);
+console.log(ford);
+console.log(ford.accelerate());
+console.log(ford.break());
+console.log(ford.accelerate());
+console.log(ford);
+
+console.log(bmw);
