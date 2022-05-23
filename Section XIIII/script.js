@@ -220,7 +220,7 @@ Mercedes.brake();
 // }
 
 // class Declaration
-
+/*
 class PersonCl {
   constructor(fullName, birthYear) {
     this.fullName = fullName;
@@ -321,7 +321,7 @@ console.log(steven.__proto__ === PersonProto);
 const sarah = Object.create(PersonProto);
 sarah.init('Sarah', 2000);
 sarah.calcAge();
-
+*/
 // Coding challenge #2
 
 /*
@@ -343,7 +343,7 @@ DATA CAR 1: 'Ford' going at 120 km/h
 GOOD LUCK.
 
 */
-
+/*
 class carCl {
   constructor(make, speed) {
     this.make = make;
@@ -373,3 +373,7 @@ ford.accelerate();
 ford.break();
 ford.speedUS = 50;
 console.log(ford);
+
+*/
+
+// Inheritence between classes constructor function
