@@ -413,3 +413,5 @@ Student.prototype.constructor = Student;
 console.dir(Student.prototype.constructor);
 
 */
+
+// coding challenge 3
