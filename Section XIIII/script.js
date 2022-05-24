@@ -377,7 +377,7 @@ console.log(ford);
 */
 
 // Inheritence between classes constructor function
-
+/*
 const Person = function (firstName, birthYear) {
   this.firstName = firstName;
   this.birthYear = birthYear;
@@ -401,3 +401,15 @@ Student.prototype.introduce = function () {
 const mike = new Student('Mike', 2002, 'Computer science');
 mike.introduce();
 mike.calcAge();
+
+console.log(mike.__proto__);
+console.log(mike.__proto__.__proto__);
+console.log(mike instanceof Object);
+
+console.log(mike instanceof Student);
+console.log(mike instanceof Person);
+
+Student.prototype.constructor = Student;
+console.dir(Student.prototype.constructor);
+
+*/
