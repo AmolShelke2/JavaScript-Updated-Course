@@ -437,3 +437,26 @@ sets the battery charge to 'chargeTo';
 DATA CAR 1: 'Tesla' going at 120 km/h, with a charge of 23%
 GOOD LUCK 😀
 */
+
+const Car = function (make, speed) {
+  this.make = make;
+  this.speed = speed;
+};
+
+// Task 1
+const Ev = function (make, speed, battery) {
+  Car.call(this, make, speed);
+  this.battery = battery;
+};
+
+Ev.prototype = Object.create(Car.prototype);
+
+Ev.prototype.accelerate = function () {
+  this.speed += 20;
+  this.battery -= 1;
+};
+
+const tesla = new Ev('Tesla', 120, 23);
+tesla.accelerate();
+tesla.accelerate();
+console.log(tesla);
