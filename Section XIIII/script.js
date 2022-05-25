@@ -443,6 +443,16 @@ const Car = function (make, speed) {
   this.speed = speed;
 };
 
+Car.prototype.accelerate = function () {
+  this.speed += 10;
+  console.log(`${this.make} is going at ${this.speed}km/h`);
+};
+
+Car.prototype.brake = function () {
+  this.speed -= 5;
+  console.log(`${this.make} is going at ${this.speed}km/h`);
+};
+
 // Task 1
 const Ev = function (make, speed, battery) {
   Car.call(this, make, speed);
@@ -454,6 +464,9 @@ Ev.prototype = Object.create(Car.prototype);
 Ev.prototype.accelerate = function () {
   this.speed += 20;
   this.battery -= 1;
+  console.log(
+    `${this.make} is going at ${this.speed}km/h, with a charge of ${this.battery}`
+  );
 };
 
 const tesla = new Ev('Tesla', 120, 23);
