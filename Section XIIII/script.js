@@ -437,7 +437,7 @@ sets the battery charge to 'chargeTo';
 DATA CAR 1: 'Tesla' going at 120 km/h, with a charge of 23%
 GOOD LUCK 😀
 */
-
+/*
 const Car = function (make, speed) {
   this.make = make;
   this.speed = speed;
@@ -479,3 +479,5 @@ tesla.chargeBattery(90);
 tesla.accelerate();
 tesla.accelerate();
 console.log(tesla);
+
+*/
