@@ -481,3 +481,5 @@ tesla.accelerate();
 console.log(tesla);
 
 */
+
+// Inheritence between classes ES6 classes
