@@ -505,7 +505,6 @@ class PersonCl {
   }
 
   set fullName(name) {
-    console.log(name);
     if (name.includes(' ')) this._fullName = name;
     else alert(`${name} is not a full name!`);
   }
@@ -520,3 +519,31 @@ class PersonCl {
     console.log(this);
   }
 }
+
+class StudentCl extends PersonCl {
+  constructor(fullName, birthYear, course) {
+    // Always needs to happen first
+    super(fullName, birthYear);
+    this.course = course;
+  }
+
+  introduce() {
+    console.log(`My name is ${this.fullName} and I study ${this.course}`);
+  }
+
+  // Shadowning
+
+  calcAge() {
+    console.log(
+      `I'm ${
+        2022 - this.birthYear
+      } years old, but as a student I more feel like ${
+        2037 - this.birthYear + 10
+      }`
+    );
+  }
+}
+
+const amol = new StudentCl('amol shelke', 2004, 'computer science');
+amol.introduce();
+amol.calcAge();
