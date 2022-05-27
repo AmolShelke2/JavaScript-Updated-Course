@@ -579,3 +579,5 @@ jay.introduce();
 jay.calcAge();
 
 */
+
+// Another class Exmaple
