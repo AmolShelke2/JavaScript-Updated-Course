@@ -484,6 +484,7 @@ console.log(tesla);
 
 // Inheritence between classes ES6 classes
 
+/*
 class PersonCl {
   constructor(fullName, birthYear) {
     this.fullName = fullName;
@@ -547,3 +548,6 @@ class StudentCl extends PersonCl {
 const amol = new StudentCl('amol shelke', 2004, 'computer science');
 amol.introduce();
 amol.calcAge();
+*/
+
+// Inheritence between classes: Object.create
