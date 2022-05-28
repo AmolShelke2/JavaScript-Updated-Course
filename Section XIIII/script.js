@@ -634,4 +634,4 @@ console.log(acc1);
 console.log(acc1);
 console.log(acc1.pin);
 
-// Encapsulation Protected properties and methods.
+// Private class fields
