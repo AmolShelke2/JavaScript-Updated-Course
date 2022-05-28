@@ -582,52 +582,76 @@ jay.calcAge();
 
 // Another class Exmaple
 
+//1) Public fields,
+//2) Private fields,
+//3) Public methods
+//4) private methods
+// (there is also the static version)
+
 class Account {
+  //1: public fields (instances.)
+  locale = navigator.language;
+  _movements = [];
+
+  //2: private fields(instances)
+  #movements = [];
+  #pin;
+
   constructor(owner, currency, pin) {
     this.owner = owner;
     this.currency = currency;
     // protected proprty
-    this._pin = pin;
+    this.#pin = pin;
     // protected property
-    this._movements = [];
-    this.locale = navigator.language;
+    // this._movements = [];
+    // this.locale = navigator.language;
 
     console.log(`Thanks for opening an account, ${owner}`);
   }
 
+  // 3) Public methods.
+
   // Public Interface.
   getMovements() {
-    return this._movements;
+    return this.#movements;
   }
 
   deposit(val) {
-    this._movements.push(val);
+    this.#movements.push(val);
   }
 
   withdrawl(val) {
     this.deposit(-val);
   }
 
-  _approveLoan(val) {
-    return true;
-  }
-
   requestLoan(val) {
+    // if(this.#approveLoan(val)){
     if (this._approveLoan(val)) {
       this.deposit(val);
       console.log(`Loan Approved.`);
     }
   }
+
+  static helper() {
+    console.log(`Helper`);
+  }
+
+  // 4) Private methods.
+  // #approveLoan(val) {
+  _approveLoan() {
+    return true;
+  }
 }
 
 const acc1 = new Account('Amol', 'INR', 1111);
 console.log(acc1);
-// acc1._movements.push(250);
-// acc1._movements.push(-140);
+// acc1.#movements.push(250);
+// acc1.#movements.push(-140);
 acc1.deposit(250);
 acc1.withdrawl(140);
 acc1.requestLoan(1000);
-acc1.approveLoan(1000);
+
+acc1._approveLoan(1000);
 console.log(acc1.getMovements());
 console.log(acc1);
 
@@ -635,3 +659,5 @@ console.log(acc1);
 console.log(acc1.pin);
 
 // Private class fields
+// console.log(acc1.#movements);
+Account.helper();
