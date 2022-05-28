@@ -667,3 +667,5 @@ Account.helper();
 // Chaining Method.
 acc1.deposit(300).deposit(500).withdrawl(35).requestLoan(25000).withdrawl(4000);
 console.log(acc1.getMovements());
+
+// Summary.
