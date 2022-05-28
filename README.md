@@ -185,15 +185,14 @@ What I learn in this section
 - converting and checking Numbers
 - Math and rounding
 - the remainder operator
-- working with bigInt 
+- working with bigInt
 - creating Dates
 - Adding Dates to Bankist_App
 - operations with dates
 - internationalizing Dates
 - internationalizing Numbers
-- Timers _setTimeOut and SetInterval
+- Timers \_setTimeOut and SetInterval
 - Implemented Timer in Bankist App
-
 
 ## Section XIII Advanced DOM And Events
 
@@ -217,5 +216,24 @@ What I learn in this section
 - Building a slider component
 - lifecycle of DOM Events
 - Efficient script loading async defer
-  
+
 ## Section XIIII Object Oriented Programming.
+
+What I Learn in this section.
+
+- What is OOPS
+- OOP in JavaScript
+- Constructor functions and the new operator
+- Prototypes
+- Prototypal inheritence
+- Prototypal inheritence on built in objects.
+- Es6 classes
+- getters and setters
+- static methods
+- object.create()
+- inheritence between classes constructor function
+- Inheritence between classes Es6 classes
+- Inheritence between classes Object.create()
+- Another class examples
+- Chaining methods
+- Classes summary.
