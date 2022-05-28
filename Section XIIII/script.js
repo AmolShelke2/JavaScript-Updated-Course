@@ -686,7 +686,7 @@ console.log(acc1.getMovements());
 DATA CAR 1: 'Rivian' going at 120 km/h, with a charge of 23%
 GOOD LUCK 😀
 */
-
+/*
 class CarCl {
   constructor(make, speed) {
     this.make = make;
@@ -742,3 +742,4 @@ const Rivian = new EVCl('Rivian', 120, 20);
 console.log(Rivian);
 Rivian.accelerate().accelerate().brake().chargeBattery(40).accelerate();
 console.log(Rivian.speedUS);
+*/
