@@ -237,3 +237,5 @@ What I Learn in this section.
 - Another class examples
 - Chaining methods
 - Classes summary.
+
+## Section XV Mapty project.
