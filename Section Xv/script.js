@@ -24,3 +24,5 @@ if (navigator.geolocation) {
     }
   );
 }
+
+// Stuck in Not-Secure error.
