@@ -17,12 +17,12 @@ const inputElevation = document.querySelector('.form__input--elevation');
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(
     function (position) {
-      console.log(position);
+      const { latitude } = position.coords;
+      const { longitude } = position.coords;
+      console.log(`https://www.google.pt/maps/@${latitude},${longitude},`);
     },
     function () {
-      alert(`could not get your position`);
+      alert(`Could not get your position`);
     }
   );
 }
-
-// Stuck in Not-Secure error.
