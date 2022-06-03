@@ -14,6 +14,7 @@ const inputElevation = document.querySelector('.form__input--elevation');
 // Learned How to Plan a web project.
 
 // Using the Geolocation API
+/*
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(
     function (position) {
@@ -26,3 +27,6 @@ if (navigator.geolocation) {
     }
   );
 }
+*/
+
+// using third party API leaflet
