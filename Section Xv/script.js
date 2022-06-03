@@ -14,19 +14,30 @@ const inputElevation = document.querySelector('.form__input--elevation');
 // Learned How to Plan a web project.
 
 // Using the Geolocation API
-/*
+
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(
     function (position) {
       const { latitude } = position.coords;
       const { longitude } = position.coords;
       console.log(`https://www.google.pt/maps/@${latitude},${longitude},`);
+
+      const coards = [latitude, longitude];
+
+      const map = L.map('map').setView(coards, 13);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(map);
+
+      L.marker(coards)
+        .addTo(map)
+        .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+        .openPopup();
     },
     function () {
       alert(`Could not get your position`);
     }
   );
 }
-*/
-
-// using third party API leaflet
