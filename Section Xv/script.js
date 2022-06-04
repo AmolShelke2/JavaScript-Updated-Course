@@ -56,3 +56,5 @@ if (navigator.geolocation) {
     }
   );
 }
+
+// Rendering Workout Input form.
