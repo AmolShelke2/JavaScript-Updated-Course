@@ -41,3 +41,5 @@ if (navigator.geolocation) {
     }
   );
 }
+
+// Displaying A map marker
