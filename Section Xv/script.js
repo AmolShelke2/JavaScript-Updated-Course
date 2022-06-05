@@ -58,3 +58,4 @@ if (navigator.geolocation) {
 }
 
 // Rendering Workout Input form.
+// DOM manipulation
