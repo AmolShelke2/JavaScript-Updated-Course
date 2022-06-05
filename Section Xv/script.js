@@ -50,8 +50,9 @@ if (navigator.geolocation) {
 
 form.addEventListener('submit', function (e) {
   e.preventDefault();
-  // display the marker
+  // clear input field
 
+  // display the marker
   console.log(mapEvent);
   const { lat, lng } = mapEvent.latlng;
   L.marker([lat, lng])
