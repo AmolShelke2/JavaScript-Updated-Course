@@ -13,6 +13,54 @@ const inputElevation = document.querySelector('.form__input--elevation');
 
 // Learned How to Plan a web project.
 
+// workout Data_ creating classes.
+
+class Workout {
+  date = new Date();
+  id = (Date.now() + '').slice(-10);
+
+  constructor(coords, distance, duration) {
+    this.coords = coords; // [lat, lng]
+    this.distance = distance; // in KM
+    this.duration = duration; // in Mins
+  }
+}
+
+class Running extends Workout {
+  constructor(coords, distance, duration, cadence) {
+    super(coords, distance, duration);
+    this.cadence = cadence;
+    this.calcPace();
+  }
+
+  calcPace() {
+    // min/km
+    this.pace = this.duration / this.distance;
+    return this.pace;
+  }
+}
+
+class Cycling extends Workout {
+  constructor(coords, distance, duration, elevationGain) {
+    super(coords, distance, duration);
+    this.elevationGain = elevationGain;
+    this.calcSpeed();
+  }
+
+  calcSpeed() {
+    // km/h
+    this.speed = this.distance / (this.duration / 60);
+    return this.speed;
+  }
+}
+
+// const run = new Running([39, -12], 5.2, 24, 178);
+// const cycling1 = new Cycling([39, -12], 27, 94, 523);
+// console.log(run, cycling1);
+
+/////////////////////////////////////////////////////
+// Application Architecture
+
 class App {
   #map;
   #mapEvent;
@@ -96,5 +144,3 @@ class App {
 }
 
 const app = new App();
-
-// Managing workout Data_ creating classes.
