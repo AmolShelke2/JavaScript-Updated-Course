@@ -16,7 +16,9 @@ const inputElevation = document.querySelector('.form__input--elevation');
 let map, mapEvent;
 
 class App {
-  constructor() {}
+  constructor() {
+    this._getPosition();
+  }
 
   _getPosition() {
     // Using the Geolocation API
@@ -56,6 +58,8 @@ class App {
 
   _newWorkout() {}
 }
+
+const app = new App();
 
 // Rendering Workout Input form.
 
