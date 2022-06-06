@@ -14,36 +14,47 @@ const inputElevation = document.querySelector('.form__input--elevation');
 // Learned How to Plan a web project.
 
 let map, mapEvent;
-// Using the Geolocation API
 
-if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(
-    function (position) {
-      const { latitude } = position.coords;
-      const { longitude } = position.coords;
-      console.log(`https://www.google.pt/maps/@${latitude},${longitude},`);
+class App {
+  constructor() {}
 
-      const coards = [latitude, longitude];
-
-      map = L.map('map').setView(coards, 13);
-      // console.log(map);
-
-      L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-        attribution:
-          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      }).addTo(map);
-
-      // Handeling clicks on map
-      map.on('click', function (mapE) {
-        mapEvent = mapE;
-        form.classList.remove('hidden');
-        inputDistance.focus();
+  _getPosition() {
+    // Using the Geolocation API
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(this._loadMap, function () {
+        alert(`Could not get your position`);
       });
-    },
-    function () {
-      alert(`Could not get your position`);
     }
-  );
+  }
+
+  _loadMap(position) {
+    const { latitude } = position.coords;
+    const { longitude } = position.coords;
+    console.log(`https://www.google.pt/maps/@${latitude},${longitude},`);
+
+    const coards = [latitude, longitude];
+
+    map = L.map('map').setView(coards, 13);
+    // console.log(map);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    }).addTo(map);
+
+    // Handeling clicks on map
+    map.on('click', function (mapE) {
+      mapEvent = mapE;
+      form.classList.remove('hidden');
+      inputDistance.focus();
+    });
+  }
+
+  _showForm() {}
+
+  _toggleElevationField() {}
+
+  _newWorkout() {}
 }
 
 // Rendering Workout Input form.
