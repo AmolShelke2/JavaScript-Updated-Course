@@ -96,3 +96,5 @@ class App {
 }
 
 const app = new App();
+
+// Managing workout Data_ creating classes.
