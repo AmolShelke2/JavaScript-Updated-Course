@@ -116,16 +116,18 @@ class App {
   }
 
   _newWorkout(e) {
-    console.log(this);
     e.preventDefault();
-    // clear input field
-    inputDistance.value =
-      inputDuration.value =
-      inputCadence.value =
-      inputElevation.value =
-        '';
 
-    // display the marker
+    // Get data from form
+
+    // Check if data is valid
+
+    // If workout running, create running object
+
+    // Add new object to workout array
+
+    // Render workout on map as marker
+
     const { lat, lng } = this.#mapEvent.latlng;
     L.marker([lat, lng])
       .addTo(this.#map)
@@ -140,6 +142,13 @@ class App {
       )
       .setPopupContent('Workout')
       .openPopup();
+
+    // clear input field
+    inputDistance.value =
+      inputDuration.value =
+      inputCadence.value =
+      inputElevation.value =
+        '';
   }
 }
 
