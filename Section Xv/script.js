@@ -168,7 +168,10 @@ class App {
     console.log(workout);
 
     // Add new object to workout array
-    this.renderWorkoutMarker(workout);
+    this._renderWorkoutMarker(workout);
+
+    // Render workout on list.
+    this._renderWorkout(workout);
 
     // clear input field
     inputDistance.value =
@@ -178,7 +181,7 @@ class App {
         '';
   }
 
-  renderWorkoutMarker(workout) {
+  _renderWorkoutMarker(workout) {
     // Render workout on map as marker
     L.marker(workout.coords)
       .addTo(this.#map)
@@ -193,6 +196,10 @@ class App {
       )
       .setPopupContent('workout')
       .openPopup();
+  }
+
+  _renderWorkout(workout) {
+    // Dom manipulation
   }
 }
 
