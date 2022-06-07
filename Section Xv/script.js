@@ -198,4 +198,4 @@ class App {
 
 const app = new App();
 
-// Creating a new workout.
+// Render Workouts on sidebar
