@@ -273,4 +273,4 @@ class App {
 
 const app = new App();
 
-// Render Workouts on sidebar
+// Move marker On click
