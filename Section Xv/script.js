@@ -300,3 +300,5 @@ class App {
 }
 
 const app = new App();
+
+// Working with localStorage
