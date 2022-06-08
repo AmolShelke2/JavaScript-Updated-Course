@@ -141,6 +141,7 @@ What I learn in this section
 - Working with strings part 1
 - Working with strings part 2
 - working with strings part 3
+<hr>
 
 ## Section X A closer look at function
 
@@ -155,6 +156,8 @@ What I learn in this section
 - the bind method
 - Immidiately invoked function expression
 - closures
+
+<hr>
 
 ## Section XI Array Bankist
 
@@ -178,6 +181,8 @@ What I learn in this section
 - summary
 - Array methods in practise
 
+<hr>
+
 ## Section XII Numbers, Dates INTL and TIMERS
 
 What I learn in this section
@@ -193,6 +198,8 @@ What I learn in this section
 - internationalizing Numbers
 - Timers \_setTimeOut and SetInterval
 - Implemented Timer in Bankist App
+
+<hr>
 
 ## Section XIII Advanced DOM And Events
 
@@ -217,6 +224,8 @@ What I learn in this section
 - lifecycle of DOM Events
 - Efficient script loading async defer
 
+<hr>
+
 ## Section XIIII Object Oriented Programming.
 
 What I Learn in this section.
@@ -238,4 +247,13 @@ What I Learn in this section.
 - Chaining methods
 - Classes summary.
 
+<hr>
+
 ## Section XV Mapty project.
+
+What I did in this section.
+
+I build Another real world project called Mapty in this section. and learned alot about classes
+and objects and architectures using OOPS concept.
+
+<hr>
