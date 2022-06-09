@@ -3,4 +3,4 @@
 const btn = document.querySelector('.btn-country');
 const countriesContainer = document.querySelector('.countries');
 
-// Learned about Asynchronous JS
+// Our First Ajax call
