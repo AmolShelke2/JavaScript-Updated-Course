@@ -110,3 +110,5 @@ setTimeout(() => {
   }, 1000);
 }, 1000);
 */
+
+// Promises and the Fetch Api
