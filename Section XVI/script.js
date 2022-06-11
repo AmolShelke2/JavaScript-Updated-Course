@@ -119,3 +119,5 @@ setTimeout(() => {
 
 const request = fetch('https://restcountries.com/v3.1/name/${Bharat}');
 console.log(request);
+
+// Learned About Promises and Fetch API
