@@ -123,3 +123,5 @@ console.log(request);
 
 // Learned About Promises and Fetch API
 */
+
+// Consuming promises.
