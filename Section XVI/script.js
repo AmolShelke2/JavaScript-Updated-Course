@@ -112,3 +112,10 @@ setTimeout(() => {
 */
 
 // Promises and the Fetch Api
+
+// const request2 = new XMLHttpRequest();
+// request2.open('GET', `https://restcountries.com/v3.1/alpha/${neighbour}`);
+// request2.send();
+
+const request = fetch('https://restcountries.com/v3.1/name/${Bharat}');
+console.log(request);
