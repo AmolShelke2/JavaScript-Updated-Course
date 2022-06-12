@@ -38,7 +38,6 @@ const getCountryData = function (country) {
 getCountryData('Bharat');
 */
 
-/*
 // Callback Hell
 
 const renderCountry = function (data, className = '') {
@@ -61,6 +60,7 @@ const renderCountry = function (data, className = '') {
   countriesContainer.style.opacity = 1;
 };
 
+/*
 const getCountryAndNeighbour = function (country) {
   // Ajax call country 1
   const request = new XMLHttpRequest();
@@ -110,7 +110,6 @@ setTimeout(() => {
   }, 1000);
 }, 1000);
 */
-
 // Promises and the Fetch Api
 
 /*
@@ -125,3 +124,29 @@ console.log(request);
 */
 
 // Consuming promises.
+
+// const request = fetch('https://restcountries.com/v3.1/name/${Bharat}');
+// console.log(request);
+
+// const getCountryData = function (country) {
+//   fetch(`https://restcountries.com/v3.1/name/${country}`)
+//     .then(function (response) {
+//       console.log(response);
+//       return response.json();
+//     })
+//     .then(function (data) {
+//       console.log(data);
+//       renderCountry(data[0]);
+//     });
+// };
+
+// Simplier way
+const getCountryData = function (country) {
+  fetch(`https://restcountries.com/v3.1/name/${country}`)
+    .then(response => response.json())
+    .then(data => {
+      renderCountry(data[0]);
+    });
+};
+
+getCountryData('Bharat');
