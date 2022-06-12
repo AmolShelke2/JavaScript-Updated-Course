@@ -148,6 +148,7 @@ console.log(request);
 // };
 
 // Simplier way
+/*
 
 const getJSON = function (url, errorMsg = 'Something went wrong') {
   return fetch(url).then(response => {
@@ -158,7 +159,7 @@ const getJSON = function (url, errorMsg = 'Something went wrong') {
     return response.json();
   });
 };
-/*
+
 const getCountryData = function (country) {
   // Country 1
   fetch(`https://restcountries.com/v3.1/name/${country}`)
@@ -196,7 +197,7 @@ const getCountryData = function (country) {
       countriesContainer.style.opacity = 1;
     });
 };
-*/
+
 
 const getCountryData = function (country) {
   // Country 1
@@ -230,3 +231,6 @@ btn.addEventListener('click', function () {
 });
 
 getCountryData('australia');
+*/
+
+// Coding challenge #1
