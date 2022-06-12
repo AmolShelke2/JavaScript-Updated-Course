@@ -160,3 +160,5 @@ const getCountryData = function (country) {
 
 getCountryData('Bharat');
 // getCountryData('Spain');
+
+// Handeling Rejected promises
