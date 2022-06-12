@@ -150,3 +150,5 @@ const getCountryData = function (country) {
 };
 
 getCountryData('Bharat');
+
+// Chaining promises.
