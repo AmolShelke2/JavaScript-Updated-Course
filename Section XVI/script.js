@@ -149,26 +149,71 @@ console.log(request);
 
 // Simplier way
 
+const getJSON = function (url, errorMsg = 'Something went wrong') {
+  return fetch(url).then(response => {
+    if (!response.ok)
+      //
+      throw new Error(`${errorMsg} (${response.status})`);
+
+    return response.json();
+  });
+};
+/*
 const getCountryData = function (country) {
   // Country 1
   fetch(`https://restcountries.com/v3.1/name/${country}`)
-    .then(
-      response => response.json()
+    .then(response => {
+      console.log(response);
+
+      if (!response.ok)
+        //
+        throw new Error(`Country not found (${response.status})`);
+
+      return response.json();
       // err => alert(err)
-    )
+    })
     .then(data => {
       renderCountry(data[0]);
-      const neighbour = data[0].borders[0];
+      // const neighbour = data[0].borders[0];
+      const neighbour = 'dddkkkdk';
 
       if (!neighbour) return;
 
       // Country 2
       return fetch(`https://restcountries.com/v3.1/alpha/${neighbour}`);
     })
-    .then(
-      response => response.json()
-      // err => alert(err)
-    )
+    .then(response => {
+      if (!response.ok)
+        throw new Error(`Country Not found (${response.status})`);
+      return response.json();
+    })
+    .then(data => renderCountry(data[0], 'neighbour'))
+    .catch(err => {
+      console.error(`${err} ❤️‍🔥❤️‍🔥❤️‍🔥`);
+      renderError(`Something went wrong 🧨🔥 ${err.message}. Try agin!`);
+    })
+    .finally(() => {
+      countriesContainer.style.opacity = 1;
+    });
+};
+*/
+
+const getCountryData = function (country) {
+  // Country 1
+  getJSON(`https://restcountries.com/v3.1/name/${country}`, 'Country Not found')
+    .then(data => {
+      renderCountry(data[0]);
+      const neighbour = data[0].borders[0];
+      console.log(neighbour);
+
+      if (!neighbour) throw new Error(`No Neighbour found`);
+
+      // Country 2
+      return getJSON(
+        `https://restcountries.com/v3.1/alpha/${neighbour}`,
+        'Country Not found'
+      );
+    })
     .then(data => renderCountry(data[0], 'neighbour'))
     .catch(err => {
       console.error(`${err} ❤️‍🔥❤️‍🔥❤️‍🔥`);
@@ -179,14 +224,9 @@ const getCountryData = function (country) {
     });
 };
 
-// getCountryData('Bharat');
-// getCountryData('Spain');
-
 // Handeling Rejected promises
 btn.addEventListener('click', function () {
   getCountryData('Bharat');
 });
 
-// getCountryData('dssdd');
-
-// Throwing Errors manually
+getCountryData('australia');
