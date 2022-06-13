@@ -248,10 +248,10 @@ PART 1
 2. Do 'reverse geocoding' of the provided coordinates. Reverse geocoding means
  to convert coordinates to a meaningful location, like a city and country name.
   Use this API to do reverse geocoding: https://geocode.xyz/api.
-
 The AJAX call will be done to a URL with this format: https://geocode.xyz/52.508,13.381?geoit=json. 
 Use the fetch API and promises to get the data. Do NOT
  use the getJSON function we created, that is cheating 😉
+
 3. Once you have the data, take a look at it in the console to see all 
 the attributes that you recieved about the provided location. Then, 
 using this data, log a messsage like this to the console: 'You are in Berlin, Germany'
@@ -272,9 +272,29 @@ PART 2
 
 7. Render the country and catch any errors, just like we have done
  in the last lecture (you can even copy this code, no need to type the same code)
- 
+
 TEST COORDINATES 1: 52.508, 13.381 (Latitude, Longitude)
 TEST COORDINATES 2: 19.037, 72.873
 TEST COORDINATES 2: -33.933, 18.474
 GOOD LUCK 😀
 */
+
+const whereAmI = function (lat, lan) {
+  fetch(`https://geocode.xyz/${lat},${lan}?geoit=json`)
+    .then(response => {
+      if (!response.ok) throw new Error(`You are not in valid country`);
+      return response.json();
+    })
+    .then(data => {
+      console.log(data);
+      console.log(`You are in ${data.country}, ${data.state}`);
+      if (!data.country) throw new Error('The country is not valid');
+    })
+    .catch(err => {
+      console.log(err);
+    });
+};
+
+whereAmI(19.037, 72.873);
+whereAmI(52.508, 13.381);
+whereAmI(-33.933, 18.474);
