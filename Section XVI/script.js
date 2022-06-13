@@ -281,7 +281,6 @@ GOOD LUCK 😀
 
 // Solution
 
-/*
 const whereAmI = function (lat, lan) {
   fetch(`https://geocode.xyz/${lat},${lan}?geoit=json`)
     .then(response => {
@@ -291,7 +290,7 @@ const whereAmI = function (lat, lan) {
     })
     .then(data => {
       console.log(data);
-      console.log(`You are in ${data.country}, ${data.state}`);
+      console.log(`You are in ${data.city}, ${data.country}`);
 
       return fetch(`https://restcountries.com/v3.1/name/${data.country}`);
     })
@@ -306,5 +305,5 @@ const whereAmI = function (lat, lan) {
 whereAmI(19.037, 72.873);
 whereAmI(52.508, 13.381);
 whereAmI(-33.933, 18.474);
-whereAmI(2, 1);
-*/
+
+// whereAmI(2, 1);
