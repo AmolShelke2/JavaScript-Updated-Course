@@ -388,6 +388,7 @@ Promise.reject(new Error('Problem!')).catch(x => console.error(x));
 
 // console.log('Getting position');
 
+/*
 const getPosition = function () {
   return new Promise(function (resolve, reject) {
     // navigator.geolocation.getCurrentPosition(
@@ -427,3 +428,6 @@ const whereAmI = function () {
 };
 
 btn.addEventListener('click', whereAmI);
+*/
+
+// Coding challenge #2
