@@ -324,7 +324,7 @@ console.log('Test end');
 */
 
 // Building a simple promise
-
+/*
 const lotteryPromise = new Promise(function (resolve, reject) {
   console.log('Lottery draw is happening 🔮');
   setTimeout(function () {
@@ -378,3 +378,6 @@ wait(2)
 
 Promise.resolve('Resolved promise').then(x => console.log(x));
 Promise.reject(new Error('Problem!')).catch(x => console.error(x));
+*/
+
+// Promisifying the Geolocation API
