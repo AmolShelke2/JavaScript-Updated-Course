@@ -1,34 +1,35 @@
-'use strict';
+// 'use strict';
 
-const btn = document.querySelector('.btn-country');
-const countriesContainer = document.querySelector('.countries');
+// const btn = document.querySelector('.btn-country');
+// const countriesContainer = document.querySelector('.countries');
 
-// render country
-const renderCountry = function (data, className = '') {
-  const html = `
-     <article class="country ${className}">
-          <img class="country__img" src="${data.flags.svg}" />
-          <div class="country__data">
-            <h3 class="country__name">${data.name.common}</h3>
-            <h4 class="country__region">${data.region}</h4>
-            <p class="country__row"><span>👫</span>${(
-              +data.population / 1000000
-            ).toFixed(1)}M people</p>
-            <p class="country__row"><span>🗣️</span>${data.languages}</p>
-            <p class="country__row"><span>💰</span>${data.currencies}</p>
-          </div>
-        </article>
-  `;
+// // render country
+// const renderCountry = function (data, className = '') {
+//   const html = `
+//      <article class="country ${className}">
+//           <img class="country__img" src="${data.flags.svg}" />
+//           <div class="country__data">
+//             <h3 class="country__name">${data.name.common}</h3>
+//             <h4 class="country__region">${data.region}</h4>
+//             <p class="country__row"><span>👫</span>${(
+//               +data.population / 1000000
+//             ).toFixed(1)}M people</p>
+//             <p class="country__row"><span>🗣️</span>${data.languages}</p>
+//             <p class="country__row"><span>💰</span>${data.currencies}</p>
+//           </div>
+//         </article>
+//   `;
 
-  countriesContainer.insertAdjacentHTML('beforeend', html);
-  // countriesContainer.style.opacity = 1;
-};
+//   countriesContainer.insertAdjacentHTML('beforeend', html);
+//   // countriesContainer.style.opacity = 1;
+// };
 
-// render error text
-const renderError = function (msg) {
-  countriesContainer.insertAdjacentText('beforeend', msg);
-  // countriesContainer.style.opacity = 1;
-};
+// // render error text
+// const renderError = function (msg) {
+//   countriesContainer.insertAdjacentText('beforeend', msg);
+//   // countriesContainer.style.opacity = 1;
+// };
+
 /*
 // Our First Ajax call
 const getCountryData = function (country) {
@@ -323,3 +324,57 @@ console.log('Test end');
 */
 
 // Building a simple promise
+
+const lotteryPromise = new Promise(function (resolve, reject) {
+  console.log('Lottery draw is happening 🔮');
+  setTimeout(function () {
+    if (Math.random() >= 0.5) {
+      resolve('You WIN 💰');
+    } else {
+      reject(new Error('You lost your money 💩'));
+    }
+  }, 2000);
+});
+
+lotteryPromise.then(res => console.log(res)).catch(err => console.error(err));
+
+// Promisifying SetTimeout
+const wait = function (seconds) {
+  return new Promise(function (resolve) {
+    setTimeout(resolve, seconds * 1000);
+  });
+};
+
+wait(2)
+  .then(() => {
+    console.log('1 Second Passed');
+    return wait(1);
+  })
+  .then(() => {
+    console.log('2 Second passed');
+    return wait(1);
+  })
+  .then(() => {
+    console.log('3 seconds passed');
+    return wait(1);
+  })
+  .then(() => {
+    console.log('4 seconds passed');
+    return wait(1);
+  });
+
+// setTimeout(() => {
+//   console.log('One second Passed');
+//   setTimeout(() => {
+//     console.log('Two second Passed');
+//     setTimeout(() => {
+//       console.log('Three second Passed');
+//       setTimeout(() => {
+//         console.log('Four second Passed');
+//       }, 1000);
+//     }, 1000);
+//   }, 1000);
+// }, 1000);
+
+Promise.resolve('Resolved promise').then(x => console.log(x));
+Promise.reject(new Error('Problem!')).catch(x => console.error(x));
