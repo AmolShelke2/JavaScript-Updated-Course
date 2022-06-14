@@ -321,3 +321,5 @@ Promise.resolve('Resolved Promise 2').then(res => {
 });
 console.log('Test end');
 */
+
+// Building a simple promise
