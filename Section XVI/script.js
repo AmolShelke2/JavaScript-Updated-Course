@@ -471,6 +471,7 @@ TEST DATA: Images in the img folder. Test the error handler by passing a wrong
 GOOD LUCK 😀
 */
 
+/*
 const wait = function (seconds) {
   return new Promise(function (resolve) {
     setTimeout(resolve, seconds * 1000);
@@ -521,3 +522,6 @@ createImage('img/img-1.jpg')
     currentImg.style.display = 'none';
   })
   .catch(err => console.error(err));
+*/
+
+// Consuming promise with async await
