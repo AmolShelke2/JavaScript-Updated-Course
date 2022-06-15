@@ -559,3 +559,5 @@ const whereAmI = async function (country) {
 whereAmI();
 console.log('FIRST');
 */
+
+// Error Handling with Try.. catch
