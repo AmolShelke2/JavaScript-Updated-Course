@@ -566,17 +566,5 @@ const whereAmI = async function (country) {
 };
 
 console.log('FIRST');
-whereAmI();
-whereAmI();
-whereAmI();
-whereAmI();
-whereAmI();
-whereAmI();
 
-// try {
-//   let y = 1;
-//   const x = 2;
-//   y = 3;
-// } catch (err) {
-//   alert(err.message);
-// }
+// Returning values from async functions
