@@ -470,13 +470,12 @@ TEST DATA: Images in the img folder. Test the error handler by passing a wrong
 
 GOOD LUCK 😀
 */
-/*
+
 const wait = function (seconds) {
   return new Promise(function (resolve) {
     setTimeout(resolve, seconds * 1000);
   });
 };
-*/
 
 // part 1
 
@@ -498,4 +497,27 @@ const createImage = function (imgPath) {
   });
 };
 
-createImage('img/img-1.jpg');
+// part 2
+
+let currentImg;
+
+createImage('img/img-1.jpg')
+  .then(img => {
+    currentImg = img;
+    console.log('Image 1 loaded');
+    return wait(2);
+  })
+  .then(() => {
+    currentImg.style.display = 'none';
+    return createImage('img/img-2.jpg');
+  })
+  .then(img => {
+    currentImg = img;
+    console.log('Image 2 loaded');
+    return wait(2);
+  })
+  .then(() => {
+    console.log('none display after 2 second');
+    currentImg.style.display = 'none';
+  })
+  .catch(err => console.error(err));
