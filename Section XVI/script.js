@@ -550,7 +550,7 @@ const whereAmI = async function (country) {
     const dataGeo = await resGeo.json();
 
     const res = await fetch(
-      `https://restcountries.com/v3.1/name/${dataGeo.countrydd}`
+      `https://restcountries.com/v3.1/name/${dataGeo.country}`
     );
 
     if (!resGeo.ok) throw new Error('Problem getting country');
@@ -568,7 +568,7 @@ const whereAmI = async function (country) {
   }
 };
 
-// console.log('1: Will get location');
+console.log('1: Will get location');
 // const city = whereAmI();
 // console.log(city);
 // whereAmI()
@@ -579,9 +579,8 @@ const whereAmI = async function (country) {
 // Mini challenge completed
 (async function () {
   try {
-    console.log('1: Will get location');
     const city = await whereAmI();
-    console.log(city);
+    console.log(`2: ${city}`);
   } catch (err) {
     console.error(`2:${err.message}`);
   }
