@@ -710,7 +710,7 @@ TEST DATA: ['img/img-1.jpg', 'img/img-2.jpg', 'img/img-3.jpg']
 
 GOOD LUCK 😀
 */
-
+/*
 const wait = function (seconds) {
   return new Promise(function (resolve) {
     setTimeout(resolve, seconds * 1000);
@@ -736,7 +736,7 @@ const createImage = function (imgPath) {
     });
   });
 };
-/*
+
 let currentImg;
 
 createImage('img/img-1.jpg')
@@ -759,7 +759,7 @@ createImage('img/img-1.jpg')
     currentImg.style.display = 'none';
   })
   .catch(err => console.error(err));
-*/
+
 
 // Part 1
 const loadNPause = async function (imgPath) {
@@ -795,3 +795,4 @@ const loadAll = async function (imgArr) {
 };
 
 loadAll(['img/img-1.jpg', 'img/img-2.jpg', 'img/img-3.jpg']);
+*/

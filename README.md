@@ -257,3 +257,26 @@ I build Another real world project called Mapty in this section. and learned alo
 and objects and architectures using OOPS concept.
 
 <hr>
+
+## Section XVI Asynchronous JavaScript.
+
+What I learn in this section.
+
+- Overview of asynchronous javascript.
+- making our first ajax call using xmlHttpRequest.
+- How the web works.
+- callBack hell.
+- promises and the fetch API.
+- consuming promises.
+- chaining promises.
+- Handling rejected promises.
+- Throwing errors manually.
+- Asynchronous javascript behind the scenes.
+- the event loop in practice.
+- building a simple promise.
+- promisifying the geolocation API.
+- consuming promises with async await.
+- Error handelling with try and catch.
+- Returning values from async functions.
+- Running promises in parallel.
+- other combinators.
