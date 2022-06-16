@@ -590,6 +590,7 @@ console.log('1: Will get location');
 
 */
 // Running promises in parallel
+/*
 const getJSON = function (url, errorMsg = 'Something went wrong') {
   return fetch(url).then(response => {
     if (!response.ok)
@@ -619,3 +620,5 @@ const get3Countries = async function (c1, c2, c3) {
 };
 
 get3Countries('Bharat', 'portugal', 'russia');
+*/
+// Other Promise combinator
