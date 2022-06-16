@@ -736,7 +736,7 @@ const createImage = function (imgPath) {
     });
   });
 };
-
+/*
 let currentImg;
 
 createImage('img/img-1.jpg')
@@ -759,3 +759,27 @@ createImage('img/img-1.jpg')
     currentImg.style.display = 'none';
   })
   .catch(err => console.error(err));
+*/
+
+// Part 1
+const loadNPause = async function (imgPath) {
+  try {
+    // load image 1
+    let img = await createImage('img/img-1.jpg');
+    console.log('Img 1 loaded');
+    await wait(2);
+
+    img.style.display = 'none';
+
+    // load image 1
+    img = await createImage('img/img-1.jpg');
+    console.log('Image 2 Loaded');
+    await wait(2);
+
+    img.style.display = 'none';
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+// loadNPause();
