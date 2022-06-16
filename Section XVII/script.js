@@ -1,1 +1,1 @@
-// Learnt overview of Modern javascript Development.
+// An overview of modules in javascript.
