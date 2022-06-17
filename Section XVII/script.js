@@ -81,4 +81,4 @@ const { addToCart } = require('./clean.js')
 
 */
 
-//Learnt A brief introduction to command line.
+// Introduction to NPM
