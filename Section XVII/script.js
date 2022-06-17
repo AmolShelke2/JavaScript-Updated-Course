@@ -28,3 +28,5 @@ add('apples', 2);
 console.log(cart);
 
 printGreeting('Amol', 17, 'Software Engineer');
+
+// Module pattern
