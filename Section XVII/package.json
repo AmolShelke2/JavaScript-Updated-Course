@@ -1,0 +1,23 @@
+{
+  "name": "javascript-updated-course",
+  "version": "1.0.0",
+  "description": "This is the updated version of the JavaScript full course from zero to hero and, Before I've learning the old version so I don't complete that so in this repo I will be sharing my learning, so lets start💕",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmolShelke2/JavaScript-Updated-Course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmolShelke2/JavaScript-Updated-Course/issues"
+  },
+  "homepage": "https://github.com/AmolShelke2/JavaScript-Updated-Course#readme",
+  "dependencies": {
+    "leaflet": "^1.8.0",
+    "lodash-es": "^4.17.21"
+  }
+}
