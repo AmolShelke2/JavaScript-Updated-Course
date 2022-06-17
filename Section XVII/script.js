@@ -63,3 +63,5 @@ ShoppingCart2.addToCart('pizza', 2);
 console.log(ShoppingCart2);
 console.log(ShoppingCart2.shippingCost);
 */
+
+// CommonJS modules
