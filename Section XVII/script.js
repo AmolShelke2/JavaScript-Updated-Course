@@ -107,3 +107,5 @@ state.user.loggedIn = false;
 console.log(stateClone);
 
 console.log(stateDeepClone);
+
+// Bundling with parcel and NPM scripts
