@@ -1,5 +1,5 @@
 // Importing and exporting Modules.
-/*
+
 // import './clean.js';
 // import { addToCart, calcAge, totalPrice as price, QT } from './clean.js';
 
@@ -28,7 +28,6 @@ add('apples', 2);
 console.log(cart);
 
 printGreeting('Amol', 17, 'Software Engineer');
-*/
 
 // Module pattern
 /*
@@ -83,7 +82,9 @@ const { addToCart } = require('./clean.js')
 
 // Introduction to NPM
 
-import cloneDeep from './node_modules/lodash-es/cloneDeep.js';
+// import cloneDeep from './node_modules/lodash-es/cloneDeep.js';
+// import { cloneDeep } from 'lodash-es';
+import { cloneDeep } from 'lodash-es';
 
 const state = {
   cart: [
@@ -108,4 +109,10 @@ console.log(stateClone);
 
 console.log(stateDeepClone);
 
+// console.log('HEllo');
+
 // Bundling with parcel and NPM scripts
+
+if (module.hot) {
+  module.hot.accept();
+}
