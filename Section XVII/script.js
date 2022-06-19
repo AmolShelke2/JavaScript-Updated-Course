@@ -30,7 +30,7 @@ console.log(cart);
 printGreeting('Amol', 17, 'Software Engineer');
 
 // Module pattern
-/*
+
 const ShoppingCart2 = (function () {
   const cart = [];
   const shippingCost = 10;
@@ -61,7 +61,6 @@ ShoppingCart2.addToCart('pizza', 2);
 
 console.log(ShoppingCart2);
 console.log(ShoppingCart2.shippingCost);
-*/
 
 // CommonJS modules
 
@@ -116,3 +115,5 @@ console.log(stateDeepClone);
 if (module.hot) {
   module.hot.accept();
 }
+
+// Configuring Babel and Polyfying
