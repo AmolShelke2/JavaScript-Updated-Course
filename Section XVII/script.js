@@ -1,25 +1,25 @@
 // Importing and exporting Modules.
 
-// import './clean.js';
-// import { addToCart, calcAge, totalPrice as price, QT } from './clean.js';
+import './clean.js';
+import { addToCart, calcAge, totalPrice as price, QT } from './clean.js';
 
-// console.log('Importing Module');
-// addToCart('bread', 5);
+console.log('Importing Module');
+addToCart('bread', 5);
 
-// calcAge(2004, 2021);
+calcAge(2004, 2021);
 
-// console.log(price, QT);
+console.log(price, QT);
 
 console.log('Importing Module');
 
-// import * as ShoppingCart from './clean.js';
-// ShoppingCart.addToCart('bread', 5);
-// console.log(ShoppingCart.totalPrice);
+import * as ShoppingCart from './clean.js';
+ShoppingCart.addToCart('bread', 5);
+console.log(ShoppingCart.totalPrice);
 
 // default exports
 
-// import add, { addToCart, calcAge, totalPrice as price, QT } from './clean.js';
-// console.log(price)
+import add, { addToCart, calcAge, totalPrice as price, QT } from './clean.js';
+console.log(price);
 
 import add, { cart, printGreeting } from './clean.js';
 add('pizza', 2);
@@ -76,7 +76,6 @@ console.log(ShoppingCart2.shippingCost);
 // Import
 
 const { addToCart } = require('./clean.js')
-
 */
 
 // Introduction to NPM
@@ -105,7 +104,6 @@ const stateClone = Object.assign({}, state);
 const stateDeepClone = cloneDeep(state);
 state.user.loggedIn = false;
 console.log(stateClone);
-
 console.log(stateDeepClone);
 
 // console.log('HEllo');
@@ -116,4 +114,15 @@ if (module.hot) {
   module.hot.accept();
 }
 
-// Configuring Babel and Polyfying
+// Configuring Babel and Pollyfilling
+class Person {
+  #greeting = 'hey';
+  constructor(name) {
+    this.name = name;
+    console.log(`${this.#greeting}, ${this.name}`);
+  }
+}
+
+const amol = new Person('Amol');
+
+console.log('Amol' ?? null);
