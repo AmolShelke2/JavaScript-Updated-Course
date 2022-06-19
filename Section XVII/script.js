@@ -82,7 +82,9 @@ const { addToCart } = require('./clean.js')
 
 // Introduction to NPM
 
-import cloneDeep from './node_modules/lodash-es/cloneDeep.js';
+// import cloneDeep from './node_modules/lodash-es/cloneDeep.js';
+
+import cloneDeep from 'lodash-es';
 
 const state = {
   cart: [
@@ -100,3 +102,9 @@ stateClone.user.loggedIn = false;
 // console.log(stateClone);
 
 console.log(stateDeepClone);
+
+// Bundelling with parcel and NPM scripts.
+
+if (module.hot) {
+  module.hot.accept();
+}
