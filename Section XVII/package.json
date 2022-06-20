@@ -6,13 +6,15 @@
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
-  "author": "",
+  "author": "Jonas",
   "license": "ISC",
   "dependencies": {
-    "leaflet": "^1.8.0",
-    "lodash-es": "^4.17.21"
+    "core-js": "^3.6.5",
+    "leaflet": "^1.6.0",
+    "lodash-es": "^4.17.15",
+    "regenerator-runtime": "^0.13.7"
   },
   "devDependencies": {
-    "parcel": "^2.6.1"
+    "parcel": "^1.12.4"
   }
 }

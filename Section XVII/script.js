@@ -99,7 +99,6 @@ const stateDeepClone = cloneDeep(state);
 console.log(stateClone);
 
 stateClone.user.loggedIn = false;
-// console.log(stateClone);
 
 console.log(stateDeepClone);
 
@@ -110,3 +109,25 @@ if (module.hot) {
 }
 
 // configuring babel and polyfilling
+
+class Person {
+  greeting = 'Hey';
+  constructor(name) {
+    this.name = name;
+    console.log(`${this.greeting}, ${this.name}`);
+  }
+}
+
+const amol = new Person('Amol');
+
+console.log('Amol' ?? null);
+
+console.log(cart.find(el => el.quantity >= 2));
+
+Promise.resolve('TEST').then(x => console.log(x));
+
+// import 'core-js/stable';
+import 'core-js/stable/array/find';
+
+// polyfilling async function
+import 'regenerator-runtime/runtime';
