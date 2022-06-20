@@ -108,3 +108,5 @@ console.log(stateDeepClone);
 if (module.hot) {
   module.hot.accept();
 }
+
+// configuring babel and polyfilling
