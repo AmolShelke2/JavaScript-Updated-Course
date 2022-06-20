@@ -587,7 +587,7 @@ const { addToCart } = require('./clean.js')
 var _lodashEs = require("lodash-es");
 var _lodashEsDefault = parcelHelpers.interopDefault(_lodashEs);
 // polyfilling async function
-var _runtime = require("regenerator-runtime/runtime");
+var _runtime = require("regenerator-runtime/runtime"); // Review writing clean and modern javascript.
 console.log("Importing Module");
 (0, _shopingCartJs.addToCart)("bread", 5);
 (0, _shopingCartJs.calcAge)(2004, 2021);
