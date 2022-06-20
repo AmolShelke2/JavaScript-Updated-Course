@@ -1,3 +1,5 @@
+// It is my solution
+
 var budget = [
   { value: 250, description: 'Sold old TV 📺', user: 'jonas' },
   { value: -45, description: 'Groceries 🥑', user: 'jonas' },
@@ -9,45 +11,49 @@ var budget = [
   { value: -1800, description: 'New Laptop 💻', user: 'jonas' },
 ];
 
-const spendingLimit = {
+const limits = {
   jonas: 1500,
   matilda: 100,
 };
 
-const getLimit = user => spendingLimit?.[user] ?? 0;
-
 const addExpense = function (value, description, user = 'jonas') {
   user = user.toLowerCase();
 
-  //   const limit = spendingLimit[user] ? spendingLimit[user] : 0;
+  let limit;
 
-  if (value <= getLimit(user)) {
-    budget.push({ value: -value, description, user });
-  }
+  limits[user] ? (limit = limits[user]) : (limit = 0);
+
+  if (value <= limit) budget.push({ value: -value, description, user });
 };
 
-addExpense(10, 'Pizza 🍕');
-addExpense(100, 'Going to movies 🍿', 'Matilda');
-addExpense(200, 'Stuff', 'Jay');
+addExpense(10, 'Pizza');
+addExpense(100, 'Going to movies', 'Matilda');
+addExpense(200, 'stuff', 'Jay');
+
 console.log(budget);
 
 const checkExpenses = function () {
-  for (const entry of budget)
-    if (entry.value < -getLimit(entry.user)) entry.flag = 'limit';
+  for (let entry of budget) {
+    let limit;
+    if (limits[entry.user]) {
+      limit = limits[entry.user];
+    }
+    limit = 0;
+
+    limits[entry.user] ? (limit = limits[entry.user]) : (limit = 0);
+    if (entry.value < -limit) entry.flag = 'limit';
+  }
 };
 
 checkExpenses();
-
 console.log(budget);
 
 const LogbigExpenses = function (bigLimit) {
   let output = '';
-  for (const el of budget)
-    output += el.value <= -bigLimit ? el.description.slice(-2) + ' / ' : '';
 
-  output = output.slice(0, -2); // Remove last '/ '
+  for (const entry of budget)
+    if (entry.value <= -bigLimit) output += entry.description.slice(-2) + ' / ';
+
+  output = output.slice(0, -2);
   console.log(output);
 };
-
-LogbigExpenses(10000);
-LogbigExpenses(100);
