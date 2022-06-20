@@ -133,3 +133,5 @@ import 'core-js/stable/array/find';
 import 'regenerator-runtime/runtime';
 
 // Review writing clean and modern javascript.
+
+// Let's Fix some Bad_code Part 1
