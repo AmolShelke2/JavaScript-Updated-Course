@@ -131,3 +131,5 @@ import 'core-js/stable/array/find';
 
 // polyfilling async function
 import 'regenerator-runtime/runtime';
+
+// Review writing clean and modern javascript.
