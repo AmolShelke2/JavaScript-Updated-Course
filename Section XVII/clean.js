@@ -57,3 +57,5 @@ const LogbigExpenses = function (bigLimit) {
   output = output.slice(0, -2);
   console.log(output);
 };
+
+// Learnt Declarative and functional javascript principles
