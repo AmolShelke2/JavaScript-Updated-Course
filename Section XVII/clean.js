@@ -59,3 +59,5 @@ const LogbigExpenses = function (bigLimit) {
 };
 
 // Learnt Declarative and functional javascript principles
+
+// Let's fix some bad code part 2
