@@ -280,3 +280,18 @@ What I learn in this section.
 - Returning values from async functions.
 - Running promises in parallel.
 - other combinators.
+
+## Section XVII Modern javascript modules, tooling and Development.
+
+Overview.
+
+- An High overview of Modern JavaScript Development.
+- An high overview of Es6 modules.
+- Importing and Exporting modules.
+- The module pattern
+- Common JS modules.
+- Bundelling with parcel and NPM scripts.
+- Configuring Babel and polyfilling.
+- Declarative and functional JS
+- functional programming priciples.
+- Let's fix some bad code part1, part2.
