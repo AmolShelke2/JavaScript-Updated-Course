@@ -156,4 +156,4 @@ const showRecipe = async function () {
 
 showRecipe();
 
-// Rendering the Recipe
+// Listening for load and hashchange Events
