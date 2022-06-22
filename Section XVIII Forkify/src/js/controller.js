@@ -7,5 +7,3 @@ const timeOut = function (s) {
     }, s * 1000);
   });
 };
-
-// Project overview and planning.
