@@ -38,3 +38,5 @@ const showRecipe = async function () {
 };
 
 showRecipe();
+
+// Rendering the Recipe
