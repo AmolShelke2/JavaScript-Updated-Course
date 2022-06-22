@@ -1,4 +1,4 @@
-const recipeContainer = document.querySelector(".recipe");
+const recipeContainer = document.querySelector('.recipe');
 
 const timeOut = function (s) {
   return new Promise(function (_, reject) {
@@ -7,3 +7,5 @@ const timeOut = function (s) {
     }, s * 1000);
   });
 };
+
+// Project overview and planning.
