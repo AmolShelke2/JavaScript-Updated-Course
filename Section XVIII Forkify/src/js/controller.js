@@ -26,11 +26,7 @@ const controlRecipes = async function () {
   }
 };
 
-['hasChange', 'load'].forEach(ev =>
-  window.addEventListener(ev, controlRecipes)
-);
-
-// window.addEventListener('hashchange', controlRecipes());
-// window.addEventListener('load', controlRecipes());
-
-// Event Handlers in MVC_publisher-subscriber pattern
+const init = function () {
+  recipeView.addHandlerRender(controlRecipes);
+};
+init();
