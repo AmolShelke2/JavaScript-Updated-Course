@@ -163,4 +163,4 @@ const showRecipe = async function () {
 // window.addEventListener('hashchange', showRecipe());
 // window.addEventListener('load', showRecipe());
 
-// The MVC Architecture.
+// Refactoring for MVC
