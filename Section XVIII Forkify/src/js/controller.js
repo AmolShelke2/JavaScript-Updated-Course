@@ -163,4 +163,4 @@ const showRecipe = async function () {
 // window.addEventListener('hashchange', showRecipe());
 // window.addEventListener('load', showRecipe());
 
-// Listening for load and hashchange Events
+// The MVC Architecture.
