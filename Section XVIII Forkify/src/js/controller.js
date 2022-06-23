@@ -41,4 +41,4 @@ const controlRecipes = async function () {
 // window.addEventListener('hashchange', controlRecipes());
 // window.addEventListener('load', controlRecipes());
 
-// Refactoring for MVC
+// Helpers and Configuration Files
