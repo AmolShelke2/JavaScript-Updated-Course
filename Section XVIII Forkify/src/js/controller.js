@@ -33,4 +33,4 @@ const controlRecipes = async function () {
 // window.addEventListener('hashchange', controlRecipes());
 // window.addEventListener('load', controlRecipes());
 
-// Helpers and Configuration Files
+// Event Handlers in MVC_publisher-subscriber pattern
