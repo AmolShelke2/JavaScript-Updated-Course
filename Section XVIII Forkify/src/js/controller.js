@@ -30,3 +30,5 @@ const init = function () {
   recipeView.addHandlerRender(controlRecipes);
 };
 init();
+
+// Implementing Error and Success messages.
