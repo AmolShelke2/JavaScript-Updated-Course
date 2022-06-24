@@ -31,4 +31,4 @@ const init = function () {
 };
 init();
 
-// Implementing Error and Success messages.
+// Implementing search results.
