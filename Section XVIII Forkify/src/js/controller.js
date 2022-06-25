@@ -49,3 +49,5 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
 };
 init();
+
+// Implementing Pagination
