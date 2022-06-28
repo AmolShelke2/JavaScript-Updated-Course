@@ -66,3 +66,5 @@ const init = function () {
   paginationView.addHandlerClick(controlPagination);
 };
 init();
+
+// Project planning part 2
