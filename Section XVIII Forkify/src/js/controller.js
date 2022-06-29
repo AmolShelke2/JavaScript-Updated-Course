@@ -67,4 +67,4 @@ const init = function () {
 };
 init();
 
-// Project planning part 2
+// Updating Recipe servings.
