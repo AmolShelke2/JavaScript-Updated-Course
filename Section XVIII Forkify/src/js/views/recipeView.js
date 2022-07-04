@@ -125,3 +125,5 @@ class RecipeView extends View {
 }
 
 export default new RecipeView();
+
+// Developing a DOM algorithm
