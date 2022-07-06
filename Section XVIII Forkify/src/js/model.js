@@ -11,6 +11,7 @@ export const state = {
     page: 1,
     resultsPerPage: RES_PER_PAGE,
   },
+  bookMarks: [],
 };
 
 export const loadRecipe = async function (id) {
@@ -28,6 +29,11 @@ export const loadRecipe = async function (id) {
       ingredients: recipe.ingredients,
       image: recipe.image_url,
     };
+
+    if (state.bookMarks.some(bookmark => bookmark.id === id))
+      state.recipe.bookmarked = true;
+    else state.recipe.bookmarked = false;
+
     console.log(state.recipe);
   } catch (err) {
     // Temp error handling.
@@ -74,4 +80,21 @@ export const updateServings = function (newServings) {
   });
 
   state.recipe.servings = newServings;
+};
+
+export const addBookMark = function (recipe) {
+  // add bookmark
+  state.bookMarks.push(recipe);
+
+  // mark current recipe as bookmark
+  if (recipe.id === state.recipe.id) state.recipe.bookmarked = true;
+};
+
+export const deleteBookMark = function (id) {
+  // delete bokmark
+  const index = state.bookMarks.findIndex(el => el.id === id);
+  state.bookMarks.splice(index, 1);
+
+  // mark current recipe as not bookmarked
+  if (id === state.recipe.id) state.recipe.bookmarked = false;
 };

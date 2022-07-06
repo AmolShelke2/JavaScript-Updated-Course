@@ -25,7 +25,7 @@ export default class View {
 
     newElements.forEach((newEl, i) => {
       const curEl = currenteElements[i];
-      console.log(curEl, newEl.isEqualNode(curEl));
+      // console.log(curEl, newEl.isEqualNode(curEl));
 
       if (
         !newEl.isEqualNode(curEl) &&
@@ -35,7 +35,7 @@ export default class View {
       }
 
       if (!newEl.isEqualNode(curEl)) {
-        console.log(Array.from(newEl.attributes));
+        // console.log(Array.from(newEl.attributes));
         Array.from(newEl.attributes).forEach(attr =>
           curEl.setAttribute(attr.name, attr.value)
         );

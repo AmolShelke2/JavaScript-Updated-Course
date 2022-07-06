@@ -75,13 +75,22 @@ const controlServings = function (newServings) {
   recipeView.update(model.state.recipe);
 };
 
+const controlAddBookMark = function () {
+  if (!model.state.recipe.bookmarked) model.addBookMark(model.state.recipe);
+  else model.deleteBookMark(model.state.recipe.id);
+
+  console.log(model.state.recipe);
+  recipeView.update(model.state.recipe);
+};
+
 const init = function () {
   recipeView.addHandlerRender(controlRecipes);
   recipeView.addHandlerServings(controlServings);
+  recipeView.addHandlerAddBookmark(controlAddBookMark);
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
 };
 
 init();
 
-// Implementing Bookmarks part 1
+// Implemented Bookmark part 1
