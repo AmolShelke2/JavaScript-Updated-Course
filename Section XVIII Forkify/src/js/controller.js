@@ -83,3 +83,5 @@ const init = function () {
 };
 
 init();
+
+// Implementing Bookmarks part 1
