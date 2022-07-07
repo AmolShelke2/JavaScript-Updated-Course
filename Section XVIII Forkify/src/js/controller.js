@@ -93,4 +93,4 @@ const init = function () {
 
 init();
 
-// Implemented Bookmark part 1
+// Implementing bookmark part 2
