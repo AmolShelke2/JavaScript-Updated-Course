@@ -99,4 +99,4 @@ const init = function () {
 
 init();
 
-// Implementing bookmark part 2
+// storing bookmarks in localStorage.
