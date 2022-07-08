@@ -1,7 +1,7 @@
 import { async } from 'regenerator-runtime';
 import { API_url } from './config.js';
-import { getJSON } from './helper.js';
-import { RES_PER_PAGE } from './config.js';
+import { getJSON, sentJSON } from './helper.js';
+import { RES_PER_PAGE, KEY } from './config.js';
 
 export const state = {
   recipe: {},
@@ -14,21 +14,26 @@ export const state = {
   bookMarks: [],
 };
 
+const createRecipeObject = function (data) {
+  const { recipe } = data.data;
+  return {
+    id: recipe.id,
+    title: recipe.title,
+    publisher: recipe.publisher,
+    sourceUrl: recipe.source_url,
+    servings: recipe.servings,
+    cookingTime: recipe.cooking_time,
+    ingredients: recipe.ingredients,
+    image: recipe.image_url,
+    ...(recipe.key && { key: recipe.key }),
+  };
+};
+
 export const loadRecipe = async function (id) {
   try {
     const data = await getJSON(`${API_url}/${id}`);
 
-    const { recipe } = data.data;
-    state.recipe = {
-      id: recipe.id,
-      title: recipe.title,
-      publisher: recipe.publisher,
-      sourceUrl: recipe.source_url,
-      servings: recipe.servings,
-      cookingTime: recipe.cooking_time,
-      ingredients: recipe.ingredients,
-      image: recipe.image_url,
-    };
+    state.recipe = createRecipeObject(data);
 
     if (state.bookMarks.some(bookmark => bookmark.id === id))
       state.recipe.bookmarked = true;
@@ -120,4 +125,35 @@ const clearBookMarks = function () {
 
 // clearBookMarks();
 
-// Uploading a New recipe part 1
+export const uploadRecipe = async function (newRecipe) {
+  try {
+    const ingredients = Object.entries(newRecipe)
+      .filter(entry => entry[0].startsWith('ingredient') && entry[1] !== '')
+      .map(ing => {
+        const ingArr = ing[1].split(',').map(el => el.trim());
+        if (ingArr.length !== 3)
+          throw new Error(
+            'Wrong ingredient format please use the correct format'
+          );
+
+        const [quantity, unit, description] = ingArr;
+        return { quantity: quantity ? +quantity : null, unit, description };
+      });
+
+    const recipe = {
+      title: newRecipe.title,
+      source_url: newRecipe.sourceUrl,
+      image_url: newRecipe.image,
+      publisher: newRecipe.publisher,
+      cooking_time: +newRecipe.cookingTime,
+      servings: +newRecipe.servings,
+      ingredients,
+    };
+
+    const data = await sentJSON(`${API_url}?key=${KEY}`, recipe);
+    state.recipe = createRecipeObject(data);
+    addBookMark(state.recipe);
+  } catch (err) {
+    throw new Error(err);
+  }
+};
