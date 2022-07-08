@@ -119,3 +119,5 @@ const clearBookMarks = function () {
 };
 
 // clearBookMarks();
+
+// Project planning part 3
