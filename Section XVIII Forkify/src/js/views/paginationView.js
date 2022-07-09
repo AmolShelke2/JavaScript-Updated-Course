@@ -26,6 +26,7 @@ class paginationView extends View {
     // page 1 and there are other pages.
     if (curPage === 1 && numPages > 1) {
       return `
+       <p style="text-align: center; color: #000; font-size: 2rem">Num Pages ${numPages}</p>
         <button data-goto="${
           curPage + 1
         }" class="btn--inline pagination__btn--next">
@@ -34,12 +35,14 @@ class paginationView extends View {
               <use href="${icons}#icon-arrow-right"></use>
            </svg>
         </button>
+
       `;
     }
 
     // Last page
     if (curPage === numPages && numPages > 1) {
       return `
+      <p style="text-align: center; color: #000; font-size: 2rem">Num Pages ${numPages}</p>
        <button data-goto="${
          curPage - 1
        }"class="btn--inline pagination__btn--prev">
@@ -54,6 +57,7 @@ class paginationView extends View {
     // Other page.
     if (curPage < numPages) {
       return `
+      <p style="text-align: center; color: #000; font-size: 2rem">Num Pages ${numPages}</p>
        <button data-goto="${
          curPage - 1
        }" class="btn--inline pagination__btn--prev">
