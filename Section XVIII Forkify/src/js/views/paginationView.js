@@ -78,6 +78,7 @@ class paginationView extends View {
     }
 
     // page 1 and there are no other pages.
+    `<p style="text-align: center; color: #000; font-size: 2rem">Num Page ${numPages}</p>`;
     return '';
   }
 }
